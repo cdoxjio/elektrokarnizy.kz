@@ -1,0 +1,5730 @@
+[
+  {
+    "id": 1,
+    "question": "Вопрос 1: Что следует предпринять в контексте темы 'Настройки встреч и звонков'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Настройки встреч и звонков', эти варианты являются наиболее подходящими.",
+    "category": "Настройки встреч и звонков",
+    "difficulty": "легкий",
+    "type": "single",
+    "group": 1
+  },
+  {
+    "id": 2,
+    "question": "Вопрос 2: Что следует предпринять в контексте темы 'Compliance и защита информации'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Compliance и защита информации', эти варианты являются наиболее подходящими.",
+    "category": "Compliance и защита информации",
+    "difficulty": "сложный",
+    "type": "single",
+    "group": 1
+  },
+  {
+    "id": 3,
+    "question": "Вопрос 3: Что следует предпринять в контексте темы 'Мониторинг и устранение неполадок'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Мониторинг и устранение неполадок', эти варианты являются наиболее подходящими.",
+    "category": "Мониторинг и устранение неполадок",
+    "difficulty": "средний",
+    "type": "single",
+    "group": 1
+  },
+  {
+    "id": 4,
+    "question": "Вопрос 4: Что следует предпринять в контексте темы 'Настройки встреч и звонков'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Настройки встреч и звонков', эти варианты являются наиболее подходящими.",
+    "category": "Настройки встреч и звонков",
+    "difficulty": "сложный",
+    "type": "single",
+    "group": 1
+  },
+  {
+    "id": 5,
+    "question": "Что делает команда PowerShell: `Get-Team`?",
+    "image": null,
+    "answers": [
+      "Получает список команд Teams",
+      "Настраивает политику встреч",
+      "Добавляет пользователя в команду",
+      "Удаляет команду"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Команда `Get-Team` используется для работы с Teams через PowerShell.",
+    "category": "PowerShell (базовый уровень)",
+    "difficulty": "сложный",
+    "type": "single",
+    "group": 1
+  },
+  {
+    "id": 6,
+    "question": "Что делает команда PowerShell: `Get-Team`?",
+    "image": null,
+    "answers": [
+      "Получает список команд Teams",
+      "Настраивает политику встреч",
+      "Добавляет пользователя в команду",
+      "Удаляет команду"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Команда `Get-Team` используется для работы с Teams через PowerShell.",
+    "category": "PowerShell (базовый уровень)",
+    "difficulty": "легкий",
+    "type": "single",
+    "group": 1
+  },
+  {
+    "id": 7,
+    "question": "Вопрос 7: Что следует предпринять в контексте темы 'Compliance и защита информации'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0,
+      1
+    ],
+    "explanation": "Пояснение: На основании темы 'Compliance и защита информации', эти варианты являются наиболее подходящими.",
+    "category": "Compliance и защита информации",
+    "difficulty": "легкий",
+    "type": "multiple",
+    "group": 1
+  },
+  {
+    "id": 8,
+    "question": "Вопрос 8: Что следует предпринять в контексте темы 'Мониторинг и устранение неполадок'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Мониторинг и устранение неполадок', эти варианты являются наиболее подходящими.",
+    "category": "Мониторинг и устранение неполадок",
+    "difficulty": "сложный",
+    "type": "single",
+    "group": 1
+  },
+  {
+    "id": 9,
+    "question": "Вопрос 9: Что следует предпринять в контексте темы 'Compliance и защита информации'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Compliance и защита информации', эти варианты являются наиболее подходящими.",
+    "category": "Compliance и защита информации",
+    "difficulty": "средний",
+    "type": "single",
+    "group": 1
+  },
+  {
+    "id": 10,
+    "question": "Что делает команда PowerShell: `Set-CsTeamsMeetingPolicy`?",
+    "image": null,
+    "answers": [
+      "Получает список команд Teams",
+      "Настраивает политику встреч",
+      "Добавляет пользователя в команду",
+      "Удаляет команду"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Команда `Set-CsTeamsMeetingPolicy` используется для работы с Teams через PowerShell.",
+    "category": "PowerShell (средний уровень)",
+    "difficulty": "легкий",
+    "type": "single",
+    "group": 1
+  },
+  {
+    "id": 11,
+    "question": "Вопрос 11: Что следует предпринять в контексте темы 'Настройки встреч и звонков'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Настройки встреч и звонков', эти варианты являются наиболее подходящими.",
+    "category": "Настройки встреч и звонков",
+    "difficulty": "средний",
+    "type": "single",
+    "group": 1
+  },
+  {
+    "id": 12,
+    "question": "Вопрос 12: Что следует предпринять в контексте темы 'Настройки встреч и звонков'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Настройки встреч и звонков', эти варианты являются наиболее подходящими.",
+    "category": "Настройки встреч и звонков",
+    "difficulty": "сложный",
+    "type": "single",
+    "group": 1
+  },
+  {
+    "id": 13,
+    "question": "Что делает команда PowerShell: `Set-CsTeamsMeetingPolicy`?",
+    "image": null,
+    "answers": [
+      "Получает список команд Teams",
+      "Настраивает политику встреч",
+      "Добавляет пользователя в команду",
+      "Удаляет команду"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Команда `Set-CsTeamsMeetingPolicy` используется для работы с Teams через PowerShell.",
+    "category": "PowerShell (средний уровень)",
+    "difficulty": "легкий",
+    "type": "single",
+    "group": 1
+  },
+  {
+    "id": 14,
+    "question": "Что делает команда PowerShell: `Get-Team`?",
+    "image": null,
+    "answers": [
+      "Получает список команд Teams",
+      "Настраивает политику встреч",
+      "Добавляет пользователя в команду",
+      "Удаляет команду"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Команда `Get-Team` используется для работы с Teams через PowerShell.",
+    "category": "PowerShell (базовый уровень)",
+    "difficulty": "средний",
+    "type": "multiple",
+    "group": 1
+  },
+  {
+    "id": 15,
+    "question": "Вопрос 15: Что следует предпринять в контексте темы 'Политики пользователей и приложений'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Политики пользователей и приложений', эти варианты являются наиболее подходящими.",
+    "category": "Политики пользователей и приложений",
+    "difficulty": "средний",
+    "type": "single",
+    "group": 1
+  },
+  {
+    "id": 16,
+    "question": "Вопрос 16: Что следует предпринять в контексте темы 'Compliance и защита информации'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Compliance и защита информации', эти варианты являются наиболее подходящими.",
+    "category": "Compliance и защита информации",
+    "difficulty": "сложный",
+    "type": "single",
+    "group": 1
+  },
+  {
+    "id": 17,
+    "question": "Вопрос 17: Что следует предпринять в контексте темы 'Политики пользователей и приложений'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Политики пользователей и приложений', эти варианты являются наиболее подходящими.",
+    "category": "Политики пользователей и приложений",
+    "difficulty": "сложный",
+    "type": "single",
+    "group": 1
+  },
+  {
+    "id": 18,
+    "question": "Вопрос 18: Что следует предпринять в контексте темы 'Настройки встреч и звонков'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Настройки встреч и звонков', эти варианты являются наиболее подходящими.",
+    "category": "Настройки встреч и звонков",
+    "difficulty": "сложный",
+    "type": "single",
+    "group": 1
+  },
+  {
+    "id": 19,
+    "question": "Вопрос 19: Что следует предпринять в контексте темы 'Compliance и защита информации'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Compliance и защита информации', эти варианты являются наиболее подходящими.",
+    "category": "Compliance и защита информации",
+    "difficulty": "средний",
+    "type": "single",
+    "group": 1
+  },
+  {
+    "id": 20,
+    "question": "Вопрос 20: Что следует предпринять в контексте темы 'Настройки встреч и звонков'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Настройки встреч и звонков', эти варианты являются наиболее подходящими.",
+    "category": "Настройки встреч и звонков",
+    "difficulty": "легкий",
+    "type": "single",
+    "group": 1
+  },
+  {
+    "id": 21,
+    "question": "Вопрос 21: Что следует предпринять в контексте темы 'Управление средой Teams'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0,
+      1
+    ],
+    "explanation": "Пояснение: На основании темы 'Управление средой Teams', эти варианты являются наиболее подходящими.",
+    "category": "Управление средой Teams",
+    "difficulty": "сложный",
+    "type": "multiple",
+    "group": 2
+  },
+  {
+    "id": 22,
+    "question": "Вопрос 22: Что следует предпринять в контексте темы 'Мониторинг и устранение неполадок'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Мониторинг и устранение неполадок', эти варианты являются наиболее подходящими.",
+    "category": "Мониторинг и устранение неполадок",
+    "difficulty": "легкий",
+    "type": "single",
+    "group": 2
+  },
+  {
+    "id": 23,
+    "question": "Вопрос 23: Что следует предпринять в контексте темы 'Настройки встреч и звонков'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Настройки встреч и звонков', эти варианты являются наиболее подходящими.",
+    "category": "Настройки встреч и звонков",
+    "difficulty": "средний",
+    "type": "single",
+    "group": 2
+  },
+  {
+    "id": 24,
+    "question": "Вопрос 24: Что следует предпринять в контексте темы 'Мониторинг и устранение неполадок'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Мониторинг и устранение неполадок', эти варианты являются наиболее подходящими.",
+    "category": "Мониторинг и устранение неполадок",
+    "difficulty": "сложный",
+    "type": "single",
+    "group": 2
+  },
+  {
+    "id": 25,
+    "question": "Вопрос 25: Что следует предпринять в контексте темы 'Настройки встреч и звонков'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Настройки встреч и звонков', эти варианты являются наиболее подходящими.",
+    "category": "Настройки встреч и звонков",
+    "difficulty": "средний",
+    "type": "single",
+    "group": 2
+  },
+  {
+    "id": 26,
+    "question": "Вопрос 26: Что следует предпринять в контексте темы 'Compliance и защита информации'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Compliance и защита информации', эти варианты являются наиболее подходящими.",
+    "category": "Compliance и защита информации",
+    "difficulty": "легкий",
+    "type": "single",
+    "group": 2
+  },
+  {
+    "id": 27,
+    "question": "Вопрос 27: Что следует предпринять в контексте темы 'Compliance и защита информации'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Compliance и защита информации', эти варианты являются наиболее подходящими.",
+    "category": "Compliance и защита информации",
+    "difficulty": "легкий",
+    "type": "single",
+    "group": 2
+  },
+  {
+    "id": 28,
+    "question": "Вопрос 28: Что следует предпринять в контексте темы 'Compliance и защита информации'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0,
+      1
+    ],
+    "explanation": "Пояснение: На основании темы 'Compliance и защита информации', эти варианты являются наиболее подходящими.",
+    "category": "Compliance и защита информации",
+    "difficulty": "легкий",
+    "type": "multiple",
+    "group": 2
+  },
+  {
+    "id": 29,
+    "question": "Вопрос 29: Что следует предпринять в контексте темы 'Политики пользователей и приложений'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Политики пользователей и приложений', эти варианты являются наиболее подходящими.",
+    "category": "Политики пользователей и приложений",
+    "difficulty": "средний",
+    "type": "single",
+    "group": 2
+  },
+  {
+    "id": 30,
+    "question": "Что делает команда PowerShell: `Get-Team`?",
+    "image": null,
+    "answers": [
+      "Получает список команд Teams",
+      "Настраивает политику встреч",
+      "Добавляет пользователя в команду",
+      "Удаляет команду"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Команда `Get-Team` используется для работы с Teams через PowerShell.",
+    "category": "PowerShell (базовый уровень)",
+    "difficulty": "сложный",
+    "type": "single",
+    "group": 2
+  },
+  {
+    "id": 31,
+    "question": "Вопрос 31: Что следует предпринять в контексте темы 'Политики пользователей и приложений'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Политики пользователей и приложений', эти варианты являются наиболее подходящими.",
+    "category": "Политики пользователей и приложений",
+    "difficulty": "средний",
+    "type": "single",
+    "group": 2
+  },
+  {
+    "id": 32,
+    "question": "Вопрос 32: Что следует предпринять в контексте темы 'Настройки встреч и звонков'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Настройки встреч и звонков', эти варианты являются наиболее подходящими.",
+    "category": "Настройки встреч и звонков",
+    "difficulty": "легкий",
+    "type": "single",
+    "group": 2
+  },
+  {
+    "id": 33,
+    "question": "Что делает команда PowerShell: `Get-Team`?",
+    "image": null,
+    "answers": [
+      "Получает список команд Teams",
+      "Настраивает политику встреч",
+      "Добавляет пользователя в команду",
+      "Удаляет команду"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Команда `Get-Team` используется для работы с Teams через PowerShell.",
+    "category": "PowerShell (базовый уровень)",
+    "difficulty": "легкий",
+    "type": "single",
+    "group": 2
+  },
+  {
+    "id": 34,
+    "question": "Вопрос 34: Что следует предпринять в контексте темы 'Политики пользователей и приложений'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Политики пользователей и приложений', эти варианты являются наиболее подходящими.",
+    "category": "Политики пользователей и приложений",
+    "difficulty": "сложный",
+    "type": "single",
+    "group": 2
+  },
+  {
+    "id": 35,
+    "question": "Что делает команда PowerShell: `Get-Team`?",
+    "image": null,
+    "answers": [
+      "Получает список команд Teams",
+      "Настраивает политику встреч",
+      "Добавляет пользователя в команду",
+      "Удаляет команду"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Команда `Get-Team` используется для работы с Teams через PowerShell.",
+    "category": "PowerShell (базовый уровень)",
+    "difficulty": "легкий",
+    "type": "multiple",
+    "group": 2
+  },
+  {
+    "id": 36,
+    "question": "Вопрос 36: Что следует предпринять в контексте темы 'Управление средой Teams'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Управление средой Teams', эти варианты являются наиболее подходящими.",
+    "category": "Управление средой Teams",
+    "difficulty": "сложный",
+    "type": "single",
+    "group": 2
+  },
+  {
+    "id": 37,
+    "question": "Вопрос 37: Что следует предпринять в контексте темы 'Compliance и защита информации'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Compliance и защита информации', эти варианты являются наиболее подходящими.",
+    "category": "Compliance и защита информации",
+    "difficulty": "сложный",
+    "type": "single",
+    "group": 2
+  },
+  {
+    "id": 38,
+    "question": "Вопрос 38: Что следует предпринять в контексте темы 'Compliance и защита информации'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Compliance и защита информации', эти варианты являются наиболее подходящими.",
+    "category": "Compliance и защита информации",
+    "difficulty": "легкий",
+    "type": "single",
+    "group": 2
+  },
+  {
+    "id": 39,
+    "question": "Вопрос 39: Что следует предпринять в контексте темы 'Настройки встреч и звонков'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Настройки встреч и звонков', эти варианты являются наиболее подходящими.",
+    "category": "Настройки встреч и звонков",
+    "difficulty": "сложный",
+    "type": "single",
+    "group": 2
+  },
+  {
+    "id": 40,
+    "question": "Вопрос 40: Что следует предпринять в контексте темы 'Compliance и защита информации'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Compliance и защита информации', эти варианты являются наиболее подходящими.",
+    "category": "Compliance и защита информации",
+    "difficulty": "средний",
+    "type": "single",
+    "group": 2
+  },
+  {
+    "id": 41,
+    "question": "Что делает команда PowerShell: `Set-CsTeamsMeetingPolicy`?",
+    "image": null,
+    "answers": [
+      "Получает список команд Teams",
+      "Настраивает политику встреч",
+      "Добавляет пользователя в команду",
+      "Удаляет команду"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Команда `Set-CsTeamsMeetingPolicy` используется для работы с Teams через PowerShell.",
+    "category": "PowerShell (средний уровень)",
+    "difficulty": "легкий",
+    "type": "single",
+    "group": 3
+  },
+  {
+    "id": 42,
+    "question": "Вопрос 42: Что следует предпринять в контексте темы 'Мониторинг и устранение неполадок'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0,
+      1
+    ],
+    "explanation": "Пояснение: На основании темы 'Мониторинг и устранение неполадок', эти варианты являются наиболее подходящими.",
+    "category": "Мониторинг и устранение неполадок",
+    "difficulty": "сложный",
+    "type": "multiple",
+    "group": 3
+  },
+  {
+    "id": 43,
+    "question": "Вопрос 43: Что следует предпринять в контексте темы 'Compliance и защита информации'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Compliance и защита информации', эти варианты являются наиболее подходящими.",
+    "category": "Compliance и защита информации",
+    "difficulty": "сложный",
+    "type": "single",
+    "group": 3
+  },
+  {
+    "id": 44,
+    "question": "Вопрос 44: Что следует предпринять в контексте темы 'Политики пользователей и приложений'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Политики пользователей и приложений', эти варианты являются наиболее подходящими.",
+    "category": "Политики пользователей и приложений",
+    "difficulty": "легкий",
+    "type": "single",
+    "group": 3
+  },
+  {
+    "id": 45,
+    "question": "Вопрос 45: Что следует предпринять в контексте темы 'Управление средой Teams'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Управление средой Teams', эти варианты являются наиболее подходящими.",
+    "category": "Управление средой Teams",
+    "difficulty": "легкий",
+    "type": "single",
+    "group": 3
+  },
+  {
+    "id": 46,
+    "question": "Вопрос 46: Что следует предпринять в контексте темы 'Настройки встреч и звонков'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Настройки встреч и звонков', эти варианты являются наиболее подходящими.",
+    "category": "Настройки встреч и звонков",
+    "difficulty": "легкий",
+    "type": "single",
+    "group": 3
+  },
+  {
+    "id": 47,
+    "question": "Вопрос 47: Что следует предпринять в контексте темы 'Управление средой Teams'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Управление средой Teams', эти варианты являются наиболее подходящими.",
+    "category": "Управление средой Teams",
+    "difficulty": "легкий",
+    "type": "single",
+    "group": 3
+  },
+  {
+    "id": 48,
+    "question": "Вопрос 48: Что следует предпринять в контексте темы 'Настройки встреч и звонков'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Настройки встреч и звонков', эти варианты являются наиболее подходящими.",
+    "category": "Настройки встреч и звонков",
+    "difficulty": "средний",
+    "type": "single",
+    "group": 3
+  },
+  {
+    "id": 49,
+    "question": "Вопрос 49: Что следует предпринять в контексте темы 'Политики пользователей и приложений'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0,
+      1
+    ],
+    "explanation": "Пояснение: На основании темы 'Политики пользователей и приложений', эти варианты являются наиболее подходящими.",
+    "category": "Политики пользователей и приложений",
+    "difficulty": "легкий",
+    "type": "multiple",
+    "group": 3
+  },
+  {
+    "id": 50,
+    "question": "Вопрос 50: Что следует предпринять в контексте темы 'Управление средой Teams'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Управление средой Teams', эти варианты являются наиболее подходящими.",
+    "category": "Управление средой Teams",
+    "difficulty": "средний",
+    "type": "single",
+    "group": 3
+  },
+  {
+    "id": 51,
+    "question": "Вопрос 51: Что следует предпринять в контексте темы 'Compliance и защита информации'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Compliance и защита информации', эти варианты являются наиболее подходящими.",
+    "category": "Compliance и защита информации",
+    "difficulty": "средний",
+    "type": "single",
+    "group": 3
+  },
+  {
+    "id": 52,
+    "question": "Что делает команда PowerShell: `Get-Team`?",
+    "image": null,
+    "answers": [
+      "Получает список команд Teams",
+      "Настраивает политику встреч",
+      "Добавляет пользователя в команду",
+      "Удаляет команду"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Команда `Get-Team` используется для работы с Teams через PowerShell.",
+    "category": "PowerShell (базовый уровень)",
+    "difficulty": "легкий",
+    "type": "single",
+    "group": 3
+  },
+  {
+    "id": 53,
+    "question": "Что делает команда PowerShell: `Set-CsTeamsMeetingPolicy`?",
+    "image": null,
+    "answers": [
+      "Получает список команд Teams",
+      "Настраивает политику встреч",
+      "Добавляет пользователя в команду",
+      "Удаляет команду"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Команда `Set-CsTeamsMeetingPolicy` используется для работы с Teams через PowerShell.",
+    "category": "PowerShell (средний уровень)",
+    "difficulty": "сложный",
+    "type": "single",
+    "group": 3
+  },
+  {
+    "id": 54,
+    "question": "Что делает команда PowerShell: `Get-Team`?",
+    "image": null,
+    "answers": [
+      "Получает список команд Teams",
+      "Настраивает политику встреч",
+      "Добавляет пользователя в команду",
+      "Удаляет команду"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Команда `Get-Team` используется для работы с Teams через PowerShell.",
+    "category": "PowerShell (базовый уровень)",
+    "difficulty": "средний",
+    "type": "single",
+    "group": 3
+  },
+  {
+    "id": 55,
+    "question": "Что делает команда PowerShell: `Get-Team`?",
+    "image": null,
+    "answers": [
+      "Получает список команд Teams",
+      "Настраивает политику встреч",
+      "Добавляет пользователя в команду",
+      "Удаляет команду"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Команда `Get-Team` используется для работы с Teams через PowerShell.",
+    "category": "PowerShell (базовый уровень)",
+    "difficulty": "легкий",
+    "type": "single",
+    "group": 3
+  },
+  {
+    "id": 56,
+    "question": "Вопрос 56: Что следует предпринять в контексте темы 'Compliance и защита информации'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0,
+      1
+    ],
+    "explanation": "Пояснение: На основании темы 'Compliance и защита информации', эти варианты являются наиболее подходящими.",
+    "category": "Compliance и защита информации",
+    "difficulty": "сложный",
+    "type": "multiple",
+    "group": 3
+  },
+  {
+    "id": 57,
+    "question": "Вопрос 57: Что следует предпринять в контексте темы 'Compliance и защита информации'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Compliance и защита информации', эти варианты являются наиболее подходящими.",
+    "category": "Compliance и защита информации",
+    "difficulty": "легкий",
+    "type": "single",
+    "group": 3
+  },
+  {
+    "id": 58,
+    "question": "Что делает команда PowerShell: `Get-Team`?",
+    "image": null,
+    "answers": [
+      "Получает список команд Teams",
+      "Настраивает политику встреч",
+      "Добавляет пользователя в команду",
+      "Удаляет команду"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Команда `Get-Team` используется для работы с Teams через PowerShell.",
+    "category": "PowerShell (базовый уровень)",
+    "difficulty": "легкий",
+    "type": "single",
+    "group": 3
+  },
+  {
+    "id": 59,
+    "question": "Что делает команда PowerShell: `Get-Team`?",
+    "image": null,
+    "answers": [
+      "Получает список команд Teams",
+      "Настраивает политику встреч",
+      "Добавляет пользователя в команду",
+      "Удаляет команду"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Команда `Get-Team` используется для работы с Teams через PowerShell.",
+    "category": "PowerShell (базовый уровень)",
+    "difficulty": "сложный",
+    "type": "single",
+    "group": 3
+  },
+  {
+    "id": 60,
+    "question": "Вопрос 60: Что следует предпринять в контексте темы 'Настройки встреч и звонков'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Настройки встреч и звонков', эти варианты являются наиболее подходящими.",
+    "category": "Настройки встреч и звонков",
+    "difficulty": "сложный",
+    "type": "single",
+    "group": 3
+  },
+  {
+    "id": 61,
+    "question": "Вопрос 61: Что следует предпринять в контексте темы 'Управление средой Teams'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Управление средой Teams', эти варианты являются наиболее подходящими.",
+    "category": "Управление средой Teams",
+    "difficulty": "средний",
+    "type": "single",
+    "group": 4
+  },
+  {
+    "id": 62,
+    "question": "Что делает команда PowerShell: `Set-CsTeamsMeetingPolicy`?",
+    "image": null,
+    "answers": [
+      "Получает список команд Teams",
+      "Настраивает политику встреч",
+      "Добавляет пользователя в команду",
+      "Удаляет команду"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Команда `Set-CsTeamsMeetingPolicy` используется для работы с Teams через PowerShell.",
+    "category": "PowerShell (средний уровень)",
+    "difficulty": "средний",
+    "type": "single",
+    "group": 4
+  },
+  {
+    "id": 63,
+    "question": "Вопрос 63: Что следует предпринять в контексте темы 'Управление средой Teams'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0,
+      1
+    ],
+    "explanation": "Пояснение: На основании темы 'Управление средой Teams', эти варианты являются наиболее подходящими.",
+    "category": "Управление средой Teams",
+    "difficulty": "сложный",
+    "type": "multiple",
+    "group": 4
+  },
+  {
+    "id": 64,
+    "question": "Что делает команда PowerShell: `Set-CsTeamsMeetingPolicy`?",
+    "image": null,
+    "answers": [
+      "Получает список команд Teams",
+      "Настраивает политику встреч",
+      "Добавляет пользователя в команду",
+      "Удаляет команду"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Команда `Set-CsTeamsMeetingPolicy` используется для работы с Teams через PowerShell.",
+    "category": "PowerShell (средний уровень)",
+    "difficulty": "средний",
+    "type": "single",
+    "group": 4
+  },
+  {
+    "id": 65,
+    "question": "Что делает команда PowerShell: `Set-CsTeamsMeetingPolicy`?",
+    "image": null,
+    "answers": [
+      "Получает список команд Teams",
+      "Настраивает политику встреч",
+      "Добавляет пользователя в команду",
+      "Удаляет команду"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Команда `Set-CsTeamsMeetingPolicy` используется для работы с Teams через PowerShell.",
+    "category": "PowerShell (средний уровень)",
+    "difficulty": "сложный",
+    "type": "single",
+    "group": 4
+  },
+  {
+    "id": 66,
+    "question": "Что делает команда PowerShell: `Get-Team`?",
+    "image": null,
+    "answers": [
+      "Получает список команд Teams",
+      "Настраивает политику встреч",
+      "Добавляет пользователя в команду",
+      "Удаляет команду"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Команда `Get-Team` используется для работы с Teams через PowerShell.",
+    "category": "PowerShell (базовый уровень)",
+    "difficulty": "средний",
+    "type": "single",
+    "group": 4
+  },
+  {
+    "id": 67,
+    "question": "Что делает команда PowerShell: `Get-Team`?",
+    "image": null,
+    "answers": [
+      "Получает список команд Teams",
+      "Настраивает политику встреч",
+      "Добавляет пользователя в команду",
+      "Удаляет команду"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Команда `Get-Team` используется для работы с Teams через PowerShell.",
+    "category": "PowerShell (базовый уровень)",
+    "difficulty": "средний",
+    "type": "single",
+    "group": 4
+  },
+  {
+    "id": 68,
+    "question": "Вопрос 68: Что следует предпринять в контексте темы 'Управление средой Teams'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Управление средой Teams', эти варианты являются наиболее подходящими.",
+    "category": "Управление средой Teams",
+    "difficulty": "средний",
+    "type": "single",
+    "group": 4
+  },
+  {
+    "id": 69,
+    "question": "Вопрос 69: Что следует предпринять в контексте темы 'Политики пользователей и приложений'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Политики пользователей и приложений', эти варианты являются наиболее подходящими.",
+    "category": "Политики пользователей и приложений",
+    "difficulty": "средний",
+    "type": "single",
+    "group": 4
+  },
+  {
+    "id": 70,
+    "question": "Что делает команда PowerShell: `Set-CsTeamsMeetingPolicy`?",
+    "image": null,
+    "answers": [
+      "Получает список команд Teams",
+      "Настраивает политику встреч",
+      "Добавляет пользователя в команду",
+      "Удаляет команду"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Команда `Set-CsTeamsMeetingPolicy` используется для работы с Teams через PowerShell.",
+    "category": "PowerShell (средний уровень)",
+    "difficulty": "легкий",
+    "type": "multiple",
+    "group": 4
+  },
+  {
+    "id": 71,
+    "question": "Что делает команда PowerShell: `Set-CsTeamsMeetingPolicy`?",
+    "image": null,
+    "answers": [
+      "Получает список команд Teams",
+      "Настраивает политику встреч",
+      "Добавляет пользователя в команду",
+      "Удаляет команду"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Команда `Set-CsTeamsMeetingPolicy` используется для работы с Teams через PowerShell.",
+    "category": "PowerShell (средний уровень)",
+    "difficulty": "средний",
+    "type": "single",
+    "group": 4
+  },
+  {
+    "id": 72,
+    "question": "Вопрос 72: Что следует предпринять в контексте темы 'Мониторинг и устранение неполадок'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Мониторинг и устранение неполадок', эти варианты являются наиболее подходящими.",
+    "category": "Мониторинг и устранение неполадок",
+    "difficulty": "легкий",
+    "type": "single",
+    "group": 4
+  },
+  {
+    "id": 73,
+    "question": "Что делает команда PowerShell: `Set-CsTeamsMeetingPolicy`?",
+    "image": null,
+    "answers": [
+      "Получает список команд Teams",
+      "Настраивает политику встреч",
+      "Добавляет пользователя в команду",
+      "Удаляет команду"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Команда `Set-CsTeamsMeetingPolicy` используется для работы с Teams через PowerShell.",
+    "category": "PowerShell (средний уровень)",
+    "difficulty": "легкий",
+    "type": "single",
+    "group": 4
+  },
+  {
+    "id": 74,
+    "question": "Вопрос 74: Что следует предпринять в контексте темы 'Управление средой Teams'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Управление средой Teams', эти варианты являются наиболее подходящими.",
+    "category": "Управление средой Teams",
+    "difficulty": "легкий",
+    "type": "single",
+    "group": 4
+  },
+  {
+    "id": 75,
+    "question": "Что делает команда PowerShell: `Set-CsTeamsMeetingPolicy`?",
+    "image": null,
+    "answers": [
+      "Получает список команд Teams",
+      "Настраивает политику встреч",
+      "Добавляет пользователя в команду",
+      "Удаляет команду"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Команда `Set-CsTeamsMeetingPolicy` используется для работы с Teams через PowerShell.",
+    "category": "PowerShell (средний уровень)",
+    "difficulty": "легкий",
+    "type": "single",
+    "group": 4
+  },
+  {
+    "id": 76,
+    "question": "Вопрос 76: Что следует предпринять в контексте темы 'Политики пользователей и приложений'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Политики пользователей и приложений', эти варианты являются наиболее подходящими.",
+    "category": "Политики пользователей и приложений",
+    "difficulty": "легкий",
+    "type": "single",
+    "group": 4
+  },
+  {
+    "id": 77,
+    "question": "Что делает команда PowerShell: `Set-CsTeamsMeetingPolicy`?",
+    "image": null,
+    "answers": [
+      "Получает список команд Teams",
+      "Настраивает политику встреч",
+      "Добавляет пользователя в команду",
+      "Удаляет команду"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Команда `Set-CsTeamsMeetingPolicy` используется для работы с Teams через PowerShell.",
+    "category": "PowerShell (средний уровень)",
+    "difficulty": "средний",
+    "type": "multiple",
+    "group": 4
+  },
+  {
+    "id": 78,
+    "question": "Что делает команда PowerShell: `Get-Team`?",
+    "image": null,
+    "answers": [
+      "Получает список команд Teams",
+      "Настраивает политику встреч",
+      "Добавляет пользователя в команду",
+      "Удаляет команду"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Команда `Get-Team` используется для работы с Teams через PowerShell.",
+    "category": "PowerShell (базовый уровень)",
+    "difficulty": "средний",
+    "type": "single",
+    "group": 4
+  },
+  {
+    "id": 79,
+    "question": "Вопрос 79: Что следует предпринять в контексте темы 'Compliance и защита информации'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Compliance и защита информации', эти варианты являются наиболее подходящими.",
+    "category": "Compliance и защита информации",
+    "difficulty": "легкий",
+    "type": "single",
+    "group": 4
+  },
+  {
+    "id": 80,
+    "question": "Что делает команда PowerShell: `Set-CsTeamsMeetingPolicy`?",
+    "image": null,
+    "answers": [
+      "Получает список команд Teams",
+      "Настраивает политику встреч",
+      "Добавляет пользователя в команду",
+      "Удаляет команду"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Команда `Set-CsTeamsMeetingPolicy` используется для работы с Teams через PowerShell.",
+    "category": "PowerShell (средний уровень)",
+    "difficulty": "средний",
+    "type": "single",
+    "group": 4
+  },
+  {
+    "id": 81,
+    "question": "Что делает команда PowerShell: `Get-Team`?",
+    "image": null,
+    "answers": [
+      "Получает список команд Teams",
+      "Настраивает политику встреч",
+      "Добавляет пользователя в команду",
+      "Удаляет команду"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Команда `Get-Team` используется для работы с Teams через PowerShell.",
+    "category": "PowerShell (базовый уровень)",
+    "difficulty": "легкий",
+    "type": "single",
+    "group": 5
+  },
+  {
+    "id": 82,
+    "question": "Что делает команда PowerShell: `Get-Team`?",
+    "image": null,
+    "answers": [
+      "Получает список команд Teams",
+      "Настраивает политику встреч",
+      "Добавляет пользователя в команду",
+      "Удаляет команду"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Команда `Get-Team` используется для работы с Teams через PowerShell.",
+    "category": "PowerShell (базовый уровень)",
+    "difficulty": "средний",
+    "type": "single",
+    "group": 5
+  },
+  {
+    "id": 83,
+    "question": "Вопрос 83: Что следует предпринять в контексте темы 'Compliance и защита информации'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Compliance и защита информации', эти варианты являются наиболее подходящими.",
+    "category": "Compliance и защита информации",
+    "difficulty": "легкий",
+    "type": "single",
+    "group": 5
+  },
+  {
+    "id": 84,
+    "question": "Что делает команда PowerShell: `Set-CsTeamsMeetingPolicy`?",
+    "image": null,
+    "answers": [
+      "Получает список команд Teams",
+      "Настраивает политику встреч",
+      "Добавляет пользователя в команду",
+      "Удаляет команду"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Команда `Set-CsTeamsMeetingPolicy` используется для работы с Teams через PowerShell.",
+    "category": "PowerShell (средний уровень)",
+    "difficulty": "средний",
+    "type": "multiple",
+    "group": 5
+  },
+  {
+    "id": 85,
+    "question": "Вопрос 85: Что следует предпринять в контексте темы 'Политики пользователей и приложений'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Политики пользователей и приложений', эти варианты являются наиболее подходящими.",
+    "category": "Политики пользователей и приложений",
+    "difficulty": "средний",
+    "type": "single",
+    "group": 5
+  },
+  {
+    "id": 86,
+    "question": "Вопрос 86: Что следует предпринять в контексте темы 'Управление средой Teams'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Управление средой Teams', эти варианты являются наиболее подходящими.",
+    "category": "Управление средой Teams",
+    "difficulty": "легкий",
+    "type": "single",
+    "group": 5
+  },
+  {
+    "id": 87,
+    "question": "Что делает команда PowerShell: `Get-Team`?",
+    "image": null,
+    "answers": [
+      "Получает список команд Teams",
+      "Настраивает политику встреч",
+      "Добавляет пользователя в команду",
+      "Удаляет команду"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Команда `Get-Team` используется для работы с Teams через PowerShell.",
+    "category": "PowerShell (базовый уровень)",
+    "difficulty": "легкий",
+    "type": "single",
+    "group": 5
+  },
+  {
+    "id": 88,
+    "question": "Что делает команда PowerShell: `Set-CsTeamsMeetingPolicy`?",
+    "image": null,
+    "answers": [
+      "Получает список команд Teams",
+      "Настраивает политику встреч",
+      "Добавляет пользователя в команду",
+      "Удаляет команду"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Команда `Set-CsTeamsMeetingPolicy` используется для работы с Teams через PowerShell.",
+    "category": "PowerShell (средний уровень)",
+    "difficulty": "легкий",
+    "type": "single",
+    "group": 5
+  },
+  {
+    "id": 89,
+    "question": "Что делает команда PowerShell: `Set-CsTeamsMeetingPolicy`?",
+    "image": null,
+    "answers": [
+      "Получает список команд Teams",
+      "Настраивает политику встреч",
+      "Добавляет пользователя в команду",
+      "Удаляет команду"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Команда `Set-CsTeamsMeetingPolicy` используется для работы с Teams через PowerShell.",
+    "category": "PowerShell (средний уровень)",
+    "difficulty": "легкий",
+    "type": "single",
+    "group": 5
+  },
+  {
+    "id": 90,
+    "question": "Что делает команда PowerShell: `Get-Team`?",
+    "image": null,
+    "answers": [
+      "Получает список команд Teams",
+      "Настраивает политику встреч",
+      "Добавляет пользователя в команду",
+      "Удаляет команду"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Команда `Get-Team` используется для работы с Teams через PowerShell.",
+    "category": "PowerShell (базовый уровень)",
+    "difficulty": "средний",
+    "type": "single",
+    "group": 5
+  },
+  {
+    "id": 91,
+    "question": "Вопрос 91: Что следует предпринять в контексте темы 'Управление средой Teams'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0,
+      1
+    ],
+    "explanation": "Пояснение: На основании темы 'Управление средой Teams', эти варианты являются наиболее подходящими.",
+    "category": "Управление средой Teams",
+    "difficulty": "средний",
+    "type": "multiple",
+    "group": 5
+  },
+  {
+    "id": 92,
+    "question": "Вопрос 92: Что следует предпринять в контексте темы 'Мониторинг и устранение неполадок'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Мониторинг и устранение неполадок', эти варианты являются наиболее подходящими.",
+    "category": "Мониторинг и устранение неполадок",
+    "difficulty": "средний",
+    "type": "single",
+    "group": 5
+  },
+  {
+    "id": 93,
+    "question": "Что делает команда PowerShell: `Get-Team`?",
+    "image": null,
+    "answers": [
+      "Получает список команд Teams",
+      "Настраивает политику встреч",
+      "Добавляет пользователя в команду",
+      "Удаляет команду"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Команда `Get-Team` используется для работы с Teams через PowerShell.",
+    "category": "PowerShell (базовый уровень)",
+    "difficulty": "легкий",
+    "type": "single",
+    "group": 5
+  },
+  {
+    "id": 94,
+    "question": "Вопрос 94: Что следует предпринять в контексте темы 'Compliance и защита информации'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Compliance и защита информации', эти варианты являются наиболее подходящими.",
+    "category": "Compliance и защита информации",
+    "difficulty": "средний",
+    "type": "single",
+    "group": 5
+  },
+  {
+    "id": 95,
+    "question": "Вопрос 95: Что следует предпринять в контексте темы 'Compliance и защита информации'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Compliance и защита информации', эти варианты являются наиболее подходящими.",
+    "category": "Compliance и защита информации",
+    "difficulty": "сложный",
+    "type": "single",
+    "group": 5
+  },
+  {
+    "id": 96,
+    "question": "Вопрос 96: Что следует предпринять в контексте темы 'Compliance и защита информации'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Compliance и защита информации', эти варианты являются наиболее подходящими.",
+    "category": "Compliance и защита информации",
+    "difficulty": "легкий",
+    "type": "single",
+    "group": 5
+  },
+  {
+    "id": 97,
+    "question": "Что делает команда PowerShell: `Get-Team`?",
+    "image": null,
+    "answers": [
+      "Получает список команд Teams",
+      "Настраивает политику встреч",
+      "Добавляет пользователя в команду",
+      "Удаляет команду"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Команда `Get-Team` используется для работы с Teams через PowerShell.",
+    "category": "PowerShell (базовый уровень)",
+    "difficulty": "средний",
+    "type": "single",
+    "group": 5
+  },
+  {
+    "id": 98,
+    "question": "Что делает команда PowerShell: `Set-CsTeamsMeetingPolicy`?",
+    "image": null,
+    "answers": [
+      "Получает список команд Teams",
+      "Настраивает политику встреч",
+      "Добавляет пользователя в команду",
+      "Удаляет команду"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Команда `Set-CsTeamsMeetingPolicy` используется для работы с Teams через PowerShell.",
+    "category": "PowerShell (средний уровень)",
+    "difficulty": "средний",
+    "type": "multiple",
+    "group": 5
+  },
+  {
+    "id": 99,
+    "question": "Вопрос 99: Что следует предпринять в контексте темы 'Политики пользователей и приложений'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Политики пользователей и приложений', эти варианты являются наиболее подходящими.",
+    "category": "Политики пользователей и приложений",
+    "difficulty": "сложный",
+    "type": "single",
+    "group": 5
+  },
+  {
+    "id": 100,
+    "question": "Вопрос 100: Что следует предпринять в контексте темы 'Политики пользователей и приложений'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Политики пользователей и приложений', эти варианты являются наиболее подходящими.",
+    "category": "Политики пользователей и приложений",
+    "difficulty": "средний",
+    "type": "single",
+    "group": 5
+  },
+  {
+    "id": 101,
+    "question": "Что делает команда PowerShell: `Set-CsTeamsMeetingPolicy`?",
+    "image": null,
+    "answers": [
+      "Получает список команд Teams",
+      "Настраивает политику встреч",
+      "Добавляет пользователя в команду",
+      "Удаляет команду"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Команда `Set-CsTeamsMeetingPolicy` используется для работы с Teams через PowerShell.",
+    "category": "PowerShell (средний уровень)",
+    "difficulty": "легкий",
+    "type": "single",
+    "group": 6
+  },
+  {
+    "id": 102,
+    "question": "Вопрос 102: Что следует предпринять в контексте темы 'Политики пользователей и приложений'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Политики пользователей и приложений', эти варианты являются наиболее подходящими.",
+    "category": "Политики пользователей и приложений",
+    "difficulty": "легкий",
+    "type": "single",
+    "group": 6
+  },
+  {
+    "id": 103,
+    "question": "Вопрос 103: Что следует предпринять в контексте темы 'Мониторинг и устранение неполадок'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Мониторинг и устранение неполадок', эти варианты являются наиболее подходящими.",
+    "category": "Мониторинг и устранение неполадок",
+    "difficulty": "сложный",
+    "type": "single",
+    "group": 6
+  },
+  {
+    "id": 104,
+    "question": "Вопрос 104: Что следует предпринять в контексте темы 'Управление средой Teams'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Управление средой Teams', эти варианты являются наиболее подходящими.",
+    "category": "Управление средой Teams",
+    "difficulty": "сложный",
+    "type": "single",
+    "group": 6
+  },
+  {
+    "id": 105,
+    "question": "Что делает команда PowerShell: `Set-CsTeamsMeetingPolicy`?",
+    "image": null,
+    "answers": [
+      "Получает список команд Teams",
+      "Настраивает политику встреч",
+      "Добавляет пользователя в команду",
+      "Удаляет команду"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Команда `Set-CsTeamsMeetingPolicy` используется для работы с Teams через PowerShell.",
+    "category": "PowerShell (средний уровень)",
+    "difficulty": "средний",
+    "type": "multiple",
+    "group": 6
+  },
+  {
+    "id": 106,
+    "question": "Вопрос 106: Что следует предпринять в контексте темы 'Compliance и защита информации'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Compliance и защита информации', эти варианты являются наиболее подходящими.",
+    "category": "Compliance и защита информации",
+    "difficulty": "сложный",
+    "type": "single",
+    "group": 6
+  },
+  {
+    "id": 107,
+    "question": "Вопрос 107: Что следует предпринять в контексте темы 'Управление средой Teams'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Управление средой Teams', эти варианты являются наиболее подходящими.",
+    "category": "Управление средой Teams",
+    "difficulty": "легкий",
+    "type": "single",
+    "group": 6
+  },
+  {
+    "id": 108,
+    "question": "Что делает команда PowerShell: `Get-Team`?",
+    "image": null,
+    "answers": [
+      "Получает список команд Teams",
+      "Настраивает политику встреч",
+      "Добавляет пользователя в команду",
+      "Удаляет команду"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Команда `Get-Team` используется для работы с Teams через PowerShell.",
+    "category": "PowerShell (базовый уровень)",
+    "difficulty": "сложный",
+    "type": "single",
+    "group": 6
+  },
+  {
+    "id": 109,
+    "question": "Вопрос 109: Что следует предпринять в контексте темы 'Политики пользователей и приложений'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Политики пользователей и приложений', эти варианты являются наиболее подходящими.",
+    "category": "Политики пользователей и приложений",
+    "difficulty": "легкий",
+    "type": "single",
+    "group": 6
+  },
+  {
+    "id": 110,
+    "question": "Вопрос 110: Что следует предпринять в контексте темы 'Compliance и защита информации'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Compliance и защита информации', эти варианты являются наиболее подходящими.",
+    "category": "Compliance и защита информации",
+    "difficulty": "легкий",
+    "type": "single",
+    "group": 6
+  },
+  {
+    "id": 111,
+    "question": "Вопрос 111: Что следует предпринять в контексте темы 'Управление средой Teams'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Управление средой Teams', эти варианты являются наиболее подходящими.",
+    "category": "Управление средой Teams",
+    "difficulty": "средний",
+    "type": "single",
+    "group": 6
+  },
+  {
+    "id": 112,
+    "question": "Вопрос 112: Что следует предпринять в контексте темы 'Мониторинг и устранение неполадок'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0,
+      1
+    ],
+    "explanation": "Пояснение: На основании темы 'Мониторинг и устранение неполадок', эти варианты являются наиболее подходящими.",
+    "category": "Мониторинг и устранение неполадок",
+    "difficulty": "средний",
+    "type": "multiple",
+    "group": 6
+  },
+  {
+    "id": 113,
+    "question": "Что делает команда PowerShell: `Set-CsTeamsMeetingPolicy`?",
+    "image": null,
+    "answers": [
+      "Получает список команд Teams",
+      "Настраивает политику встреч",
+      "Добавляет пользователя в команду",
+      "Удаляет команду"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Команда `Set-CsTeamsMeetingPolicy` используется для работы с Teams через PowerShell.",
+    "category": "PowerShell (средний уровень)",
+    "difficulty": "сложный",
+    "type": "single",
+    "group": 6
+  },
+  {
+    "id": 114,
+    "question": "Вопрос 114: Что следует предпринять в контексте темы 'Политики пользователей и приложений'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Политики пользователей и приложений', эти варианты являются наиболее подходящими.",
+    "category": "Политики пользователей и приложений",
+    "difficulty": "средний",
+    "type": "single",
+    "group": 6
+  },
+  {
+    "id": 115,
+    "question": "Вопрос 115: Что следует предпринять в контексте темы 'Мониторинг и устранение неполадок'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Мониторинг и устранение неполадок', эти варианты являются наиболее подходящими.",
+    "category": "Мониторинг и устранение неполадок",
+    "difficulty": "средний",
+    "type": "single",
+    "group": 6
+  },
+  {
+    "id": 116,
+    "question": "Что делает команда PowerShell: `Set-CsTeamsMeetingPolicy`?",
+    "image": null,
+    "answers": [
+      "Получает список команд Teams",
+      "Настраивает политику встреч",
+      "Добавляет пользователя в команду",
+      "Удаляет команду"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Команда `Set-CsTeamsMeetingPolicy` используется для работы с Teams через PowerShell.",
+    "category": "PowerShell (средний уровень)",
+    "difficulty": "сложный",
+    "type": "single",
+    "group": 6
+  },
+  {
+    "id": 117,
+    "question": "Вопрос 117: Что следует предпринять в контексте темы 'Настройки встреч и звонков'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Настройки встреч и звонков', эти варианты являются наиболее подходящими.",
+    "category": "Настройки встреч и звонков",
+    "difficulty": "сложный",
+    "type": "single",
+    "group": 6
+  },
+  {
+    "id": 118,
+    "question": "Что делает команда PowerShell: `Get-Team`?",
+    "image": null,
+    "answers": [
+      "Получает список команд Teams",
+      "Настраивает политику встреч",
+      "Добавляет пользователя в команду",
+      "Удаляет команду"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Команда `Get-Team` используется для работы с Teams через PowerShell.",
+    "category": "PowerShell (базовый уровень)",
+    "difficulty": "сложный",
+    "type": "single",
+    "group": 6
+  },
+  {
+    "id": 119,
+    "question": "Вопрос 119: Что следует предпринять в контексте темы 'Мониторинг и устранение неполадок'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0,
+      1
+    ],
+    "explanation": "Пояснение: На основании темы 'Мониторинг и устранение неполадок', эти варианты являются наиболее подходящими.",
+    "category": "Мониторинг и устранение неполадок",
+    "difficulty": "легкий",
+    "type": "multiple",
+    "group": 6
+  },
+  {
+    "id": 120,
+    "question": "Что делает команда PowerShell: `Get-Team`?",
+    "image": null,
+    "answers": [
+      "Получает список команд Teams",
+      "Настраивает политику встреч",
+      "Добавляет пользователя в команду",
+      "Удаляет команду"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Команда `Get-Team` используется для работы с Teams через PowerShell.",
+    "category": "PowerShell (базовый уровень)",
+    "difficulty": "средний",
+    "type": "single",
+    "group": 6
+  },
+  {
+    "id": 121,
+    "question": "Вопрос 121: Что следует предпринять в контексте темы 'Compliance и защита информации'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Compliance и защита информации', эти варианты являются наиболее подходящими.",
+    "category": "Compliance и защита информации",
+    "difficulty": "средний",
+    "type": "single",
+    "group": 7
+  },
+  {
+    "id": 122,
+    "question": "Вопрос 122: Что следует предпринять в контексте темы 'Compliance и защита информации'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Compliance и защита информации', эти варианты являются наиболее подходящими.",
+    "category": "Compliance и защита информации",
+    "difficulty": "легкий",
+    "type": "single",
+    "group": 7
+  },
+  {
+    "id": 123,
+    "question": "Вопрос 123: Что следует предпринять в контексте темы 'Compliance и защита информации'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Compliance и защита информации', эти варианты являются наиболее подходящими.",
+    "category": "Compliance и защита информации",
+    "difficulty": "сложный",
+    "type": "single",
+    "group": 7
+  },
+  {
+    "id": 124,
+    "question": "Вопрос 124: Что следует предпринять в контексте темы 'Мониторинг и устранение неполадок'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Мониторинг и устранение неполадок', эти варианты являются наиболее подходящими.",
+    "category": "Мониторинг и устранение неполадок",
+    "difficulty": "средний",
+    "type": "single",
+    "group": 7
+  },
+  {
+    "id": 125,
+    "question": "Что делает команда PowerShell: `Set-CsTeamsMeetingPolicy`?",
+    "image": null,
+    "answers": [
+      "Получает список команд Teams",
+      "Настраивает политику встреч",
+      "Добавляет пользователя в команду",
+      "Удаляет команду"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Команда `Set-CsTeamsMeetingPolicy` используется для работы с Teams через PowerShell.",
+    "category": "PowerShell (средний уровень)",
+    "difficulty": "легкий",
+    "type": "single",
+    "group": 7
+  },
+  {
+    "id": 126,
+    "question": "Вопрос 126: Что следует предпринять в контексте темы 'Compliance и защита информации'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0,
+      1
+    ],
+    "explanation": "Пояснение: На основании темы 'Compliance и защита информации', эти варианты являются наиболее подходящими.",
+    "category": "Compliance и защита информации",
+    "difficulty": "сложный",
+    "type": "multiple",
+    "group": 7
+  },
+  {
+    "id": 127,
+    "question": "Вопрос 127: Что следует предпринять в контексте темы 'Настройки встреч и звонков'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Настройки встреч и звонков', эти варианты являются наиболее подходящими.",
+    "category": "Настройки встреч и звонков",
+    "difficulty": "сложный",
+    "type": "single",
+    "group": 7
+  },
+  {
+    "id": 128,
+    "question": "Что делает команда PowerShell: `Get-Team`?",
+    "image": null,
+    "answers": [
+      "Получает список команд Teams",
+      "Настраивает политику встреч",
+      "Добавляет пользователя в команду",
+      "Удаляет команду"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Команда `Get-Team` используется для работы с Teams через PowerShell.",
+    "category": "PowerShell (базовый уровень)",
+    "difficulty": "сложный",
+    "type": "single",
+    "group": 7
+  },
+  {
+    "id": 129,
+    "question": "Вопрос 129: Что следует предпринять в контексте темы 'Управление средой Teams'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Управление средой Teams', эти варианты являются наиболее подходящими.",
+    "category": "Управление средой Teams",
+    "difficulty": "легкий",
+    "type": "single",
+    "group": 7
+  },
+  {
+    "id": 130,
+    "question": "Вопрос 130: Что следует предпринять в контексте темы 'Настройки встреч и звонков'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Настройки встреч и звонков', эти варианты являются наиболее подходящими.",
+    "category": "Настройки встреч и звонков",
+    "difficulty": "легкий",
+    "type": "single",
+    "group": 7
+  },
+  {
+    "id": 131,
+    "question": "Что делает команда PowerShell: `Set-CsTeamsMeetingPolicy`?",
+    "image": null,
+    "answers": [
+      "Получает список команд Teams",
+      "Настраивает политику встреч",
+      "Добавляет пользователя в команду",
+      "Удаляет команду"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Команда `Set-CsTeamsMeetingPolicy` используется для работы с Teams через PowerShell.",
+    "category": "PowerShell (средний уровень)",
+    "difficulty": "средний",
+    "type": "single",
+    "group": 7
+  },
+  {
+    "id": 132,
+    "question": "Вопрос 132: Что следует предпринять в контексте темы 'Мониторинг и устранение неполадок'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Мониторинг и устранение неполадок', эти варианты являются наиболее подходящими.",
+    "category": "Мониторинг и устранение неполадок",
+    "difficulty": "легкий",
+    "type": "single",
+    "group": 7
+  },
+  {
+    "id": 133,
+    "question": "Что делает команда PowerShell: `Set-CsTeamsMeetingPolicy`?",
+    "image": null,
+    "answers": [
+      "Получает список команд Teams",
+      "Настраивает политику встреч",
+      "Добавляет пользователя в команду",
+      "Удаляет команду"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Команда `Set-CsTeamsMeetingPolicy` используется для работы с Teams через PowerShell.",
+    "category": "PowerShell (средний уровень)",
+    "difficulty": "средний",
+    "type": "multiple",
+    "group": 7
+  },
+  {
+    "id": 134,
+    "question": "Вопрос 134: Что следует предпринять в контексте темы 'Compliance и защита информации'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Compliance и защита информации', эти варианты являются наиболее подходящими.",
+    "category": "Compliance и защита информации",
+    "difficulty": "сложный",
+    "type": "single",
+    "group": 7
+  },
+  {
+    "id": 135,
+    "question": "Вопрос 135: Что следует предпринять в контексте темы 'Compliance и защита информации'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Compliance и защита информации', эти варианты являются наиболее подходящими.",
+    "category": "Compliance и защита информации",
+    "difficulty": "средний",
+    "type": "single",
+    "group": 7
+  },
+  {
+    "id": 136,
+    "question": "Вопрос 136: Что следует предпринять в контексте темы 'Управление средой Teams'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Управление средой Teams', эти варианты являются наиболее подходящими.",
+    "category": "Управление средой Teams",
+    "difficulty": "средний",
+    "type": "single",
+    "group": 7
+  },
+  {
+    "id": 137,
+    "question": "Вопрос 137: Что следует предпринять в контексте темы 'Мониторинг и устранение неполадок'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Мониторинг и устранение неполадок', эти варианты являются наиболее подходящими.",
+    "category": "Мониторинг и устранение неполадок",
+    "difficulty": "средний",
+    "type": "single",
+    "group": 7
+  },
+  {
+    "id": 138,
+    "question": "Вопрос 138: Что следует предпринять в контексте темы 'Мониторинг и устранение неполадок'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Мониторинг и устранение неполадок', эти варианты являются наиболее подходящими.",
+    "category": "Мониторинг и устранение неполадок",
+    "difficulty": "средний",
+    "type": "single",
+    "group": 7
+  },
+  {
+    "id": 139,
+    "question": "Что делает команда PowerShell: `Set-CsTeamsMeetingPolicy`?",
+    "image": null,
+    "answers": [
+      "Получает список команд Teams",
+      "Настраивает политику встреч",
+      "Добавляет пользователя в команду",
+      "Удаляет команду"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Команда `Set-CsTeamsMeetingPolicy` используется для работы с Teams через PowerShell.",
+    "category": "PowerShell (средний уровень)",
+    "difficulty": "легкий",
+    "type": "single",
+    "group": 7
+  },
+  {
+    "id": 140,
+    "question": "Вопрос 140: Что следует предпринять в контексте темы 'Политики пользователей и приложений'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0,
+      1
+    ],
+    "explanation": "Пояснение: На основании темы 'Политики пользователей и приложений', эти варианты являются наиболее подходящими.",
+    "category": "Политики пользователей и приложений",
+    "difficulty": "легкий",
+    "type": "multiple",
+    "group": 7
+  },
+  {
+    "id": 141,
+    "question": "Вопрос 141: Что следует предпринять в контексте темы 'Настройки встреч и звонков'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Настройки встреч и звонков', эти варианты являются наиболее подходящими.",
+    "category": "Настройки встреч и звонков",
+    "difficulty": "средний",
+    "type": "single",
+    "group": 8
+  },
+  {
+    "id": 142,
+    "question": "Вопрос 142: Что следует предпринять в контексте темы 'Мониторинг и устранение неполадок'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Мониторинг и устранение неполадок', эти варианты являются наиболее подходящими.",
+    "category": "Мониторинг и устранение неполадок",
+    "difficulty": "сложный",
+    "type": "single",
+    "group": 8
+  },
+  {
+    "id": 143,
+    "question": "Вопрос 143: Что следует предпринять в контексте темы 'Мониторинг и устранение неполадок'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Мониторинг и устранение неполадок', эти варианты являются наиболее подходящими.",
+    "category": "Мониторинг и устранение неполадок",
+    "difficulty": "средний",
+    "type": "single",
+    "group": 8
+  },
+  {
+    "id": 144,
+    "question": "Вопрос 144: Что следует предпринять в контексте темы 'Мониторинг и устранение неполадок'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Мониторинг и устранение неполадок', эти варианты являются наиболее подходящими.",
+    "category": "Мониторинг и устранение неполадок",
+    "difficulty": "сложный",
+    "type": "single",
+    "group": 8
+  },
+  {
+    "id": 145,
+    "question": "Вопрос 145: Что следует предпринять в контексте темы 'Управление средой Teams'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Управление средой Teams', эти варианты являются наиболее подходящими.",
+    "category": "Управление средой Teams",
+    "difficulty": "сложный",
+    "type": "single",
+    "group": 8
+  },
+  {
+    "id": 146,
+    "question": "Что делает команда PowerShell: `Set-CsTeamsMeetingPolicy`?",
+    "image": null,
+    "answers": [
+      "Получает список команд Teams",
+      "Настраивает политику встреч",
+      "Добавляет пользователя в команду",
+      "Удаляет команду"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Команда `Set-CsTeamsMeetingPolicy` используется для работы с Teams через PowerShell.",
+    "category": "PowerShell (средний уровень)",
+    "difficulty": "легкий",
+    "type": "single",
+    "group": 8
+  },
+  {
+    "id": 147,
+    "question": "Вопрос 147: Что следует предпринять в контексте темы 'Настройки встреч и звонков'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0,
+      1
+    ],
+    "explanation": "Пояснение: На основании темы 'Настройки встреч и звонков', эти варианты являются наиболее подходящими.",
+    "category": "Настройки встреч и звонков",
+    "difficulty": "средний",
+    "type": "multiple",
+    "group": 8
+  },
+  {
+    "id": 148,
+    "question": "Что делает команда PowerShell: `Get-Team`?",
+    "image": null,
+    "answers": [
+      "Получает список команд Teams",
+      "Настраивает политику встреч",
+      "Добавляет пользователя в команду",
+      "Удаляет команду"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Команда `Get-Team` используется для работы с Teams через PowerShell.",
+    "category": "PowerShell (базовый уровень)",
+    "difficulty": "средний",
+    "type": "single",
+    "group": 8
+  },
+  {
+    "id": 149,
+    "question": "Что делает команда PowerShell: `Set-CsTeamsMeetingPolicy`?",
+    "image": null,
+    "answers": [
+      "Получает список команд Teams",
+      "Настраивает политику встреч",
+      "Добавляет пользователя в команду",
+      "Удаляет команду"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Команда `Set-CsTeamsMeetingPolicy` используется для работы с Teams через PowerShell.",
+    "category": "PowerShell (средний уровень)",
+    "difficulty": "сложный",
+    "type": "single",
+    "group": 8
+  },
+  {
+    "id": 150,
+    "question": "Что делает команда PowerShell: `Get-Team`?",
+    "image": null,
+    "answers": [
+      "Получает список команд Teams",
+      "Настраивает политику встреч",
+      "Добавляет пользователя в команду",
+      "Удаляет команду"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Команда `Get-Team` используется для работы с Teams через PowerShell.",
+    "category": "PowerShell (базовый уровень)",
+    "difficulty": "сложный",
+    "type": "single",
+    "group": 8
+  },
+  {
+    "id": 151,
+    "question": "Что делает команда PowerShell: `Set-CsTeamsMeetingPolicy`?",
+    "image": null,
+    "answers": [
+      "Получает список команд Teams",
+      "Настраивает политику встреч",
+      "Добавляет пользователя в команду",
+      "Удаляет команду"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Команда `Set-CsTeamsMeetingPolicy` используется для работы с Teams через PowerShell.",
+    "category": "PowerShell (средний уровень)",
+    "difficulty": "сложный",
+    "type": "single",
+    "group": 8
+  },
+  {
+    "id": 152,
+    "question": "Вопрос 152: Что следует предпринять в контексте темы 'Политики пользователей и приложений'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Политики пользователей и приложений', эти варианты являются наиболее подходящими.",
+    "category": "Политики пользователей и приложений",
+    "difficulty": "легкий",
+    "type": "single",
+    "group": 8
+  },
+  {
+    "id": 153,
+    "question": "Вопрос 153: Что следует предпринять в контексте темы 'Настройки встреч и звонков'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Настройки встреч и звонков', эти варианты являются наиболее подходящими.",
+    "category": "Настройки встреч и звонков",
+    "difficulty": "средний",
+    "type": "single",
+    "group": 8
+  },
+  {
+    "id": 154,
+    "question": "Вопрос 154: Что следует предпринять в контексте темы 'Политики пользователей и приложений'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0,
+      1
+    ],
+    "explanation": "Пояснение: На основании темы 'Политики пользователей и приложений', эти варианты являются наиболее подходящими.",
+    "category": "Политики пользователей и приложений",
+    "difficulty": "легкий",
+    "type": "multiple",
+    "group": 8
+  },
+  {
+    "id": 155,
+    "question": "Вопрос 155: Что следует предпринять в контексте темы 'Compliance и защита информации'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Compliance и защита информации', эти варианты являются наиболее подходящими.",
+    "category": "Compliance и защита информации",
+    "difficulty": "средний",
+    "type": "single",
+    "group": 8
+  },
+  {
+    "id": 156,
+    "question": "Вопрос 156: Что следует предпринять в контексте темы 'Управление средой Teams'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Управление средой Teams', эти варианты являются наиболее подходящими.",
+    "category": "Управление средой Teams",
+    "difficulty": "средний",
+    "type": "single",
+    "group": 8
+  },
+  {
+    "id": 157,
+    "question": "Вопрос 157: Что следует предпринять в контексте темы 'Compliance и защита информации'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Compliance и защита информации', эти варианты являются наиболее подходящими.",
+    "category": "Compliance и защита информации",
+    "difficulty": "средний",
+    "type": "single",
+    "group": 8
+  },
+  {
+    "id": 158,
+    "question": "Что делает команда PowerShell: `Get-Team`?",
+    "image": null,
+    "answers": [
+      "Получает список команд Teams",
+      "Настраивает политику встреч",
+      "Добавляет пользователя в команду",
+      "Удаляет команду"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Команда `Get-Team` используется для работы с Teams через PowerShell.",
+    "category": "PowerShell (базовый уровень)",
+    "difficulty": "легкий",
+    "type": "single",
+    "group": 8
+  },
+  {
+    "id": 159,
+    "question": "Вопрос 159: Что следует предпринять в контексте темы 'Compliance и защита информации'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Compliance и защита информации', эти варианты являются наиболее подходящими.",
+    "category": "Compliance и защита информации",
+    "difficulty": "средний",
+    "type": "single",
+    "group": 8
+  },
+  {
+    "id": 160,
+    "question": "Вопрос 160: Что следует предпринять в контексте темы 'Мониторинг и устранение неполадок'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Мониторинг и устранение неполадок', эти варианты являются наиболее подходящими.",
+    "category": "Мониторинг и устранение неполадок",
+    "difficulty": "средний",
+    "type": "single",
+    "group": 8
+  },
+  {
+    "id": 161,
+    "question": "Вопрос 161: Что следует предпринять в контексте темы 'Мониторинг и устранение неполадок'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0,
+      1
+    ],
+    "explanation": "Пояснение: На основании темы 'Мониторинг и устранение неполадок', эти варианты являются наиболее подходящими.",
+    "category": "Мониторинг и устранение неполадок",
+    "difficulty": "средний",
+    "type": "multiple",
+    "group": 9
+  },
+  {
+    "id": 162,
+    "question": "Что делает команда PowerShell: `Set-CsTeamsMeetingPolicy`?",
+    "image": null,
+    "answers": [
+      "Получает список команд Teams",
+      "Настраивает политику встреч",
+      "Добавляет пользователя в команду",
+      "Удаляет команду"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Команда `Set-CsTeamsMeetingPolicy` используется для работы с Teams через PowerShell.",
+    "category": "PowerShell (средний уровень)",
+    "difficulty": "средний",
+    "type": "single",
+    "group": 9
+  },
+  {
+    "id": 163,
+    "question": "Вопрос 163: Что следует предпринять в контексте темы 'Политики пользователей и приложений'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Политики пользователей и приложений', эти варианты являются наиболее подходящими.",
+    "category": "Политики пользователей и приложений",
+    "difficulty": "средний",
+    "type": "single",
+    "group": 9
+  },
+  {
+    "id": 164,
+    "question": "Что делает команда PowerShell: `Set-CsTeamsMeetingPolicy`?",
+    "image": null,
+    "answers": [
+      "Получает список команд Teams",
+      "Настраивает политику встреч",
+      "Добавляет пользователя в команду",
+      "Удаляет команду"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Команда `Set-CsTeamsMeetingPolicy` используется для работы с Teams через PowerShell.",
+    "category": "PowerShell (средний уровень)",
+    "difficulty": "легкий",
+    "type": "single",
+    "group": 9
+  },
+  {
+    "id": 165,
+    "question": "Что делает команда PowerShell: `Set-CsTeamsMeetingPolicy`?",
+    "image": null,
+    "answers": [
+      "Получает список команд Teams",
+      "Настраивает политику встреч",
+      "Добавляет пользователя в команду",
+      "Удаляет команду"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Команда `Set-CsTeamsMeetingPolicy` используется для работы с Teams через PowerShell.",
+    "category": "PowerShell (средний уровень)",
+    "difficulty": "средний",
+    "type": "single",
+    "group": 9
+  },
+  {
+    "id": 166,
+    "question": "Что делает команда PowerShell: `Set-CsTeamsMeetingPolicy`?",
+    "image": null,
+    "answers": [
+      "Получает список команд Teams",
+      "Настраивает политику встреч",
+      "Добавляет пользователя в команду",
+      "Удаляет команду"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Команда `Set-CsTeamsMeetingPolicy` используется для работы с Teams через PowerShell.",
+    "category": "PowerShell (средний уровень)",
+    "difficulty": "средний",
+    "type": "single",
+    "group": 9
+  },
+  {
+    "id": 167,
+    "question": "Вопрос 167: Что следует предпринять в контексте темы 'Compliance и защита информации'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Compliance и защита информации', эти варианты являются наиболее подходящими.",
+    "category": "Compliance и защита информации",
+    "difficulty": "легкий",
+    "type": "single",
+    "group": 9
+  },
+  {
+    "id": 168,
+    "question": "Вопрос 168: Что следует предпринять в контексте темы 'Политики пользователей и приложений'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0,
+      1
+    ],
+    "explanation": "Пояснение: На основании темы 'Политики пользователей и приложений', эти варианты являются наиболее подходящими.",
+    "category": "Политики пользователей и приложений",
+    "difficulty": "средний",
+    "type": "multiple",
+    "group": 9
+  },
+  {
+    "id": 169,
+    "question": "Что делает команда PowerShell: `Get-Team`?",
+    "image": null,
+    "answers": [
+      "Получает список команд Teams",
+      "Настраивает политику встреч",
+      "Добавляет пользователя в команду",
+      "Удаляет команду"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Команда `Get-Team` используется для работы с Teams через PowerShell.",
+    "category": "PowerShell (базовый уровень)",
+    "difficulty": "легкий",
+    "type": "single",
+    "group": 9
+  },
+  {
+    "id": 170,
+    "question": "Вопрос 170: Что следует предпринять в контексте темы 'Настройки встреч и звонков'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Настройки встреч и звонков', эти варианты являются наиболее подходящими.",
+    "category": "Настройки встреч и звонков",
+    "difficulty": "легкий",
+    "type": "single",
+    "group": 9
+  },
+  {
+    "id": 171,
+    "question": "Что делает команда PowerShell: `Get-Team`?",
+    "image": null,
+    "answers": [
+      "Получает список команд Teams",
+      "Настраивает политику встреч",
+      "Добавляет пользователя в команду",
+      "Удаляет команду"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Команда `Get-Team` используется для работы с Teams через PowerShell.",
+    "category": "PowerShell (базовый уровень)",
+    "difficulty": "средний",
+    "type": "single",
+    "group": 9
+  },
+  {
+    "id": 172,
+    "question": "Вопрос 172: Что следует предпринять в контексте темы 'Мониторинг и устранение неполадок'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Мониторинг и устранение неполадок', эти варианты являются наиболее подходящими.",
+    "category": "Мониторинг и устранение неполадок",
+    "difficulty": "средний",
+    "type": "single",
+    "group": 9
+  },
+  {
+    "id": 173,
+    "question": "Вопрос 173: Что следует предпринять в контексте темы 'Политики пользователей и приложений'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Политики пользователей и приложений', эти варианты являются наиболее подходящими.",
+    "category": "Политики пользователей и приложений",
+    "difficulty": "сложный",
+    "type": "single",
+    "group": 9
+  },
+  {
+    "id": 174,
+    "question": "Вопрос 174: Что следует предпринять в контексте темы 'Настройки встреч и звонков'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Настройки встреч и звонков', эти варианты являются наиболее подходящими.",
+    "category": "Настройки встреч и звонков",
+    "difficulty": "легкий",
+    "type": "single",
+    "group": 9
+  },
+  {
+    "id": 175,
+    "question": "Что делает команда PowerShell: `Set-CsTeamsMeetingPolicy`?",
+    "image": null,
+    "answers": [
+      "Получает список команд Teams",
+      "Настраивает политику встреч",
+      "Добавляет пользователя в команду",
+      "Удаляет команду"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Команда `Set-CsTeamsMeetingPolicy` используется для работы с Teams через PowerShell.",
+    "category": "PowerShell (средний уровень)",
+    "difficulty": "сложный",
+    "type": "multiple",
+    "group": 9
+  },
+  {
+    "id": 176,
+    "question": "Вопрос 176: Что следует предпринять в контексте темы 'Compliance и защита информации'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Compliance и защита информации', эти варианты являются наиболее подходящими.",
+    "category": "Compliance и защита информации",
+    "difficulty": "легкий",
+    "type": "single",
+    "group": 9
+  },
+  {
+    "id": 177,
+    "question": "Что делает команда PowerShell: `Get-Team`?",
+    "image": null,
+    "answers": [
+      "Получает список команд Teams",
+      "Настраивает политику встреч",
+      "Добавляет пользователя в команду",
+      "Удаляет команду"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Команда `Get-Team` используется для работы с Teams через PowerShell.",
+    "category": "PowerShell (базовый уровень)",
+    "difficulty": "легкий",
+    "type": "single",
+    "group": 9
+  },
+  {
+    "id": 178,
+    "question": "Вопрос 178: Что следует предпринять в контексте темы 'Настройки встреч и звонков'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Настройки встреч и звонков', эти варианты являются наиболее подходящими.",
+    "category": "Настройки встреч и звонков",
+    "difficulty": "средний",
+    "type": "single",
+    "group": 9
+  },
+  {
+    "id": 179,
+    "question": "Вопрос 179: Что следует предпринять в контексте темы 'Мониторинг и устранение неполадок'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Мониторинг и устранение неполадок', эти варианты являются наиболее подходящими.",
+    "category": "Мониторинг и устранение неполадок",
+    "difficulty": "средний",
+    "type": "single",
+    "group": 9
+  },
+  {
+    "id": 180,
+    "question": "Что делает команда PowerShell: `Set-CsTeamsMeetingPolicy`?",
+    "image": null,
+    "answers": [
+      "Получает список команд Teams",
+      "Настраивает политику встреч",
+      "Добавляет пользователя в команду",
+      "Удаляет команду"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Команда `Set-CsTeamsMeetingPolicy` используется для работы с Teams через PowerShell.",
+    "category": "PowerShell (средний уровень)",
+    "difficulty": "средний",
+    "type": "single",
+    "group": 9
+  },
+  {
+    "id": 181,
+    "question": "Что делает команда PowerShell: `Get-Team`?",
+    "image": null,
+    "answers": [
+      "Получает список команд Teams",
+      "Настраивает политику встреч",
+      "Добавляет пользователя в команду",
+      "Удаляет команду"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Команда `Get-Team` используется для работы с Teams через PowerShell.",
+    "category": "PowerShell (базовый уровень)",
+    "difficulty": "легкий",
+    "type": "single",
+    "group": 10
+  },
+  {
+    "id": 182,
+    "question": "Вопрос 182: Что следует предпринять в контексте темы 'Настройки встреч и звонков'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0,
+      1
+    ],
+    "explanation": "Пояснение: На основании темы 'Настройки встреч и звонков', эти варианты являются наиболее подходящими.",
+    "category": "Настройки встреч и звонков",
+    "difficulty": "средний",
+    "type": "multiple",
+    "group": 10
+  },
+  {
+    "id": 183,
+    "question": "Вопрос 183: Что следует предпринять в контексте темы 'Управление средой Teams'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Управление средой Teams', эти варианты являются наиболее подходящими.",
+    "category": "Управление средой Teams",
+    "difficulty": "средний",
+    "type": "single",
+    "group": 10
+  },
+  {
+    "id": 184,
+    "question": "Что делает команда PowerShell: `Get-Team`?",
+    "image": null,
+    "answers": [
+      "Получает список команд Teams",
+      "Настраивает политику встреч",
+      "Добавляет пользователя в команду",
+      "Удаляет команду"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Команда `Get-Team` используется для работы с Teams через PowerShell.",
+    "category": "PowerShell (базовый уровень)",
+    "difficulty": "сложный",
+    "type": "single",
+    "group": 10
+  },
+  {
+    "id": 185,
+    "question": "Вопрос 185: Что следует предпринять в контексте темы 'Настройки встреч и звонков'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Настройки встреч и звонков', эти варианты являются наиболее подходящими.",
+    "category": "Настройки встреч и звонков",
+    "difficulty": "легкий",
+    "type": "single",
+    "group": 10
+  },
+  {
+    "id": 186,
+    "question": "Что делает команда PowerShell: `Set-CsTeamsMeetingPolicy`?",
+    "image": null,
+    "answers": [
+      "Получает список команд Teams",
+      "Настраивает политику встреч",
+      "Добавляет пользователя в команду",
+      "Удаляет команду"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Команда `Set-CsTeamsMeetingPolicy` используется для работы с Teams через PowerShell.",
+    "category": "PowerShell (средний уровень)",
+    "difficulty": "средний",
+    "type": "single",
+    "group": 10
+  },
+  {
+    "id": 187,
+    "question": "Вопрос 187: Что следует предпринять в контексте темы 'Управление средой Teams'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Управление средой Teams', эти варианты являются наиболее подходящими.",
+    "category": "Управление средой Teams",
+    "difficulty": "средний",
+    "type": "single",
+    "group": 10
+  },
+  {
+    "id": 188,
+    "question": "Вопрос 188: Что следует предпринять в контексте темы 'Compliance и защита информации'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Compliance и защита информации', эти варианты являются наиболее подходящими.",
+    "category": "Compliance и защита информации",
+    "difficulty": "сложный",
+    "type": "single",
+    "group": 10
+  },
+  {
+    "id": 189,
+    "question": "Что делает команда PowerShell: `Set-CsTeamsMeetingPolicy`?",
+    "image": null,
+    "answers": [
+      "Получает список команд Teams",
+      "Настраивает политику встреч",
+      "Добавляет пользователя в команду",
+      "Удаляет команду"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Команда `Set-CsTeamsMeetingPolicy` используется для работы с Teams через PowerShell.",
+    "category": "PowerShell (средний уровень)",
+    "difficulty": "легкий",
+    "type": "multiple",
+    "group": 10
+  },
+  {
+    "id": 190,
+    "question": "Вопрос 190: Что следует предпринять в контексте темы 'Настройки встреч и звонков'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Настройки встреч и звонков', эти варианты являются наиболее подходящими.",
+    "category": "Настройки встреч и звонков",
+    "difficulty": "средний",
+    "type": "single",
+    "group": 10
+  },
+  {
+    "id": 191,
+    "question": "Что делает команда PowerShell: `Get-Team`?",
+    "image": null,
+    "answers": [
+      "Получает список команд Teams",
+      "Настраивает политику встреч",
+      "Добавляет пользователя в команду",
+      "Удаляет команду"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Команда `Get-Team` используется для работы с Teams через PowerShell.",
+    "category": "PowerShell (базовый уровень)",
+    "difficulty": "легкий",
+    "type": "single",
+    "group": 10
+  },
+  {
+    "id": 192,
+    "question": "Вопрос 192: Что следует предпринять в контексте темы 'Политики пользователей и приложений'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Политики пользователей и приложений', эти варианты являются наиболее подходящими.",
+    "category": "Политики пользователей и приложений",
+    "difficulty": "средний",
+    "type": "single",
+    "group": 10
+  },
+  {
+    "id": 193,
+    "question": "Вопрос 193: Что следует предпринять в контексте темы 'Мониторинг и устранение неполадок'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Мониторинг и устранение неполадок', эти варианты являются наиболее подходящими.",
+    "category": "Мониторинг и устранение неполадок",
+    "difficulty": "легкий",
+    "type": "single",
+    "group": 10
+  },
+  {
+    "id": 194,
+    "question": "Что делает команда PowerShell: `Set-CsTeamsMeetingPolicy`?",
+    "image": null,
+    "answers": [
+      "Получает список команд Teams",
+      "Настраивает политику встреч",
+      "Добавляет пользователя в команду",
+      "Удаляет команду"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Команда `Set-CsTeamsMeetingPolicy` используется для работы с Teams через PowerShell.",
+    "category": "PowerShell (средний уровень)",
+    "difficulty": "средний",
+    "type": "single",
+    "group": 10
+  },
+  {
+    "id": 195,
+    "question": "Вопрос 195: Что следует предпринять в контексте темы 'Compliance и защита информации'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Compliance и защита информации', эти варианты являются наиболее подходящими.",
+    "category": "Compliance и защита информации",
+    "difficulty": "легкий",
+    "type": "single",
+    "group": 10
+  },
+  {
+    "id": 196,
+    "question": "Что делает команда PowerShell: `Get-Team`?",
+    "image": null,
+    "answers": [
+      "Получает список команд Teams",
+      "Настраивает политику встреч",
+      "Добавляет пользователя в команду",
+      "Удаляет команду"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Команда `Get-Team` используется для работы с Teams через PowerShell.",
+    "category": "PowerShell (базовый уровень)",
+    "difficulty": "сложный",
+    "type": "multiple",
+    "group": 10
+  },
+  {
+    "id": 197,
+    "question": "Вопрос 197: Что следует предпринять в контексте темы 'Политики пользователей и приложений'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Политики пользователей и приложений', эти варианты являются наиболее подходящими.",
+    "category": "Политики пользователей и приложений",
+    "difficulty": "сложный",
+    "type": "single",
+    "group": 10
+  },
+  {
+    "id": 198,
+    "question": "Вопрос 198: Что следует предпринять в контексте темы 'Compliance и защита информации'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Compliance и защита информации', эти варианты являются наиболее подходящими.",
+    "category": "Compliance и защита информации",
+    "difficulty": "сложный",
+    "type": "single",
+    "group": 10
+  },
+  {
+    "id": 199,
+    "question": "Вопрос 199: Что следует предпринять в контексте темы 'Мониторинг и устранение неполадок'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Мониторинг и устранение неполадок', эти варианты являются наиболее подходящими.",
+    "category": "Мониторинг и устранение неполадок",
+    "difficulty": "средний",
+    "type": "single",
+    "group": 10
+  },
+  {
+    "id": 200,
+    "question": "Вопрос 200: Что следует предпринять в контексте темы 'Управление средой Teams'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Управление средой Teams', эти варианты являются наиболее подходящими.",
+    "category": "Управление средой Teams",
+    "difficulty": "легкий",
+    "type": "single",
+    "group": 10
+  },
+  {
+    "id": 201,
+    "question": "Вопрос 201: Что следует предпринять в контексте темы 'Управление средой Teams'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Управление средой Teams', эти варианты являются наиболее подходящими.",
+    "category": "Управление средой Teams",
+    "difficulty": "средний",
+    "type": "single",
+    "group": 11
+  },
+  {
+    "id": 202,
+    "question": "Что делает команда PowerShell: `Set-CsTeamsMeetingPolicy`?",
+    "image": null,
+    "answers": [
+      "Получает список команд Teams",
+      "Настраивает политику встреч",
+      "Добавляет пользователя в команду",
+      "Удаляет команду"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Команда `Set-CsTeamsMeetingPolicy` используется для работы с Teams через PowerShell.",
+    "category": "PowerShell (средний уровень)",
+    "difficulty": "средний",
+    "type": "single",
+    "group": 11
+  },
+  {
+    "id": 203,
+    "question": "Вопрос 203: Что следует предпринять в контексте темы 'Политики пользователей и приложений'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0,
+      1
+    ],
+    "explanation": "Пояснение: На основании темы 'Политики пользователей и приложений', эти варианты являются наиболее подходящими.",
+    "category": "Политики пользователей и приложений",
+    "difficulty": "сложный",
+    "type": "multiple",
+    "group": 11
+  },
+  {
+    "id": 204,
+    "question": "Вопрос 204: Что следует предпринять в контексте темы 'Политики пользователей и приложений'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Политики пользователей и приложений', эти варианты являются наиболее подходящими.",
+    "category": "Политики пользователей и приложений",
+    "difficulty": "сложный",
+    "type": "single",
+    "group": 11
+  },
+  {
+    "id": 205,
+    "question": "Вопрос 205: Что следует предпринять в контексте темы 'Compliance и защита информации'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Compliance и защита информации', эти варианты являются наиболее подходящими.",
+    "category": "Compliance и защита информации",
+    "difficulty": "средний",
+    "type": "single",
+    "group": 11
+  },
+  {
+    "id": 206,
+    "question": "Вопрос 206: Что следует предпринять в контексте темы 'Compliance и защита информации'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Compliance и защита информации', эти варианты являются наиболее подходящими.",
+    "category": "Compliance и защита информации",
+    "difficulty": "сложный",
+    "type": "single",
+    "group": 11
+  },
+  {
+    "id": 207,
+    "question": "Что делает команда PowerShell: `Set-CsTeamsMeetingPolicy`?",
+    "image": null,
+    "answers": [
+      "Получает список команд Teams",
+      "Настраивает политику встреч",
+      "Добавляет пользователя в команду",
+      "Удаляет команду"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Команда `Set-CsTeamsMeetingPolicy` используется для работы с Teams через PowerShell.",
+    "category": "PowerShell (средний уровень)",
+    "difficulty": "сложный",
+    "type": "single",
+    "group": 11
+  },
+  {
+    "id": 208,
+    "question": "Вопрос 208: Что следует предпринять в контексте темы 'Мониторинг и устранение неполадок'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Мониторинг и устранение неполадок', эти варианты являются наиболее подходящими.",
+    "category": "Мониторинг и устранение неполадок",
+    "difficulty": "средний",
+    "type": "single",
+    "group": 11
+  },
+  {
+    "id": 209,
+    "question": "Что делает команда PowerShell: `Set-CsTeamsMeetingPolicy`?",
+    "image": null,
+    "answers": [
+      "Получает список команд Teams",
+      "Настраивает политику встреч",
+      "Добавляет пользователя в команду",
+      "Удаляет команду"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Команда `Set-CsTeamsMeetingPolicy` используется для работы с Teams через PowerShell.",
+    "category": "PowerShell (средний уровень)",
+    "difficulty": "средний",
+    "type": "single",
+    "group": 11
+  },
+  {
+    "id": 210,
+    "question": "Вопрос 210: Что следует предпринять в контексте темы 'Политики пользователей и приложений'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0,
+      1
+    ],
+    "explanation": "Пояснение: На основании темы 'Политики пользователей и приложений', эти варианты являются наиболее подходящими.",
+    "category": "Политики пользователей и приложений",
+    "difficulty": "легкий",
+    "type": "multiple",
+    "group": 11
+  },
+  {
+    "id": 211,
+    "question": "Вопрос 211: Что следует предпринять в контексте темы 'Управление средой Teams'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Управление средой Teams', эти варианты являются наиболее подходящими.",
+    "category": "Управление средой Teams",
+    "difficulty": "средний",
+    "type": "single",
+    "group": 11
+  },
+  {
+    "id": 212,
+    "question": "Что делает команда PowerShell: `Set-CsTeamsMeetingPolicy`?",
+    "image": null,
+    "answers": [
+      "Получает список команд Teams",
+      "Настраивает политику встреч",
+      "Добавляет пользователя в команду",
+      "Удаляет команду"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Команда `Set-CsTeamsMeetingPolicy` используется для работы с Teams через PowerShell.",
+    "category": "PowerShell (средний уровень)",
+    "difficulty": "легкий",
+    "type": "single",
+    "group": 11
+  },
+  {
+    "id": 213,
+    "question": "Вопрос 213: Что следует предпринять в контексте темы 'Настройки встреч и звонков'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Настройки встреч и звонков', эти варианты являются наиболее подходящими.",
+    "category": "Настройки встреч и звонков",
+    "difficulty": "легкий",
+    "type": "single",
+    "group": 11
+  },
+  {
+    "id": 214,
+    "question": "Вопрос 214: Что следует предпринять в контексте темы 'Настройки встреч и звонков'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Настройки встреч и звонков', эти варианты являются наиболее подходящими.",
+    "category": "Настройки встреч и звонков",
+    "difficulty": "сложный",
+    "type": "single",
+    "group": 11
+  },
+  {
+    "id": 215,
+    "question": "Вопрос 215: Что следует предпринять в контексте темы 'Политики пользователей и приложений'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Политики пользователей и приложений', эти варианты являются наиболее подходящими.",
+    "category": "Политики пользователей и приложений",
+    "difficulty": "средний",
+    "type": "single",
+    "group": 11
+  },
+  {
+    "id": 216,
+    "question": "Вопрос 216: Что следует предпринять в контексте темы 'Политики пользователей и приложений'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Политики пользователей и приложений', эти варианты являются наиболее подходящими.",
+    "category": "Политики пользователей и приложений",
+    "difficulty": "сложный",
+    "type": "single",
+    "group": 11
+  },
+  {
+    "id": 217,
+    "question": "Что делает команда PowerShell: `Get-Team`?",
+    "image": null,
+    "answers": [
+      "Получает список команд Teams",
+      "Настраивает политику встреч",
+      "Добавляет пользователя в команду",
+      "Удаляет команду"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Команда `Get-Team` используется для работы с Teams через PowerShell.",
+    "category": "PowerShell (базовый уровень)",
+    "difficulty": "сложный",
+    "type": "multiple",
+    "group": 11
+  },
+  {
+    "id": 218,
+    "question": "Вопрос 218: Что следует предпринять в контексте темы 'Compliance и защита информации'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Compliance и защита информации', эти варианты являются наиболее подходящими.",
+    "category": "Compliance и защита информации",
+    "difficulty": "сложный",
+    "type": "single",
+    "group": 11
+  },
+  {
+    "id": 219,
+    "question": "Вопрос 219: Что следует предпринять в контексте темы 'Compliance и защита информации'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Compliance и защита информации', эти варианты являются наиболее подходящими.",
+    "category": "Compliance и защита информации",
+    "difficulty": "средний",
+    "type": "single",
+    "group": 11
+  },
+  {
+    "id": 220,
+    "question": "Что делает команда PowerShell: `Set-CsTeamsMeetingPolicy`?",
+    "image": null,
+    "answers": [
+      "Получает список команд Teams",
+      "Настраивает политику встреч",
+      "Добавляет пользователя в команду",
+      "Удаляет команду"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Команда `Set-CsTeamsMeetingPolicy` используется для работы с Teams через PowerShell.",
+    "category": "PowerShell (средний уровень)",
+    "difficulty": "средний",
+    "type": "single",
+    "group": 11
+  },
+  {
+    "id": 221,
+    "question": "Вопрос 221: Что следует предпринять в контексте темы 'Политики пользователей и приложений'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Политики пользователей и приложений', эти варианты являются наиболее подходящими.",
+    "category": "Политики пользователей и приложений",
+    "difficulty": "сложный",
+    "type": "single",
+    "group": 12
+  },
+  {
+    "id": 222,
+    "question": "Вопрос 222: Что следует предпринять в контексте темы 'Мониторинг и устранение неполадок'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Мониторинг и устранение неполадок', эти варианты являются наиболее подходящими.",
+    "category": "Мониторинг и устранение неполадок",
+    "difficulty": "средний",
+    "type": "single",
+    "group": 12
+  },
+  {
+    "id": 223,
+    "question": "Вопрос 223: Что следует предпринять в контексте темы 'Настройки встреч и звонков'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Настройки встреч и звонков', эти варианты являются наиболее подходящими.",
+    "category": "Настройки встреч и звонков",
+    "difficulty": "легкий",
+    "type": "single",
+    "group": 12
+  },
+  {
+    "id": 224,
+    "question": "Вопрос 224: Что следует предпринять в контексте темы 'Мониторинг и устранение неполадок'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0,
+      1
+    ],
+    "explanation": "Пояснение: На основании темы 'Мониторинг и устранение неполадок', эти варианты являются наиболее подходящими.",
+    "category": "Мониторинг и устранение неполадок",
+    "difficulty": "сложный",
+    "type": "multiple",
+    "group": 12
+  },
+  {
+    "id": 225,
+    "question": "Вопрос 225: Что следует предпринять в контексте темы 'Настройки встреч и звонков'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Настройки встреч и звонков', эти варианты являются наиболее подходящими.",
+    "category": "Настройки встреч и звонков",
+    "difficulty": "сложный",
+    "type": "single",
+    "group": 12
+  },
+  {
+    "id": 226,
+    "question": "Что делает команда PowerShell: `Set-CsTeamsMeetingPolicy`?",
+    "image": null,
+    "answers": [
+      "Получает список команд Teams",
+      "Настраивает политику встреч",
+      "Добавляет пользователя в команду",
+      "Удаляет команду"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Команда `Set-CsTeamsMeetingPolicy` используется для работы с Teams через PowerShell.",
+    "category": "PowerShell (средний уровень)",
+    "difficulty": "легкий",
+    "type": "single",
+    "group": 12
+  },
+  {
+    "id": 227,
+    "question": "Вопрос 227: Что следует предпринять в контексте темы 'Мониторинг и устранение неполадок'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Мониторинг и устранение неполадок', эти варианты являются наиболее подходящими.",
+    "category": "Мониторинг и устранение неполадок",
+    "difficulty": "сложный",
+    "type": "single",
+    "group": 12
+  },
+  {
+    "id": 228,
+    "question": "Вопрос 228: Что следует предпринять в контексте темы 'Настройки встреч и звонков'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Настройки встреч и звонков', эти варианты являются наиболее подходящими.",
+    "category": "Настройки встреч и звонков",
+    "difficulty": "средний",
+    "type": "single",
+    "group": 12
+  },
+  {
+    "id": 229,
+    "question": "Вопрос 229: Что следует предпринять в контексте темы 'Политики пользователей и приложений'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Политики пользователей и приложений', эти варианты являются наиболее подходящими.",
+    "category": "Политики пользователей и приложений",
+    "difficulty": "средний",
+    "type": "single",
+    "group": 12
+  },
+  {
+    "id": 230,
+    "question": "Что делает команда PowerShell: `Get-Team`?",
+    "image": null,
+    "answers": [
+      "Получает список команд Teams",
+      "Настраивает политику встреч",
+      "Добавляет пользователя в команду",
+      "Удаляет команду"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Команда `Get-Team` используется для работы с Teams через PowerShell.",
+    "category": "PowerShell (базовый уровень)",
+    "difficulty": "легкий",
+    "type": "single",
+    "group": 12
+  },
+  {
+    "id": 231,
+    "question": "Что делает команда PowerShell: `Get-Team`?",
+    "image": null,
+    "answers": [
+      "Получает список команд Teams",
+      "Настраивает политику встреч",
+      "Добавляет пользователя в команду",
+      "Удаляет команду"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Команда `Get-Team` используется для работы с Teams через PowerShell.",
+    "category": "PowerShell (базовый уровень)",
+    "difficulty": "легкий",
+    "type": "multiple",
+    "group": 12
+  },
+  {
+    "id": 232,
+    "question": "Вопрос 232: Что следует предпринять в контексте темы 'Политики пользователей и приложений'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Политики пользователей и приложений', эти варианты являются наиболее подходящими.",
+    "category": "Политики пользователей и приложений",
+    "difficulty": "сложный",
+    "type": "single",
+    "group": 12
+  },
+  {
+    "id": 233,
+    "question": "Что делает команда PowerShell: `Set-CsTeamsMeetingPolicy`?",
+    "image": null,
+    "answers": [
+      "Получает список команд Teams",
+      "Настраивает политику встреч",
+      "Добавляет пользователя в команду",
+      "Удаляет команду"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Команда `Set-CsTeamsMeetingPolicy` используется для работы с Teams через PowerShell.",
+    "category": "PowerShell (средний уровень)",
+    "difficulty": "средний",
+    "type": "single",
+    "group": 12
+  },
+  {
+    "id": 234,
+    "question": "Что делает команда PowerShell: `Get-Team`?",
+    "image": null,
+    "answers": [
+      "Получает список команд Teams",
+      "Настраивает политику встреч",
+      "Добавляет пользователя в команду",
+      "Удаляет команду"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Команда `Get-Team` используется для работы с Teams через PowerShell.",
+    "category": "PowerShell (базовый уровень)",
+    "difficulty": "средний",
+    "type": "single",
+    "group": 12
+  },
+  {
+    "id": 235,
+    "question": "Вопрос 235: Что следует предпринять в контексте темы 'Управление средой Teams'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Управление средой Teams', эти варианты являются наиболее подходящими.",
+    "category": "Управление средой Teams",
+    "difficulty": "средний",
+    "type": "single",
+    "group": 12
+  },
+  {
+    "id": 236,
+    "question": "Вопрос 236: Что следует предпринять в контексте темы 'Compliance и защита информации'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Compliance и защита информации', эти варианты являются наиболее подходящими.",
+    "category": "Compliance и защита информации",
+    "difficulty": "сложный",
+    "type": "single",
+    "group": 12
+  },
+  {
+    "id": 237,
+    "question": "Что делает команда PowerShell: `Get-Team`?",
+    "image": null,
+    "answers": [
+      "Получает список команд Teams",
+      "Настраивает политику встреч",
+      "Добавляет пользователя в команду",
+      "Удаляет команду"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Команда `Get-Team` используется для работы с Teams через PowerShell.",
+    "category": "PowerShell (базовый уровень)",
+    "difficulty": "легкий",
+    "type": "single",
+    "group": 12
+  },
+  {
+    "id": 238,
+    "question": "Вопрос 238: Что следует предпринять в контексте темы 'Управление средой Teams'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0,
+      1
+    ],
+    "explanation": "Пояснение: На основании темы 'Управление средой Teams', эти варианты являются наиболее подходящими.",
+    "category": "Управление средой Teams",
+    "difficulty": "легкий",
+    "type": "multiple",
+    "group": 12
+  },
+  {
+    "id": 239,
+    "question": "Вопрос 239: Что следует предпринять в контексте темы 'Compliance и защита информации'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Compliance и защита информации', эти варианты являются наиболее подходящими.",
+    "category": "Compliance и защита информации",
+    "difficulty": "средний",
+    "type": "single",
+    "group": 12
+  },
+  {
+    "id": 240,
+    "question": "Вопрос 240: Что следует предпринять в контексте темы 'Мониторинг и устранение неполадок'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Мониторинг и устранение неполадок', эти варианты являются наиболее подходящими.",
+    "category": "Мониторинг и устранение неполадок",
+    "difficulty": "средний",
+    "type": "single",
+    "group": 12
+  },
+  {
+    "id": 241,
+    "question": "Вопрос 241: Что следует предпринять в контексте темы 'Политики пользователей и приложений'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Политики пользователей и приложений', эти варианты являются наиболее подходящими.",
+    "category": "Политики пользователей и приложений",
+    "difficulty": "легкий",
+    "type": "single",
+    "group": 13
+  },
+  {
+    "id": 242,
+    "question": "Что делает команда PowerShell: `Set-CsTeamsMeetingPolicy`?",
+    "image": null,
+    "answers": [
+      "Получает список команд Teams",
+      "Настраивает политику встреч",
+      "Добавляет пользователя в команду",
+      "Удаляет команду"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Команда `Set-CsTeamsMeetingPolicy` используется для работы с Teams через PowerShell.",
+    "category": "PowerShell (средний уровень)",
+    "difficulty": "легкий",
+    "type": "single",
+    "group": 13
+  },
+  {
+    "id": 243,
+    "question": "Вопрос 243: Что следует предпринять в контексте темы 'Compliance и защита информации'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Compliance и защита информации', эти варианты являются наиболее подходящими.",
+    "category": "Compliance и защита информации",
+    "difficulty": "сложный",
+    "type": "single",
+    "group": 13
+  },
+  {
+    "id": 244,
+    "question": "Что делает команда PowerShell: `Get-Team`?",
+    "image": null,
+    "answers": [
+      "Получает список команд Teams",
+      "Настраивает политику встреч",
+      "Добавляет пользователя в команду",
+      "Удаляет команду"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Команда `Get-Team` используется для работы с Teams через PowerShell.",
+    "category": "PowerShell (базовый уровень)",
+    "difficulty": "легкий",
+    "type": "single",
+    "group": 13
+  },
+  {
+    "id": 245,
+    "question": "Что делает команда PowerShell: `Set-CsTeamsMeetingPolicy`?",
+    "image": null,
+    "answers": [
+      "Получает список команд Teams",
+      "Настраивает политику встреч",
+      "Добавляет пользователя в команду",
+      "Удаляет команду"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Команда `Set-CsTeamsMeetingPolicy` используется для работы с Teams через PowerShell.",
+    "category": "PowerShell (средний уровень)",
+    "difficulty": "сложный",
+    "type": "multiple",
+    "group": 13
+  },
+  {
+    "id": 246,
+    "question": "Вопрос 246: Что следует предпринять в контексте темы 'Compliance и защита информации'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Compliance и защита информации', эти варианты являются наиболее подходящими.",
+    "category": "Compliance и защита информации",
+    "difficulty": "средний",
+    "type": "single",
+    "group": 13
+  },
+  {
+    "id": 247,
+    "question": "Вопрос 247: Что следует предпринять в контексте темы 'Управление средой Teams'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Управление средой Teams', эти варианты являются наиболее подходящими.",
+    "category": "Управление средой Teams",
+    "difficulty": "сложный",
+    "type": "single",
+    "group": 13
+  },
+  {
+    "id": 248,
+    "question": "Вопрос 248: Что следует предпринять в контексте темы 'Мониторинг и устранение неполадок'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Мониторинг и устранение неполадок', эти варианты являются наиболее подходящими.",
+    "category": "Мониторинг и устранение неполадок",
+    "difficulty": "средний",
+    "type": "single",
+    "group": 13
+  },
+  {
+    "id": 249,
+    "question": "Вопрос 249: Что следует предпринять в контексте темы 'Политики пользователей и приложений'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Политики пользователей и приложений', эти варианты являются наиболее подходящими.",
+    "category": "Политики пользователей и приложений",
+    "difficulty": "средний",
+    "type": "single",
+    "group": 13
+  },
+  {
+    "id": 250,
+    "question": "Вопрос 250: Что следует предпринять в контексте темы 'Настройки встреч и звонков'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Настройки встреч и звонков', эти варианты являются наиболее подходящими.",
+    "category": "Настройки встреч и звонков",
+    "difficulty": "сложный",
+    "type": "single",
+    "group": 13
+  },
+  {
+    "id": 251,
+    "question": "Вопрос 251: Что следует предпринять в контексте темы 'Мониторинг и устранение неполадок'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Мониторинг и устранение неполадок', эти варианты являются наиболее подходящими.",
+    "category": "Мониторинг и устранение неполадок",
+    "difficulty": "сложный",
+    "type": "single",
+    "group": 13
+  },
+  {
+    "id": 252,
+    "question": "Вопрос 252: Что следует предпринять в контексте темы 'Политики пользователей и приложений'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0,
+      1
+    ],
+    "explanation": "Пояснение: На основании темы 'Политики пользователей и приложений', эти варианты являются наиболее подходящими.",
+    "category": "Политики пользователей и приложений",
+    "difficulty": "средний",
+    "type": "multiple",
+    "group": 13
+  },
+  {
+    "id": 253,
+    "question": "Вопрос 253: Что следует предпринять в контексте темы 'Политики пользователей и приложений'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Политики пользователей и приложений', эти варианты являются наиболее подходящими.",
+    "category": "Политики пользователей и приложений",
+    "difficulty": "сложный",
+    "type": "single",
+    "group": 13
+  },
+  {
+    "id": 254,
+    "question": "Вопрос 254: Что следует предпринять в контексте темы 'Управление средой Teams'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Управление средой Teams', эти варианты являются наиболее подходящими.",
+    "category": "Управление средой Teams",
+    "difficulty": "средний",
+    "type": "single",
+    "group": 13
+  },
+  {
+    "id": 255,
+    "question": "Вопрос 255: Что следует предпринять в контексте темы 'Управление средой Teams'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Управление средой Teams', эти варианты являются наиболее подходящими.",
+    "category": "Управление средой Teams",
+    "difficulty": "сложный",
+    "type": "single",
+    "group": 13
+  },
+  {
+    "id": 256,
+    "question": "Вопрос 256: Что следует предпринять в контексте темы 'Мониторинг и устранение неполадок'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Мониторинг и устранение неполадок', эти варианты являются наиболее подходящими.",
+    "category": "Мониторинг и устранение неполадок",
+    "difficulty": "легкий",
+    "type": "single",
+    "group": 13
+  },
+  {
+    "id": 257,
+    "question": "Что делает команда PowerShell: `Set-CsTeamsMeetingPolicy`?",
+    "image": null,
+    "answers": [
+      "Получает список команд Teams",
+      "Настраивает политику встреч",
+      "Добавляет пользователя в команду",
+      "Удаляет команду"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Команда `Set-CsTeamsMeetingPolicy` используется для работы с Teams через PowerShell.",
+    "category": "PowerShell (средний уровень)",
+    "difficulty": "сложный",
+    "type": "single",
+    "group": 13
+  },
+  {
+    "id": 258,
+    "question": "Вопрос 258: Что следует предпринять в контексте темы 'Управление средой Teams'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Управление средой Teams', эти варианты являются наиболее подходящими.",
+    "category": "Управление средой Teams",
+    "difficulty": "легкий",
+    "type": "single",
+    "group": 13
+  },
+  {
+    "id": 259,
+    "question": "Вопрос 259: Что следует предпринять в контексте темы 'Compliance и защита информации'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0,
+      1
+    ],
+    "explanation": "Пояснение: На основании темы 'Compliance и защита информации', эти варианты являются наиболее подходящими.",
+    "category": "Compliance и защита информации",
+    "difficulty": "средний",
+    "type": "multiple",
+    "group": 13
+  },
+  {
+    "id": 260,
+    "question": "Что делает команда PowerShell: `Get-Team`?",
+    "image": null,
+    "answers": [
+      "Получает список команд Teams",
+      "Настраивает политику встреч",
+      "Добавляет пользователя в команду",
+      "Удаляет команду"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Команда `Get-Team` используется для работы с Teams через PowerShell.",
+    "category": "PowerShell (базовый уровень)",
+    "difficulty": "сложный",
+    "type": "single",
+    "group": 13
+  },
+  {
+    "id": 261,
+    "question": "Что делает команда PowerShell: `Set-CsTeamsMeetingPolicy`?",
+    "image": null,
+    "answers": [
+      "Получает список команд Teams",
+      "Настраивает политику встреч",
+      "Добавляет пользователя в команду",
+      "Удаляет команду"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Команда `Set-CsTeamsMeetingPolicy` используется для работы с Teams через PowerShell.",
+    "category": "PowerShell (средний уровень)",
+    "difficulty": "сложный",
+    "type": "single",
+    "group": 14
+  },
+  {
+    "id": 262,
+    "question": "Вопрос 262: Что следует предпринять в контексте темы 'Настройки встреч и звонков'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Настройки встреч и звонков', эти варианты являются наиболее подходящими.",
+    "category": "Настройки встреч и звонков",
+    "difficulty": "средний",
+    "type": "single",
+    "group": 14
+  },
+  {
+    "id": 263,
+    "question": "Что делает команда PowerShell: `Set-CsTeamsMeetingPolicy`?",
+    "image": null,
+    "answers": [
+      "Получает список команд Teams",
+      "Настраивает политику встреч",
+      "Добавляет пользователя в команду",
+      "Удаляет команду"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Команда `Set-CsTeamsMeetingPolicy` используется для работы с Teams через PowerShell.",
+    "category": "PowerShell (средний уровень)",
+    "difficulty": "сложный",
+    "type": "single",
+    "group": 14
+  },
+  {
+    "id": 264,
+    "question": "Вопрос 264: Что следует предпринять в контексте темы 'Настройки встреч и звонков'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Настройки встреч и звонков', эти варианты являются наиболее подходящими.",
+    "category": "Настройки встреч и звонков",
+    "difficulty": "средний",
+    "type": "single",
+    "group": 14
+  },
+  {
+    "id": 265,
+    "question": "Вопрос 265: Что следует предпринять в контексте темы 'Compliance и защита информации'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Compliance и защита информации', эти варианты являются наиболее подходящими.",
+    "category": "Compliance и защита информации",
+    "difficulty": "сложный",
+    "type": "single",
+    "group": 14
+  },
+  {
+    "id": 266,
+    "question": "Вопрос 266: Что следует предпринять в контексте темы 'Политики пользователей и приложений'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0,
+      1
+    ],
+    "explanation": "Пояснение: На основании темы 'Политики пользователей и приложений', эти варианты являются наиболее подходящими.",
+    "category": "Политики пользователей и приложений",
+    "difficulty": "средний",
+    "type": "multiple",
+    "group": 14
+  },
+  {
+    "id": 267,
+    "question": "Вопрос 267: Что следует предпринять в контексте темы 'Compliance и защита информации'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Compliance и защита информации', эти варианты являются наиболее подходящими.",
+    "category": "Compliance и защита информации",
+    "difficulty": "средний",
+    "type": "single",
+    "group": 14
+  },
+  {
+    "id": 268,
+    "question": "Что делает команда PowerShell: `Set-CsTeamsMeetingPolicy`?",
+    "image": null,
+    "answers": [
+      "Получает список команд Teams",
+      "Настраивает политику встреч",
+      "Добавляет пользователя в команду",
+      "Удаляет команду"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Команда `Set-CsTeamsMeetingPolicy` используется для работы с Teams через PowerShell.",
+    "category": "PowerShell (средний уровень)",
+    "difficulty": "легкий",
+    "type": "single",
+    "group": 14
+  },
+  {
+    "id": 269,
+    "question": "Вопрос 269: Что следует предпринять в контексте темы 'Настройки встреч и звонков'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Настройки встреч и звонков', эти варианты являются наиболее подходящими.",
+    "category": "Настройки встреч и звонков",
+    "difficulty": "сложный",
+    "type": "single",
+    "group": 14
+  },
+  {
+    "id": 270,
+    "question": "Вопрос 270: Что следует предпринять в контексте темы 'Настройки встреч и звонков'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Настройки встреч и звонков', эти варианты являются наиболее подходящими.",
+    "category": "Настройки встреч и звонков",
+    "difficulty": "легкий",
+    "type": "single",
+    "group": 14
+  },
+  {
+    "id": 271,
+    "question": "Вопрос 271: Что следует предпринять в контексте темы 'Политики пользователей и приложений'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Политики пользователей и приложений', эти варианты являются наиболее подходящими.",
+    "category": "Политики пользователей и приложений",
+    "difficulty": "средний",
+    "type": "single",
+    "group": 14
+  },
+  {
+    "id": 272,
+    "question": "Что делает команда PowerShell: `Set-CsTeamsMeetingPolicy`?",
+    "image": null,
+    "answers": [
+      "Получает список команд Teams",
+      "Настраивает политику встреч",
+      "Добавляет пользователя в команду",
+      "Удаляет команду"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Команда `Set-CsTeamsMeetingPolicy` используется для работы с Teams через PowerShell.",
+    "category": "PowerShell (средний уровень)",
+    "difficulty": "средний",
+    "type": "single",
+    "group": 14
+  },
+  {
+    "id": 273,
+    "question": "Вопрос 273: Что следует предпринять в контексте темы 'Политики пользователей и приложений'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0,
+      1
+    ],
+    "explanation": "Пояснение: На основании темы 'Политики пользователей и приложений', эти варианты являются наиболее подходящими.",
+    "category": "Политики пользователей и приложений",
+    "difficulty": "легкий",
+    "type": "multiple",
+    "group": 14
+  },
+  {
+    "id": 274,
+    "question": "Вопрос 274: Что следует предпринять в контексте темы 'Настройки встреч и звонков'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Настройки встреч и звонков', эти варианты являются наиболее подходящими.",
+    "category": "Настройки встреч и звонков",
+    "difficulty": "легкий",
+    "type": "single",
+    "group": 14
+  },
+  {
+    "id": 275,
+    "question": "Вопрос 275: Что следует предпринять в контексте темы 'Управление средой Teams'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Управление средой Teams', эти варианты являются наиболее подходящими.",
+    "category": "Управление средой Teams",
+    "difficulty": "легкий",
+    "type": "single",
+    "group": 14
+  },
+  {
+    "id": 276,
+    "question": "Вопрос 276: Что следует предпринять в контексте темы 'Мониторинг и устранение неполадок'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Мониторинг и устранение неполадок', эти варианты являются наиболее подходящими.",
+    "category": "Мониторинг и устранение неполадок",
+    "difficulty": "сложный",
+    "type": "single",
+    "group": 14
+  },
+  {
+    "id": 277,
+    "question": "Вопрос 277: Что следует предпринять в контексте темы 'Compliance и защита информации'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Compliance и защита информации', эти варианты являются наиболее подходящими.",
+    "category": "Compliance и защита информации",
+    "difficulty": "легкий",
+    "type": "single",
+    "group": 14
+  },
+  {
+    "id": 278,
+    "question": "Что делает команда PowerShell: `Get-Team`?",
+    "image": null,
+    "answers": [
+      "Получает список команд Teams",
+      "Настраивает политику встреч",
+      "Добавляет пользователя в команду",
+      "Удаляет команду"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Команда `Get-Team` используется для работы с Teams через PowerShell.",
+    "category": "PowerShell (базовый уровень)",
+    "difficulty": "сложный",
+    "type": "single",
+    "group": 14
+  },
+  {
+    "id": 279,
+    "question": "Вопрос 279: Что следует предпринять в контексте темы 'Настройки встреч и звонков'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Настройки встреч и звонков', эти варианты являются наиболее подходящими.",
+    "category": "Настройки встреч и звонков",
+    "difficulty": "легкий",
+    "type": "single",
+    "group": 14
+  },
+  {
+    "id": 280,
+    "question": "Вопрос 280: Что следует предпринять в контексте темы 'Настройки встреч и звонков'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0,
+      1
+    ],
+    "explanation": "Пояснение: На основании темы 'Настройки встреч и звонков', эти варианты являются наиболее подходящими.",
+    "category": "Настройки встреч и звонков",
+    "difficulty": "сложный",
+    "type": "multiple",
+    "group": 14
+  },
+  {
+    "id": 281,
+    "question": "Вопрос 281: Что следует предпринять в контексте темы 'Политики пользователей и приложений'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Политики пользователей и приложений', эти варианты являются наиболее подходящими.",
+    "category": "Политики пользователей и приложений",
+    "difficulty": "легкий",
+    "type": "single",
+    "group": 15
+  },
+  {
+    "id": 282,
+    "question": "Что делает команда PowerShell: `Set-CsTeamsMeetingPolicy`?",
+    "image": null,
+    "answers": [
+      "Получает список команд Teams",
+      "Настраивает политику встреч",
+      "Добавляет пользователя в команду",
+      "Удаляет команду"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Команда `Set-CsTeamsMeetingPolicy` используется для работы с Teams через PowerShell.",
+    "category": "PowerShell (средний уровень)",
+    "difficulty": "средний",
+    "type": "single",
+    "group": 15
+  },
+  {
+    "id": 283,
+    "question": "Вопрос 283: Что следует предпринять в контексте темы 'Политики пользователей и приложений'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Политики пользователей и приложений', эти варианты являются наиболее подходящими.",
+    "category": "Политики пользователей и приложений",
+    "difficulty": "сложный",
+    "type": "single",
+    "group": 15
+  },
+  {
+    "id": 284,
+    "question": "Что делает команда PowerShell: `Set-CsTeamsMeetingPolicy`?",
+    "image": null,
+    "answers": [
+      "Получает список команд Teams",
+      "Настраивает политику встреч",
+      "Добавляет пользователя в команду",
+      "Удаляет команду"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Команда `Set-CsTeamsMeetingPolicy` используется для работы с Teams через PowerShell.",
+    "category": "PowerShell (средний уровень)",
+    "difficulty": "легкий",
+    "type": "single",
+    "group": 15
+  },
+  {
+    "id": 285,
+    "question": "Вопрос 285: Что следует предпринять в контексте темы 'Compliance и защита информации'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Compliance и защита информации', эти варианты являются наиболее подходящими.",
+    "category": "Compliance и защита информации",
+    "difficulty": "сложный",
+    "type": "single",
+    "group": 15
+  },
+  {
+    "id": 286,
+    "question": "Что делает команда PowerShell: `Set-CsTeamsMeetingPolicy`?",
+    "image": null,
+    "answers": [
+      "Получает список команд Teams",
+      "Настраивает политику встреч",
+      "Добавляет пользователя в команду",
+      "Удаляет команду"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Команда `Set-CsTeamsMeetingPolicy` используется для работы с Teams через PowerShell.",
+    "category": "PowerShell (средний уровень)",
+    "difficulty": "легкий",
+    "type": "single",
+    "group": 15
+  },
+  {
+    "id": 287,
+    "question": "Вопрос 287: Что следует предпринять в контексте темы 'Compliance и защита информации'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0,
+      1
+    ],
+    "explanation": "Пояснение: На основании темы 'Compliance и защита информации', эти варианты являются наиболее подходящими.",
+    "category": "Compliance и защита информации",
+    "difficulty": "средний",
+    "type": "multiple",
+    "group": 15
+  },
+  {
+    "id": 288,
+    "question": "Вопрос 288: Что следует предпринять в контексте темы 'Настройки встреч и звонков'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Настройки встреч и звонков', эти варианты являются наиболее подходящими.",
+    "category": "Настройки встреч и звонков",
+    "difficulty": "сложный",
+    "type": "single",
+    "group": 15
+  },
+  {
+    "id": 289,
+    "question": "Вопрос 289: Что следует предпринять в контексте темы 'Политики пользователей и приложений'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Политики пользователей и приложений', эти варианты являются наиболее подходящими.",
+    "category": "Политики пользователей и приложений",
+    "difficulty": "легкий",
+    "type": "single",
+    "group": 15
+  },
+  {
+    "id": 290,
+    "question": "Вопрос 290: Что следует предпринять в контексте темы 'Мониторинг и устранение неполадок'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Мониторинг и устранение неполадок', эти варианты являются наиболее подходящими.",
+    "category": "Мониторинг и устранение неполадок",
+    "difficulty": "легкий",
+    "type": "single",
+    "group": 15
+  },
+  {
+    "id": 291,
+    "question": "Вопрос 291: Что следует предпринять в контексте темы 'Compliance и защита информации'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Compliance и защита информации', эти варианты являются наиболее подходящими.",
+    "category": "Compliance и защита информации",
+    "difficulty": "средний",
+    "type": "single",
+    "group": 15
+  },
+  {
+    "id": 292,
+    "question": "Что делает команда PowerShell: `Set-CsTeamsMeetingPolicy`?",
+    "image": null,
+    "answers": [
+      "Получает список команд Teams",
+      "Настраивает политику встреч",
+      "Добавляет пользователя в команду",
+      "Удаляет команду"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "Команда `Set-CsTeamsMeetingPolicy` используется для работы с Teams через PowerShell.",
+    "category": "PowerShell (средний уровень)",
+    "difficulty": "сложный",
+    "type": "single",
+    "group": 15
+  },
+  {
+    "id": 293,
+    "question": "Вопрос 293: Что следует предпринять в контексте темы 'Управление средой Teams'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Управление средой Teams', эти варианты являются наиболее подходящими.",
+    "category": "Управление средой Teams",
+    "difficulty": "сложный",
+    "type": "single",
+    "group": 15
+  },
+  {
+    "id": 294,
+    "question": "Вопрос 294: Что следует предпринять в контексте темы 'Compliance и защита информации'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0,
+      1
+    ],
+    "explanation": "Пояснение: На основании темы 'Compliance и защита информации', эти варианты являются наиболее подходящими.",
+    "category": "Compliance и защита информации",
+    "difficulty": "легкий",
+    "type": "multiple",
+    "group": 15
+  },
+  {
+    "id": 295,
+    "question": "Вопрос 295: Что следует предпринять в контексте темы 'Политики пользователей и приложений'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Политики пользователей и приложений', эти варианты являются наиболее подходящими.",
+    "category": "Политики пользователей и приложений",
+    "difficulty": "средний",
+    "type": "single",
+    "group": 15
+  },
+  {
+    "id": 296,
+    "question": "Вопрос 296: Что следует предпринять в контексте темы 'Мониторинг и устранение неполадок'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Мониторинг и устранение неполадок', эти варианты являются наиболее подходящими.",
+    "category": "Мониторинг и устранение неполадок",
+    "difficulty": "средний",
+    "type": "single",
+    "group": 15
+  },
+  {
+    "id": 297,
+    "question": "Вопрос 297: Что следует предпринять в контексте темы 'Настройки встреч и звонков'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Настройки встреч и звонков', эти варианты являются наиболее подходящими.",
+    "category": "Настройки встреч и звонков",
+    "difficulty": "сложный",
+    "type": "single",
+    "group": 15
+  },
+  {
+    "id": 298,
+    "question": "Вопрос 298: Что следует предпринять в контексте темы 'Управление средой Teams'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Управление средой Teams', эти варианты являются наиболее подходящими.",
+    "category": "Управление средой Teams",
+    "difficulty": "легкий",
+    "type": "single",
+    "group": 15
+  },
+  {
+    "id": 299,
+    "question": "Вопрос 299: Что следует предпринять в контексте темы 'Управление средой Teams'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Управление средой Teams', эти варианты являются наиболее подходящими.",
+    "category": "Управление средой Teams",
+    "difficulty": "сложный",
+    "type": "single",
+    "group": 15
+  },
+  {
+    "id": 300,
+    "question": "Вопрос 300: Что следует предпринять в контексте темы 'Настройки встреч и звонков'?",
+    "image": null,
+    "answers": [
+      "использовать Teams Admin Center",
+      "применить политику через PowerShell",
+      "настроить параметр в Azure AD",
+      "применить настройки в Compliance Center"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "Пояснение: На основании темы 'Настройки встреч и звонков', эти варианты являются наиболее подходящими.",
+    "category": "Настройки встреч и звонков",
+    "difficulty": "легкий",
+    "type": "single",
+    "group": 15
+  }
+]
