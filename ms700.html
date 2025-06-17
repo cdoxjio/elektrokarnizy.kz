@@ -304,7 +304,7 @@ let QUESTIONS_LOADED = false;
 let LOAD_ERROR = false;
 let allQuestionsMode = false;
 
-fetch('https://raw.githubusercontent.com/cdoxjio/elektrokarnizy.kz/main/ms700_questions.json')
+fetch('ms700_questions.json')
   .then(r => r.json())
   .then(qs => { QUESTIONS.push(...qs); QUESTIONS_LOADED = true; start(); })
   .catch(() => {
