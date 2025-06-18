@@ -1,0 +1,4760 @@
+[
+  {
+    "id": 1,
+    "question": "Сценарий: В компании Contoso включён гостевой доступ. HR‑подразделение жалуется, что внешние гости случайно создают команды.\nЧто нужно сделать, чтобы только администраторы могли добавлять гостей во все команды?",
+    "answers": [
+      "Использовать Retention policy",
+      "Создать Teams template с privacy=Private",
+      "Включить Sensitivity labels",
+      "Отключить публичные команды в Org‑wide settings"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Teams Environment Management",
+    "difficulty": "сложный",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/en-us/microsoftteams/manage-teams-skypeforbusiness-admin-center",
+    "group": 1
+  },
+  {
+    "id": 2,
+    "question": "Сценарий: Компания Northwind обнаружила, что любой сотрудник может приглашать внешних гостей. \nАдминистратору поручили временно отключить гостевой доступ для всей организации.",
+    "answers": [
+      "SharePoint external sharing — заблокировать",
+      "Azure AD B2B — блокировать",
+      "External access — выключить",
+      "Teams Admin Center › Org‑wide settings › Guest access — выключить"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Teams Environment Management",
+    "difficulty": "легкий",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/teams/guest-access",
+    "group": 1
+  },
+  {
+    "id": 3,
+    "question": "Сценарий: Организация Fabrikam использует Teams в режиме Islands. Руководство решило полностью перейти на TeamsOnly.\nКакой PowerShell‑cmdlet примените, чтобы установить режим TeamsOnly для всех пользователей?",
+    "answers": [
+      "Set-CsTeamsUpgradePolicy -PolicyName TeamsOnly -Global",
+      "Set-CsTeamsUpgradeMode Islands",
+      "Grant-CsTeamsUpgradePolicy -PolicyName UpgradeToTeams",
+      "SwitchViaAdminCenter Upgrade"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Teams Environment Management",
+    "difficulty": "легкий",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/en-us/microsoftteams/manage-teams-skypeforbusiness-admin-center",
+    "group": 1
+  },
+  {
+    "id": 4,
+    "question": "Сценарий: В Teams tenant включены Sensitivity labels. Требуется, чтобы при создании новых команд ProjectX метка `Confidential` применялась автоматически \nи блокировала гостевой доступ и публичную видимость.",
+    "answers": [
+      "Создать автополитику Sensitivity label `Confidential` для всех групп, Privacy = Private + Guest access = Block",
+      "Включить Customer Key",
+      "Назначить Retention label 7 лет",
+      "В Meeting policy запретить публичные команды"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Security & Compliance",
+    "difficulty": "сложный",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/teams/security-compliance-overview",
+    "group": 1
+  },
+  {
+    "id": 5,
+    "question": "Сценарий: Tenant Contoso имеет тысячи команд. IT‑отдел хочет запретить создание публичных команд без одобрения.\nКакой параметр должны отключить в Teams Admin Center, чтобы запретить публичные команды?",
+    "answers": [
+      "Azure AD Roles",
+      "Security & compliance",
+      "Teams Admin Center > Teams settings > Team creation > Public",
+      "Intune"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Teams Environment Management",
+    "difficulty": "сложный",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/en-us/microsoftteams/manage-teams-skypeforbusiness-admin-center",
+    "group": 1
+  },
+  {
+    "id": 6,
+    "question": "Сценарий: По требованию Legal нужно запретить пользователям удалять собственные сообщения во всех чатах.",
+    "answers": [
+      "Disable cloud recording",
+      "Создать Retention 365 дней",
+      "Включить E2EE",
+      "Создать Messaging policy и выключить 'Delete sent messages'"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Teams Policies and Configuration",
+    "difficulty": "сложный",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/teams/teams-policies",
+    "group": 1
+  },
+  {
+    "id": 7,
+    "question": "Сценарий: После слияния компаний появился второй домен `partner.com`. Пользователи жалуются, что не могут федеративно чатиться.\nГде в Teams Admin Center нужно добавить домен `partner.com` в allow‑list?",
+    "answers": [
+      "External access > Add a domain",
+      "Org-wide settings > Domains",
+      "Conditional Access",
+      "Guest access > Allow guest domain"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Teams Environment Management",
+    "difficulty": "средний",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/en-us/microsoftteams/manage-teams-skypeforbusiness-admin-center",
+    "group": 1
+  },
+  {
+    "id": 8,
+    "question": "Сценарий: Вы создали новую Meeting policy `NoLobby`. Требуется назначить её 120 пользователям из CSV.",
+    "answers": [
+      "Set-Team",
+      "New-CsTeamsMeetingPolicy",
+      "Import‑CSV users.csv | ForEach-Object {Grant-CsTeamsMeetingPolicy -Identity $_.UserPrincipalName -PolicyName NoLobby}",
+      "Set-CsTeamsMeetingPolicy -PolicyName NoLobby"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "PowerShell Intermediate",
+    "difficulty": "средний",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/powershell/module/teams/?view=teams-ps",
+    "group": 1
+  },
+  {
+    "id": 9,
+    "question": "Сценарий: Отдел SecureOps требует, чтобы новые команды по умолчанию были приватными.\nКакой шаблон (privacy) следует установить в PowerShell при создании команды?",
+    "answers": [
+      "New-CsOnlineSession",
+      "Установить параметр `Visibility=Private` при `New-Team`",
+      "Добавить Sensitivity label",
+      "Create Retention label"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Teams Environment Management",
+    "difficulty": "легкий",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/en-us/microsoftteams/manage-teams-skypeforbusiness-admin-center",
+    "group": 1
+  },
+  {
+    "id": 10,
+    "question": "Сценарий: Для отдела CustomerSupport нужно включить запись звонков и запретить переадресацию входящих звонков пользователем.",
+    "answers": [
+      "Назначить политики отделу",
+      "Создать Meeting policy: Cloud recording = On",
+      "Включить CQD alerts",
+      "Создать Calling policy: Call forwarding = Off"
+    ],
+    "correct": [
+      3,
+      1,
+      0
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Meetings and Calling",
+    "difficulty": "сложный",
+    "type": "multiple",
+    "reference": "https://learn.microsoft.com/teams/meeting-policies-in-teams",
+    "group": 1
+  },
+  {
+    "id": 11,
+    "question": "Сценарий: Филиал в Берлине хочет принимать входящие PSTN‑звонки через Direct Routing. У них уже есть сертифицированный SBC.",
+    "answers": [
+      "Создать Sensitivity label",
+      "Купить Domestic Calling Plan",
+      "Настроить Voice routing policy и связать с SBC",
+      "Включить Guest access"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Meetings and Calling",
+    "difficulty": "сложный",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/en-us/microsoftteams/meeting-policies-in-teams",
+    "group": 1
+  },
+  {
+    "id": 12,
+    "question": "Сценарий: Пользователи Финляндии будут звонить через Phone System с Calling Plan. Что необходимо добавить к лицензии M365 E3?",
+    "answers": [
+      "Defender for Identity",
+      "Audio Conferencing",
+      "EMS E3",
+      "Teams Phone Standard + Domestic Calling Plan"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Meetings and Calling",
+    "difficulty": "легкий",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/teams/meeting-policies-in-teams",
+    "group": 1
+  },
+  {
+    "id": 13,
+    "question": "Сценарий: Во время совещаний отдела R&D необходимо автоматическое включение записи и запрет скачивания записи.",
+    "answers": [
+      "Включить Retention policy",
+      "Создать Meeting policy: Cloud recording=On, AllowCloudRecordingDownload=Off",
+      "Изменить Calling policy",
+      "Использовать Compliance DLP"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Meetings and Calling",
+    "difficulty": "легкий",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/en-us/microsoftteams/meeting-policies-in-teams",
+    "group": 1
+  },
+  {
+    "id": 14,
+    "question": "Сценарий: Финансовый отдел хочет блокировать отправку номеров кредитных карт через Teams чат.",
+    "answers": [
+      "Отключить гостевой доступ",
+      "Создать DLP политику с Credit Card Sensitive info type",
+      "Set-CsTeamsMessagingPolicy",
+      "Enable Retention"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Security & Compliance",
+    "difficulty": "средний",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/teams/security-compliance-overview",
+    "group": 1
+  },
+  {
+    "id": 15,
+    "question": "Сценарий: Участники внешних встреч жалуются, что попадают в лобби. Нужно сразу пускать домен partner.io.",
+    "answers": [
+      "Retention policy",
+      "Meeting policy: Lobby bypass on Verified domain",
+      "Calling policy",
+      "Sensitivity label"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Meetings and Calling",
+    "difficulty": "средний",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/en-us/microsoftteams/meeting-policies-in-teams",
+    "group": 1
+  },
+  {
+    "id": 16,
+    "question": "Сценарий: Компания использует Customer Key. Требуется перевести ключ на новый HSM без потери данных в Teams.",
+    "answers": [
+      "Использовать BitLocker",
+      "Перегенерировать E2EE сертификаты",
+      "Создать новое ключевое хранилище, загрузить ключ, обновить Customer Key assignment через Compliance portal",
+      "Отключить Customer Key и включить снова"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Security & Compliance",
+    "difficulty": "сложный",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/teams/security-compliance-overview",
+    "group": 1
+  },
+  {
+    "id": 17,
+    "question": "Сценарий: В компании Contoso нужно разрешить экстренный номер 112 для пользователей в Финляндии.",
+    "answers": [
+      "Включить DLP",
+      "Создать App setup",
+      "Добавить Emergency calling policy и E911 address",
+      "Set-CsTeamsUpgradePolicy"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Meetings and Calling",
+    "difficulty": "средний",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/en-us/microsoftteams/meeting-policies-in-teams",
+    "group": 1
+  },
+  {
+    "id": 18,
+    "question": "Сценарий: Администратор хочет быстро посмотреть деталь одного проблемного звонка пользователя.",
+    "answers": [
+      "Открыть CQD Overall report",
+      "Service health dashboard",
+      "Использовать Teams Call analytics",
+      "Azure Monitor"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Monitoring & Troubleshooting",
+    "difficulty": "легкий",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/teams/monitoring-and-reporting-overview",
+    "group": 1
+  },
+  {
+    "id": 19,
+    "question": "Сценарий: Нужно отключить возможность переадресации входящих вызовов для группы стажёров.",
+    "answers": [
+      "Messaging policy: Remove calls",
+      "Disable voicemail",
+      "Calling policy: Call forwarding=Off",
+      "Sensitivity label"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Meetings and Calling",
+    "difficulty": "сложный",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/en-us/microsoftteams/meeting-policies-in-teams",
+    "group": 1
+  },
+  {
+    "id": 20,
+    "question": "Сценарий: В CQD MOS опустился ниже 3 в регионе EMEA. Нужно автоматически уведомлять сетевых инженеров.",
+    "answers": [
+      "Создать Retention alert",
+      "Compliance DLP alert",
+      "Настроить Quality alerts в Teams admin center",
+      "Azure Sentinel rule"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Monitoring & Troubleshooting",
+    "difficulty": "средний",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/teams/monitoring-and-reporting-overview",
+    "group": 1
+  },
+  {
+    "id": 21,
+    "question": "Сценарий: Legal‑отделу необходимо, чтобы сообщения Teams сохранялись 10 лет и не могли удаляться.",
+    "answers": [
+      "Apply Sensitivity label",
+      "Создать Messaging policy",
+      "Создать Retention policy 10 лет, блокировать удаление",
+      "Включить DLP"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Security & Compliance",
+    "difficulty": "легкий",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/en-us/microsoftteams/security-compliance-overview",
+    "group": 2
+  },
+  {
+    "id": 22,
+    "question": "Что делает команда PowerShell `Get-TeamUser -GroupId <id>`?",
+    "answers": [
+      "Возвращает список участников команды",
+      "Создаёт команду",
+      "Экспортирует CQD",
+      "Удаляет команду"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "PowerShell Beginner",
+    "difficulty": "средний",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/powershell/module/microsoftteams/?view=teams-ps",
+    "group": 2
+  },
+  {
+    "id": 23,
+    "question": "Сценарий: Финансовый отдел обменивается номерами карт. Нужно блокировать отправку строк формата ****‑****‑****‑****.",
+    "answers": [
+      "Disable Clipboard",
+      "Сделать Retention 1 день",
+      "Отключить гостевой доступ",
+      "Создать DLP политику с Credit Card Sensitive info"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Security & Compliance",
+    "difficulty": "легкий",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/en-us/microsoftteams/security-compliance-overview",
+    "group": 2
+  },
+  {
+    "id": 24,
+    "question": "Команда `New-TeamChannel -MembershipType Private` создаёт:",
+    "answers": [
+      "Удалённый канал",
+      "Публичный канал",
+      "Приватный канал",
+      "Политику"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "PowerShell Beginner",
+    "difficulty": "сложный",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/powershell/module/microsoftteams/?view=teams-ps",
+    "group": 2
+  },
+  {
+    "id": 25,
+    "question": "Сценарий: Нужно применить Sensitivity label `Highly Confidential` ко всем новым командам HR.",
+    "answers": [
+      "Создать Retention policy",
+      "Создать Meeting policy",
+      "Настроить автоматическое применение через label policy",
+      "Set-CsTeamsCallingPolicy"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Security & Compliance",
+    "difficulty": "средний",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/en-us/microsoftteams/security-compliance-overview",
+    "group": 2
+  },
+  {
+    "id": 26,
+    "question": "Сценарий: Нужно изменить параметр `AllowIPVideo=false` в Meeting policy `RemoteUsers`. Какой cmdlet используете?",
+    "answers": [
+      "Set-Team",
+      "Set-CsTeamsMeetingPolicy -Identity RemoteUsers -AllowIPVideo $false",
+      "Set-CsOnlineVoiceRoute",
+      "Grant-CsTeamsMeetingPolicy"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "PowerShell Intermediate",
+    "difficulty": "сложный",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/powershell/module/teams/?view=teams-ps",
+    "group": 2
+  },
+  {
+    "id": 27,
+    "question": "Сценарий: SecOps требует audit log всех действий Guest users.",
+    "answers": [
+      "Включить Unified audit log в M365 и фильтр Guest",
+      "Call analytics",
+      "Azure AD Sign-ins only",
+      "CQD"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Security & Compliance",
+    "difficulty": "средний",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/en-us/microsoftteams/security-compliance-overview",
+    "group": 2
+  },
+  {
+    "id": 28,
+    "question": "Лабораторное задание: Включить Live Captions по умолчанию для отдела Learning. Выберите шаги.",
+    "answers": [
+      "Перезапустить Teams",
+      "Включить Live Captions",
+      "Назначить политику группе Learning",
+      "Создать Meeting policy"
+    ],
+    "correct": [
+      3,
+      1,
+      2
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Lab Scenario",
+    "difficulty": "средний",
+    "type": "multiple",
+    "reference": "https://learn.microsoft.com/teams/tutorials-and-labs",
+    "group": 2
+  },
+  {
+    "id": 29,
+    "question": "Сценарий: Компания хочет Customer Key для Teams chat‑данных.",
+    "answers": [
+      "Enable Sensitivity label",
+      "Включить Microsoft Purview Customer Key",
+      "GPO",
+      "TLS 1.3"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Security & Compliance",
+    "difficulty": "легкий",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/en-us/microsoftteams/security-compliance-overview",
+    "group": 2
+  },
+  {
+    "id": 30,
+    "question": "Сценарий: В tenant слишком много неиспользуемых команд. Необходимо автоматически архивировать команды без активности 90 дней.",
+    "answers": [
+      "Network Planner",
+      "Disable Guest",
+      "Создать Retention 90 дней",
+      "Включить Teams archive via Graph lifecycle policy"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Teams Environment Management",
+    "difficulty": "средний",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/teams/guest-access",
+    "group": 2
+  },
+  {
+    "id": 31,
+    "question": "Сценарий: После развёртывания нового Wi‑Fi точки в HQ выросло количество Packet loss >10% в CQD.",
+    "answers": [
+      "Откатить Teams version",
+      "Enable G.722",
+      "Убрать Sensitivity label",
+      "Использовать Network Planner для расчёта требуемого throughput"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Monitoring & Troubleshooting",
+    "difficulty": "легкий",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/en-us/microsoftteams/monitoring-and-reporting-overview",
+    "group": 2
+  },
+  {
+    "id": 32,
+    "question": "Сценарий: Требуется разрешить только одобренным приложениям и запретить сторонние для отдела DevOps.",
+    "answers": [
+      "Создать App permission policy — Allow specific apps",
+      "Назначить обе политики группе DevOps",
+      "Создать App setup policy — Pin approved apps"
+    ],
+    "correct": [
+      0,
+      2,
+      1
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Teams Policies and Configuration",
+    "difficulty": "сложный",
+    "type": "multiple",
+    "reference": "https://learn.microsoft.com/teams/teams-policies",
+    "group": 2
+  },
+  {
+    "id": 33,
+    "question": "Сценарий: User ID 123 обрывается каждые 30 секунд. В Call analytics jitter = 45 ms.",
+    "answers": [
+      "Удалить Messaging policy",
+      "Пересоздать команду",
+      "Проверить локальную сеть пользователя и VPN",
+      "Включить E2EE"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Monitoring & Troubleshooting",
+    "difficulty": "легкий",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/en-us/microsoftteams/monitoring-and-reporting-overview",
+    "group": 2
+  },
+  {
+    "id": 34,
+    "question": "Сценарий: Пользователь жалуется, что не может организовать встречу онлайн. У него нет глубокой лицензии.",
+    "answers": [
+      "Проверить наличия лицензии Teams и Exchange Online",
+      "Enable Retention",
+      "Assign Sensitivity label",
+      "Включить Intune"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Meetings and Calling",
+    "difficulty": "средний",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/teams/meeting-policies-in-teams",
+    "group": 2
+  },
+  {
+    "id": 35,
+    "question": "Сценарий: Падение MOS ниже 3.0 найдено в CQD для региона APAC.",
+    "answers": [
+      "Отключить DLP",
+      "Disable E2EE",
+      "Поменять Sensitivity",
+      "Увеличить полосу пропускания, настроить QoS"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Monitoring & Troubleshooting",
+    "difficulty": "легкий",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/en-us/microsoftteams/monitoring-and-reporting-overview",
+    "group": 2
+  },
+  {
+    "id": 36,
+    "question": "Сценарий: Нужно просматривать действия гостей (audit). Где включить Unified audit log?",
+    "answers": [
+      "GPO",
+      "Azure Monitor",
+      "Teams Admin Center",
+      "Microsoft Purview compliance portal > Audit"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Security & Compliance",
+    "difficulty": "легкий",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/teams/security-compliance-overview",
+    "group": 2
+  },
+  {
+    "id": 37,
+    "question": "Сценарий: Service health dashboard показывает Advisories по Teams Files.",
+    "answers": [
+      "Отключить Teams",
+      "Блокировать OneDrive",
+      "Проверить SharePoint status и коммуникации",
+      "Set-CsTeamsUpgradePolicy"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Monitoring & Troubleshooting",
+    "difficulty": "средний",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/en-us/microsoftteams/monitoring-and-reporting-overview",
+    "group": 2
+  },
+  {
+    "id": 38,
+    "question": "Сценарий: На диаграмме CQD отражён высокий \"Reflective Jitter\" для локальной сети. Какое сетевое явление это указывает?",
+    "answers": [
+      "Дуплексный конфликт или буферизация на устройствах",
+      "Плохой Wi‑Fi сигнал",
+      "Потеря пакетов на магистрали",
+      "DNS задержка"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Monitoring & Troubleshooting",
+    "difficulty": "сложный",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/teams/monitoring-and-reporting-overview",
+    "group": 2
+  },
+  {
+    "id": 39,
+    "question": "Сценарий: CQD отчёт показывает High Reflective Jitter.",
+    "answers": [
+      "Включить Retention",
+      "Проверить duplex mismatch на сетевых устройствах",
+      "Создать App setup",
+      "Disable recording"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Monitoring & Troubleshooting",
+    "difficulty": "легкий",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/en-us/microsoftteams/monitoring-and-reporting-overview",
+    "group": 2
+  },
+  {
+    "id": 40,
+    "question": "Какой cmdlet пакетно назначает пользовательскую Calling policy из файла CSV?",
+    "answers": [
+      "Set-CsTeamsCallingPolicy",
+      "Import-CSV users.csv | foreach {Grant-CsTeamsCallingPolicy -Identity $_.UPN -PolicyName Branch}",
+      "Get-Team",
+      "New-CsTeamsCallingPolicy"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "PowerShell Intermediate",
+    "difficulty": "средний",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/powershell/module/teams/?view=teams-ps",
+    "group": 2
+  },
+  {
+    "id": 41,
+    "question": "Сценарий: Нужно пакетно назначить Messaging policy 'NoDelete' 50 пользователям. Какой скрипт правильный?",
+    "answers": [
+      "Remove-Team",
+      "New-Team",
+      "Set-TeamMessagingPolicy",
+      "Get-Content users.csv | ForEach-Object {Grant-CsTeamsMessagingPolicy -PolicyName NoDelete -Identity $_}"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "PowerShell Intermediate",
+    "difficulty": "средний",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/en-us/powershell/module/teams/?view=teams-ps",
+    "group": 3
+  },
+  {
+    "id": 42,
+    "question": "Сценарий: Инженер запускает `Get-CsOnlineUser -Identity user@contoso.com | Select-Object TeamsUpgradeEffectiveMode` и получает Islands.",
+    "answers": [
+      "Пользователь SfBOnly",
+      "Это значит, что пользователь ещё в режиме Islands",
+      "Пользователь TeamsOnly",
+      "Отображает лицензии"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "PowerShell Beginner",
+    "difficulty": "легкий",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/en-us/powershell/module/microsoftteams/?view=teams-ps",
+    "group": 3
+  },
+  {
+    "id": 43,
+    "question": "Сценарий: Для экспорта CQD raw‑data администратор использует:",
+    "answers": [
+      "Get-TeamChannel",
+      "Export-CsOnlineUser",
+      "Get-CsQoEReport -StartDate 2025-01-01 -EndDate 2025-01-31",
+      "Get-CsTeam"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "PowerShell Intermediate",
+    "difficulty": "сложный",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/en-us/powershell/module/teams/?view=teams-ps",
+    "group": 3
+  },
+  {
+    "id": 44,
+    "question": "Сценарий: Нужно проверить, может ли пользователь создавать приватные каналы через PowerShell.",
+    "answers": [
+      "Set-CsTeamsMessagingPolicy",
+      "Get-Team",
+      "Get-TeamChannel -GroupId <id> -MembershipType Private",
+      "Get-CsOnlineUser"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "PowerShell Beginner",
+    "difficulty": "легкий",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/en-us/powershell/module/microsoftteams/?view=teams-ps",
+    "group": 3
+  },
+  {
+    "id": 45,
+    "question": "Лабораторное задание: Включить E2EE для отдела безопасности. Выберите все необходимые шаги.",
+    "answers": [
+      "Перезапустить Teams клиент",
+      "Создать Meeting policy",
+      "Назначить политику группе Security",
+      "Включить End-to-End Encryption"
+    ],
+    "correct": [
+      1,
+      3,
+      2
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Lab Scenario",
+    "difficulty": "сложный",
+    "type": "multiple",
+    "reference": "https://learn.microsoft.com/en-us/microsoftteams/tutorials-and-labs",
+    "group": 3
+  },
+  {
+    "id": 46,
+    "question": "Сценарий: IT‑отдел планирует миграцию Skype for Business on‑premises в Teams. Какой режим нужно установить всем пользователям перед отключением SfB?",
+    "answers": [
+      "Islands",
+      "Legacy",
+      "TeamsOnly",
+      "SfBWithTeamsCollab"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Meetings and Calling",
+    "difficulty": "сложный",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/en-us/microsoftteams/meeting-policies-in-teams",
+    "group": 3
+  },
+  {
+    "id": 47,
+    "question": "Сценарий: Компания Contoso хочет, чтобы все внешние пользователи попадали в лобби, кроме домена trusted.com.",
+    "answers": [
+      "Enable DLP",
+      "Meeting policy: Lobby bypass for specific domains",
+      "Disable Guest",
+      "Upgrade mode"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Meetings and Calling",
+    "difficulty": "легкий",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/en-us/microsoftteams/meeting-policies-in-teams",
+    "group": 3
+  },
+  {
+    "id": 48,
+    "question": "Сценарий: CEO хочет получать транскрипции записей встреч. Что необходимо включить?",
+    "answers": [
+      "Calling policy",
+      "Sensitivity label",
+      "CQD",
+      "Meeting policy > Transcription"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Meetings and Calling",
+    "difficulty": "легкий",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/en-us/microsoftteams/meeting-policies-in-teams",
+    "group": 3
+  },
+  {
+    "id": 49,
+    "question": "Сценарий: HR‑бот не отображается у новых сотрудников. Где закрепить бота на панели?",
+    "answers": [
+      "Meeting policy",
+      "Compliance policy",
+      "Azure AD Enterprise app",
+      "App setup policy > Pinned apps"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Teams Policies and Configuration",
+    "difficulty": "легкий",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/en-us/microsoftteams/teams-policies",
+    "group": 3
+  },
+  {
+    "id": 50,
+    "question": "Сценарий: При попытке добавить гостя возникает ошибка 'Guest access disabled'. Где включить?",
+    "answers": [
+      "Retention",
+      "Azure B2B",
+      "Meeting policy",
+      "Teams Admin Center > Org‑wide settings > Guest access"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Teams Environment Management",
+    "difficulty": "легкий",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/en-us/microsoftteams/manage-teams-skypeforbusiness-admin-center",
+    "group": 3
+  },
+  {
+    "id": 51,
+    "question": "Сценарий: Необходимо просматривать отчёт активность по пользователям за 30 дней.",
+    "answers": [
+      "Teams usage report in Admin Center",
+      "Azure Monitor",
+      "CQD User report",
+      "Power BI connector only"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Monitoring & Troubleshooting",
+    "difficulty": "сложный",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/en-us/microsoftteams/monitoring-and-reporting-overview",
+    "group": 3
+  },
+  {
+    "id": 52,
+    "question": "Сценарий: Сценарий: Вы заметили в CQD высокий показатель Round Trip Time > 300 мс для офиса в Бразилии.",
+    "answers": [
+      "Создать Retention",
+      "Set sensitivity",
+      "Добавить скоростной ExpressRoute или оптимизировать маршрут",
+      "Отключить E2EE"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Monitoring & Troubleshooting",
+    "difficulty": "легкий",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/en-us/microsoftteams/monitoring-and-reporting-overview",
+    "group": 3
+  },
+  {
+    "id": 53,
+    "question": "Сценарий: Security может удалять сообщения пользователей в каналах. Какая роль даёт это?",
+    "answers": [
+      "Intune Admin",
+      "Global Reader",
+      "CQD Viewer",
+      "Teams Communications Compliance Investigator"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Security & Compliance",
+    "difficulty": "сложный",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/en-us/microsoftteams/security-compliance-overview",
+    "group": 3
+  },
+  {
+    "id": 54,
+    "question": "Сценарий: Необходимо блокировать гостям скачивание файлов из Teams.",
+    "answers": [
+      "SharePoint External sharing - View only",
+      "Meeting policy",
+      "Disable Guest Record",
+      "Calling policy"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Security & Compliance",
+    "difficulty": "средний",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/en-us/microsoftteams/security-compliance-overview",
+    "group": 3
+  },
+  {
+    "id": 55,
+    "question": "Сценарий: Сценарий: User получила ошибку 'Cannot merge calls' – функция отключена.",
+    "answers": [
+      "Sensitivity",
+      "Retention",
+      "Calling policy: Call merging=Off",
+      "DLP"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Meetings and Calling",
+    "difficulty": "средний",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/en-us/microsoftteams/meeting-policies-in-teams",
+    "group": 3
+  },
+  {
+    "id": 56,
+    "question": "Сценарий: PowerShell: Как получить список политик Meeting?",
+    "answers": [
+      "Get-CsQoEReport",
+      "Get-CsTeamsMeetingPolicy",
+      "Get-Team",
+      "Get-CsOnlineUser"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "PowerShell Intermediate",
+    "difficulty": "средний",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/en-us/powershell/module/teams/?view=teams-ps",
+    "group": 3
+  },
+  {
+    "id": 57,
+    "question": "Сценарий: PowerShell: Выведите все команды, где Owner — Маша.",
+    "answers": [
+      "Remove-Team",
+      "Set-Team",
+      "Get-CsOnlineUser",
+      "Get-Team | Where-Object {$_.Owners -contains 'Маша'}"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "PowerShell Beginner",
+    "difficulty": "сложный",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/en-us/powershell/module/microsoftteams/?view=teams-ps",
+    "group": 3
+  },
+  {
+    "id": 58,
+    "question": "Сценарий: Сценарий: нужно мигрировать 500 пользователей в режим TeamsOnly через скрипт.",
+    "answers": [
+      "Set-CsOnlineVoiceRoute",
+      "Get-Content users.txt | ForEach {Grant-CsTeamsUpgradePolicy -Identity $_ -PolicyName UpgradeToTeams}",
+      "Enable-DLP",
+      "Switch in GUI"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "PowerShell Intermediate",
+    "difficulty": "легкий",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/en-us/powershell/module/teams/?view=teams-ps",
+    "group": 3
+  },
+  {
+    "id": 59,
+    "question": "Сценарий: После включения E2EE пользователи жалуются на недоступность записи встреч.",
+    "answers": [
+      "Upgrade policy",
+      "E2EE отключает функции записи — использовать стандартное шифрование",
+      "Нужно Meeting policy CloudRecording",
+      "QoS"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Security & Compliance",
+    "difficulty": "сложный",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/en-us/microsoftteams/security-compliance-overview",
+    "group": 3
+  },
+  {
+    "id": 60,
+    "question": "Сценарий: Lab: Настроить DLP для ключевых слов 'Project X' в чате Teams.",
+    "answers": [
+      "Назначить policy Users",
+      "Тестовое сообщение",
+      "Перезапуск Teams",
+      "Создать DLP policy с ключевым словом"
+    ],
+    "correct": [
+      3,
+      0
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Lab Scenario",
+    "difficulty": "средний",
+    "type": "multiple",
+    "reference": "https://learn.microsoft.com/en-us/microsoftteams/tutorials-and-labs",
+    "group": 3
+  },
+  {
+    "id": 61,
+    "question": "Сценарий: Lab: Ограничить создание приватных каналов для стажёров.",
+    "answers": [
+      "Создать Teams policy PrivateChannelCreation=Off",
+      "Перезапустить Teams",
+      "Удалить старые каналы",
+      "Назначить policy группе Interns"
+    ],
+    "correct": [
+      0,
+      3
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Lab Scenario",
+    "difficulty": "средний",
+    "type": "multiple",
+    "reference": "https://learn.microsoft.com/en-us/microsoftteams/tutorials-and-labs",
+    "group": 4
+  },
+  {
+    "id": 62,
+    "question": "Сценарий: Сценарий: User пожаловался на эхо во время звонков. Какое значение в CQD стоит проверить?",
+    "answers": [
+      "Bitrate",
+      "Label",
+      "Mic Glitch Rate / Echo",
+      "TLS"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Monitoring & Troubleshooting",
+    "difficulty": "сложный",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/en-us/microsoftteams/monitoring-and-reporting-overview",
+    "group": 4
+  },
+  {
+    "id": 63,
+    "question": "Сценарий: Сценарий: Требуется, чтобы файлы канала Projects были доступны только членам команды.",
+    "answers": [
+      "Установить приватный канал",
+      "External access off",
+      "Sensitivity Public",
+      "Disable upload"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Teams Environment Management",
+    "difficulty": "легкий",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/en-us/microsoftteams/manage-teams-skypeforbusiness-admin-center",
+    "group": 4
+  },
+  {
+    "id": 64,
+    "question": "Сценарий: Контроль: Какая лицензия обязательна для Phone System?",
+    "answers": [
+      "EMS",
+      "Azure AD P1",
+      "Office Home",
+      "Microsoft Teams Phone Standard or E5"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Meetings and Calling",
+    "difficulty": "сложный",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/en-us/microsoftteams/meeting-policies-in-teams",
+    "group": 4
+  },
+  {
+    "id": 65,
+    "question": "Сценарий: Сценарий: Tenant Contoso включает запись до 4 часов. Нужно увеличить лимит до 24 ч.",
+    "answers": [
+      "Calling policy",
+      "Meeting policy: Recording storage & length",
+      "App setup",
+      "CQD"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Meetings and Calling",
+    "difficulty": "средний",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/en-us/microsoftteams/meeting-policies-in-teams",
+    "group": 4
+  },
+  {
+    "id": 66,
+    "question": "Сценарий: PowerShell: Как проверить, назначена ли Calling policy пользователю?",
+    "answers": [
+      "Export-CsList",
+      "Get-CsQoEReport",
+      "Get-Team",
+      "Get-CsOnlineUser -Identity user | Select TeamsCallingPolicy"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "PowerShell Intermediate",
+    "difficulty": "сложный",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/en-us/powershell/module/teams/?view=teams-ps",
+    "group": 4
+  },
+  {
+    "id": 67,
+    "question": "Сценарий: Security требует шифрования at‑rest с собственными ключами.",
+    "answers": [
+      "TLS only",
+      "E2EE",
+      "Enable Customer Key",
+      "BitLocker"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Security & Compliance",
+    "difficulty": "средний",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/en-us/microsoftteams/security-compliance-overview",
+    "group": 4
+  },
+  {
+    "id": 68,
+    "question": "Сценарий: Monitoring: где настроить alert, если MOS < 3?",
+    "answers": [
+      "Intune",
+      "Azure Sentinel",
+      "SharePoint alerts",
+      "Teams quality alerts in CQD"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Monitoring & Troubleshooting",
+    "difficulty": "сложный",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/en-us/microsoftteams/monitoring-and-reporting-overview",
+    "group": 4
+  },
+  {
+    "id": 69,
+    "question": "Сценарий: По требованиям GDPR чаты должны удаляться через 90 дней.",
+    "answers": [
+      "Messaging policy",
+      "Sensitivity label",
+      "Calling policy",
+      "Retention policy 90 days"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Security & Compliance",
+    "difficulty": "средний",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/en-us/microsoftteams/security-compliance-overview",
+    "group": 4
+  },
+  {
+    "id": 70,
+    "question": "Сценарий: PowerShell: Очистить кэш Teams на всех компьютерах Intune невозможно напрямую. Что использовать?",
+    "answers": [
+      "Set-CsTeamsDevice",
+      "Disable QoS",
+      "PowerShell script via Intune win32 app",
+      "Grant-CsTeamsMessagingPolicy"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "PowerShell Beginner",
+    "difficulty": "средний",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/en-us/powershell/module/microsoftteams/?view=teams-ps",
+    "group": 4
+  },
+  {
+    "id": 71,
+    "question": "Сценарий: После включения Sensitivity label 'Secret' для команды Research \nучастники не могут делиться файлами с внешними пользователями, но внешний консультант должен иметь доступ.\nКакое действие позволит соблюсти политику и дать доступ консультанту?",
+    "answers": [
+      "Отключить label entirely",
+      "Включить External sharing in SharePoint",
+      "Добавить консультанта как Guest и понизить Sensitivity label до Confidential",
+      "Снять Sensitivity"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Security & Compliance",
+    "difficulty": "сложный",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/teams/security-compliance-overview",
+    "group": 4
+  },
+  {
+    "id": 72,
+    "question": "Сценарий: Tenant с режимом Islands хочет планово переводить отделы на TeamsOnly раз в неделю.",
+    "answers": [
+      "Создать Meeting policy",
+      "Использовать Teams upgrade scheduling via PowerShell Grant-CsTeamsUpgradePolicy",
+      "Изменить Calling policy",
+      "Просто выключить Skype Online"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "PowerShell Intermediate",
+    "difficulty": "средний",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/powershell/module/teams/?view=teams-ps",
+    "group": 4
+  },
+  {
+    "id": 73,
+    "question": "Команда `Get-CsOnlineVoiceRoutingPolicy` возвращает:",
+    "answers": [
+      "Список Voice routing policies",
+      "Лицензии пользователя",
+      "Список команд",
+      "Отчёт CQD"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "PowerShell Intermediate",
+    "difficulty": "легкий",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/powershell/module/teams/?view=teams-ps",
+    "group": 4
+  },
+  {
+    "id": 74,
+    "question": "Сценарий: В офисе Singapore MOS упал ниже 2.5 с loss 8 %. Необходимо быстро замерить пропускную способность.\nКакой встроенный инструмент использовать?",
+    "answers": [
+      "Network Planner Bandwidth calculator",
+      "CQD Overall report",
+      "Azure Network Watcher",
+      "Power BI"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Monitoring & Troubleshooting",
+    "difficulty": "средний",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/teams/monitoring-and-reporting-overview",
+    "group": 4
+  },
+  {
+    "id": 75,
+    "question": "Сценарий: DevOps-Team использует неутверждённый бот. Требуется запретить этот бот только для DevOps.",
+    "answers": [
+      "DLP block",
+      "Disable entire Tenant App",
+      "Conditional Access",
+      "Создать App permission policy Deny bot, назначить DevOps"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Teams Policies and Configuration",
+    "difficulty": "сложный",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/teams/teams-policies",
+    "group": 4
+  },
+  {
+    "id": 76,
+    "question": "Лабораторное задание: Включить E2EE только для пользователей роли Security. Выберите шаги.",
+    "answers": [
+      "Создать Meeting policy",
+      "Назначить Security group",
+      "Enable EndToEndEncryption=true",
+      "Перезапустить Teams"
+    ],
+    "correct": [
+      0,
+      2,
+      1
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Lab Scenario",
+    "difficulty": "средний",
+    "type": "multiple",
+    "reference": "https://learn.microsoft.com/teams/tutorials-and-labs",
+    "group": 4
+  },
+  {
+    "id": 77,
+    "question": "Сценарий: External access разрешён, но домен bad.com нужно заблокировать.",
+    "answers": [
+      "External access > Block bad.com",
+      "Meeting policy",
+      "Guest access > deny",
+      "Azure B2B"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Teams Environment Management",
+    "difficulty": "средний",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/teams/guest-access",
+    "group": 4
+  },
+  {
+    "id": 78,
+    "question": "Какой параметр в Calling policy отключает CallForwarding?",
+    "answers": [
+      "AllowCallTransfer",
+      "CallForwardingEnabled=False",
+      "Cortana",
+      "BusyOnBusy"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Teams Policies and Configuration",
+    "difficulty": "легкий",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/teams/teams-policies",
+    "group": 4
+  },
+  {
+    "id": 79,
+    "question": "PowerShell: Сценарий: нужно вывести всех пользователей без Calling policy.",
+    "answers": [
+      "Get-CsOnlineUser | where {!$_.TeamsCallingPolicy}",
+      "Get-Team",
+      "Get-CsOnlineVoiceRoute",
+      "Get-CsQoEReport"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "PowerShell Intermediate",
+    "difficulty": "средний",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/powershell/module/teams/?view=teams-ps",
+    "group": 4
+  },
+  {
+    "id": 80,
+    "question": "Сценарий: Требуется настроить Music on Hold с собственным файлом для пользователей PSTN.",
+    "answers": [
+      "DLP",
+      "Sensitivity label",
+      "Upload in Meeting policy",
+      "Set-CsTeamsCallingPolicy -MusicOnHoldAudioFileUrl"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "PowerShell Intermediate",
+    "difficulty": "сложный",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/powershell/module/teams/?view=teams-ps",
+    "group": 4
+  },
+  {
+    "id": 81,
+    "question": "Сценарий: После обновления клиент Teams показывает ошибку отчётов CQD.",
+    "answers": [
+      "Отключить E2EE",
+      "Grant Sensitivity",
+      "Перезапустить клиент",
+      "Проверить роль Reports Reader и Teams Communications Support Specialist"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Monitoring & Troubleshooting",
+    "difficulty": "легкий",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/teams/monitoring-and-reporting-overview",
+    "group": 5
+  },
+  {
+    "id": 82,
+    "question": "Сценарий: Нужно, чтобы любое упоминание слова 'Draft' в чате HR триггерило предупреждение.",
+    "answers": [
+      "DLP с ключевым словом 'Draft' и Action=PolicyTip",
+      "Meeting policy",
+      "Retention 1 день",
+      "Sensitivity Confidential"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Security & Compliance",
+    "difficulty": "легкий",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/teams/security-compliance-overview",
+    "group": 5
+  },
+  {
+    "id": 83,
+    "question": "Что делает cmdlet `Get-CsUserSession`?",
+    "answers": [
+      "Создаёт команду",
+      "Получает данные последней сессии пользователя",
+      "Экспортирует CQD",
+      "Удаляет команду"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "PowerShell Intermediate",
+    "difficulty": "средний",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/powershell/module/teams/?view=teams-ps",
+    "group": 5
+  },
+  {
+    "id": 84,
+    "question": "Сценарий: Руководитель хочет запретить участникам встречи включать камеры.",
+    "answers": [
+      "Calling policy",
+      "Set Meeting policy AllowIPVideo=False",
+      "App policy",
+      "Network Planner"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Meetings and Calling",
+    "difficulty": "средний",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/teams/meeting-policies-in-teams",
+    "group": 5
+  },
+  {
+    "id": 85,
+    "question": "Сценарий: Нужно автоматизировать архивирование команд без активности 180 дней.",
+    "answers": [
+      "Teams policy",
+      "Retention",
+      "Label",
+      "Graph API with TeamArchive if LastActivity >180"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Teams Environment Management",
+    "difficulty": "сложный",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/teams/guest-access",
+    "group": 5
+  },
+  {
+    "id": 86,
+    "question": "PowerShell beginner: Что делает `New-CsOnlineSession`?",
+    "answers": [
+      "Удаляет пользователя",
+      "Экспортирует audit",
+      "Создаёт аутентифицированный сеанс PowerShell для Teams",
+      "Создаёт команду"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "PowerShell Beginner",
+    "difficulty": "легкий",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/powershell/module/microsoftteams/?view=teams-ps",
+    "group": 5
+  },
+  {
+    "id": 87,
+    "question": "Сценарий: Teams записей больше 1 TB. Где настроить автоматическое удаление через 60 дней?",
+    "answers": [
+      "DLP",
+      "CQD",
+      "Retention policy targeting Teams meeting recordings",
+      "Calling policy"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Security & Compliance",
+    "difficulty": "сложный",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/teams/security-compliance-overview",
+    "group": 5
+  },
+  {
+    "id": 88,
+    "question": "Сценарий: Tenant получил жалобу на потерю качества видео в P2P звонках между филиалами. Какое значение Jitter считается критическим?",
+    "answers": [
+      "Loss >2 %",
+      ">5 %",
+      "MOS <3",
+      ">30 ms"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Monitoring & Troubleshooting",
+    "difficulty": "легкий",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/teams/monitoring-and-reporting-overview",
+    "group": 5
+  },
+  {
+    "id": 89,
+    "question": "Сценарий: Для Voice routing нужно перенаправить вызовы Finland → SBC_FI. Какая таблица управляет маршрутом?",
+    "answers": [
+      "App permission",
+      "Meeting policies",
+      "Voice Routing policies + PSTN usages",
+      "Teams dial plans"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Meetings and Calling",
+    "difficulty": "сложный",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/teams/meeting-policies-in-teams",
+    "group": 5
+  },
+  {
+    "id": 90,
+    "question": "Лабораторное задание: Запретить пересылку файлов гостями в каналах.",
+    "answers": [
+      "SharePoint external sharing ViewOnly",
+      "Назначить гостям",
+      "Тестирование",
+      "Guest access Files=Disable"
+    ],
+    "correct": [
+      0,
+      3,
+      1
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Lab Scenario",
+    "difficulty": "сложный",
+    "type": "multiple",
+    "reference": "https://learn.microsoft.com/teams/tutorials-and-labs",
+    "group": 5
+  },
+  {
+    "id": 91,
+    "question": "Какой максимум участников поддерживается в одной команде Microsoft Teams (на 2025)?",
+    "answers": [
+      "5000",
+      "10 000",
+      "25 000",
+      "50 000"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Teams Environment Management",
+    "difficulty": "легкий",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/teams/manage-teams-skypeforbusiness-admin-center",
+    "group": 5
+  },
+  {
+    "id": 92,
+    "question": "Где в Teams Admin Center настраивается логотип организации, отображаемый в приветственном письме гостя?",
+    "answers": [
+      "Branding в Compliance Center",
+      "Org-wide settings › External access",
+      "Meeting policies",
+      "Calling policies"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Teams Environment Management",
+    "difficulty": "средний",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/teams/manage-teams-skypeforbusiness-admin-center",
+    "group": 5
+  },
+  {
+    "id": 93,
+    "question": "PowerShell: какой cmdlet создаёт публичный канал в существующей команде?",
+    "answers": [
+      "New-TeamChannel -Visibility Standard",
+      "Set-Team",
+      "Add-TeamUser",
+      "New-Team"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "PowerShell Beginner",
+    "difficulty": "легкий",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/powershell/module/microsoftteams/?view=teams-ps",
+    "group": 5
+  },
+  {
+    "id": 94,
+    "question": "Сценарий: В отделе Marketing нужно запретить GIF-анимации в чате и каналах.",
+    "answers": [
+      "Retention 7 days",
+      "Sensitivity Confidential",
+      "App permission policy Deny Giphy",
+      "Messaging policy › Giphy = Off"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Teams Policies and Configuration",
+    "difficulty": "средний",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/teams/teams-policies",
+    "group": 5
+  },
+  {
+    "id": 95,
+    "question": "Сценарий: Во время звонка пользователь жалуется на эхо. Какое значение Echo (%) в Call analytics считается критическим?",
+    "answers": [
+      "> 20 %",
+      "> 5 %",
+      "> 0.5 %",
+      "> 1 %"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Monitoring & Troubleshooting",
+    "difficulty": "сложный",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/teams/monitoring-and-reporting-overview",
+    "group": 5
+  },
+  {
+    "id": 96,
+    "question": "Какой минимальный уровень лицензии необходим, чтобы использовать Teams Rooms Pro?",
+    "answers": [
+      "Phone System",
+      "Microsoft 365 E3",
+      "Audio Conferencing",
+      "Teams Rooms Pro license или эквивалентная"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Meetings and Calling",
+    "difficulty": "средний",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/teams/meeting-policies-in-teams",
+    "group": 5
+  },
+  {
+    "id": 97,
+    "question": "Сценарий: Tenant MultilingualCo хочет включить перевод CC (Live translated captions) в встречах.",
+    "answers": [
+      "Calling policy",
+      "Guest access",
+      "Meeting policy › Live Captions translation",
+      "CQD setting"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Meetings and Calling",
+    "difficulty": "легкий",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/teams/meeting-policies-in-teams",
+    "group": 5
+  },
+  {
+    "id": 98,
+    "question": "Какой отчёт в Teams Admin Center показывает количество активных устройств Teams Rooms?",
+    "answers": [
+      "User activity report",
+      "Audit log",
+      "CQD summary",
+      "Device usage report"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Monitoring & Troubleshooting",
+    "difficulty": "легкий",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/teams/monitoring-and-reporting-overview",
+    "group": 5
+  },
+  {
+    "id": 99,
+    "question": "PowerShell: Чтобы удалить участника из команды, используется cmdlet:",
+    "answers": [
+      "Revoke-CsGroupPolicy",
+      "Remove-TeamUser",
+      "Remove-Team",
+      "Set-Team"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "PowerShell Beginner",
+    "difficulty": "средний",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/powershell/module/microsoftteams/?view=teams-ps",
+    "group": 5
+  },
+  {
+    "id": 100,
+    "question": "Сценарий: Compliance требует, чтобы все 1:1 чаты CEO архивировались бессрочно.",
+    "answers": [
+      "DLP",
+      "Создать Retention policy Preserve forever, scope chat messages CEO",
+      "Sensitivity top secret",
+      "Enable E-discovery legal hold"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Security & Compliance",
+    "difficulty": "сложный",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/teams/security-compliance-overview",
+    "group": 5
+  },
+  {
+    "id": 101,
+    "question": "Лабораторное задание: Запретить переадресацию звонков отделу Sales. Выберите шаги.",
+    "answers": [
+      "Проверить результат",
+      "Отключить Call forwarding",
+      "Назначить политику Sales",
+      "Создать Calling policy"
+    ],
+    "correct": [
+      3,
+      1,
+      2
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Lab Scenario",
+    "difficulty": "средний",
+    "type": "multiple",
+    "reference": "https://learn.microsoft.com/teams/tutorials-and-labs",
+    "group": 6
+  },
+  {
+    "id": 102,
+    "question": "Какой порт по умолчанию используют медиа-трафик Teams UDP?",
+    "answers": [
+      "25",
+      "80",
+      "3478-3481",
+      "443"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Monitoring & Troubleshooting",
+    "difficulty": "средний",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/teams/monitoring-and-reporting-overview",
+    "group": 6
+  },
+  {
+    "id": 103,
+    "question": "Сценарий: Пользователь не может поделиться экраном, кнопка Share disabled.",
+    "answers": [
+      "Meeting policy › Screen sharing mode = Disabled",
+      "Guest permissions",
+      "Calling policy",
+      "Sensitivity"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Meetings and Calling",
+    "difficulty": "средний",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/teams/meeting-policies-in-teams",
+    "group": 6
+  },
+  {
+    "id": 104,
+    "question": "В какой секции Teams Admin Center создаются шаблоны команд (Team templates)?",
+    "answers": [
+      "Security",
+      "Org-wide settings",
+      "External access",
+      "Teams › Team templates"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Teams Environment Management",
+    "difficulty": "легкий",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/teams/manage-teams-skypeforbusiness-admin-center",
+    "group": 6
+  },
+  {
+    "id": 105,
+    "question": "PowerShell: Получить все команды, созданные после 1 января 2025 г.",
+    "answers": [
+      "Get-TeamChannel",
+      "Get-Team | where {$_.CreatedDate -ge '2025-01-01'}",
+      "Get-CsOnlineUser",
+      "Get-CsTeamSite"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "PowerShell Beginner",
+    "difficulty": "средний",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/powershell/module/microsoftteams/?view=teams-ps",
+    "group": 6
+  },
+  {
+    "id": 106,
+    "question": "Сценарий: Руководство хочет видеть отчёт: «% пользователей, включающих видео на встречах».",
+    "answers": [
+      "Security dashboard",
+      "CQD User report",
+      "Power BI template",
+      "Teams Admin Center › Analytics › Media quality > Video streams"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Monitoring & Troubleshooting",
+    "difficulty": "средний",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/teams/monitoring-and-reporting-overview",
+    "group": 6
+  },
+  {
+    "id": 107,
+    "question": "Какая максимальная длительность записи встречи Teams по умолчанию до авто‑удаления (если нет Retention)?",
+    "answers": [
+      "Нет лимита",
+      "30 дней",
+      "120 дней",
+      "90 дней"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Meetings and Calling",
+    "difficulty": "легкий",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/teams/meeting-policies-in-teams",
+    "group": 6
+  },
+  {
+    "id": 108,
+    "question": "Для чего используется cmdlet `Grant-CsTeamsVideoInteropServicePolicy`?",
+    "answers": [
+      "Удалить Calling policy",
+      "Назначить политику CVI (Cloud Video Interop) пользователю",
+      "Включить E2EE",
+      "Назначить Upgrade policy"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "PowerShell Intermediate",
+    "difficulty": "средний",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/powershell/module/teams/?view=teams-ps",
+    "group": 6
+  },
+  {
+    "id": 109,
+    "question": "Сценарий: После включения Customer Key администратор хочет проверить ключевой статус.",
+    "answers": [
+      "PowerShell Get-Team",
+      "Compliance portal › Customer Key › Key status = Active",
+      "Azure Key Vault",
+      "E-discovery"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Security & Compliance",
+    "difficulty": "средний",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/teams/security-compliance-overview",
+    "group": 6
+  },
+  {
+    "id": 110,
+    "question": "Что такое QoS DSCP маркировка по умолчанию для аудио-трафика Teams?",
+    "answers": [
+      "34",
+      "0",
+      "46 (EF)",
+      "40"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Monitoring & Troubleshooting",
+    "difficulty": "сложный",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/teams/monitoring-and-reporting-overview",
+    "group": 6
+  },
+  {
+    "id": 111,
+    "question": "Сценарий: В Teams tenant включена политика 'Only invited users can bypass lobby'. Однако домен partner.com должен обходить лобби автоматически.",
+    "answers": [
+      "Meeting policy › Bypass lobby for specific domains = partner.com",
+      "External access allow list",
+      "Guest access › Auto admit",
+      "Upgrade policy"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Meetings and Calling",
+    "difficulty": "средний",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/teams/meeting-policies-in-teams",
+    "group": 6
+  },
+  {
+    "id": 112,
+    "question": "Какой cmdlet позволяет массово удалить устаревшие команды, архивированные более года назад?",
+    "answers": [
+      "Set-TeamArchive",
+      "Get-Team | where {$_.Archived -and $_.ArchivedDate -lt (Get-Date).AddYears(-1)} | Remove-Team",
+      "Remove-AzureADGroup",
+      "Remove-CsTeamSite"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "PowerShell Intermediate",
+    "difficulty": "сложный",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/powershell/module/teams/?view=teams-ps",
+    "group": 6
+  },
+  {
+    "id": 113,
+    "question": "Сценарий: Tenant хочет, чтобы любое добавление приложения третьей стороны требовало одобрения админа.",
+    "answers": [
+      "Sensitivity labels",
+      "App permission policy › Allow only specific apps + App request workflow",
+      "Conditional Access",
+      "Disable Teams store"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Teams Policies and Configuration",
+    "difficulty": "сложный",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/teams/teams-policies",
+    "group": 6
+  },
+  {
+    "id": 114,
+    "question": "Какое максимальное количество членов в приватном канале?",
+    "answers": [
+      "250",
+      "5000",
+      "10 000",
+      "100"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Teams Environment Management",
+    "difficulty": "легкий",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/teams/manage-teams-skypeforbusiness-admin-center",
+    "group": 6
+  },
+  {
+    "id": 115,
+    "question": "PowerShell: Команда `Set-CsTeamsMessagingPolicy -AllowUserChat $false` делает что?",
+    "answers": [
+      "Отключает запись",
+      "Меняет Sensitivity",
+      "Запрещает пользователю участвовать в чате 1:1 и групповых",
+      "Отключает зовнки PSTN"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "PowerShell Intermediate",
+    "difficulty": "легкий",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/powershell/module/teams/?view=teams-ps",
+    "group": 6
+  },
+  {
+    "id": 116,
+    "question": "Сценарий: Требуется, чтобы записи встреч автоматически выгружались в OneDrive участника вместо Stream (классик).",
+    "answers": [
+      "Запись по умолчанию хранится в OneDrive/SharePoint — Stream classic deprecated, ничего менять не нужно",
+      "Включить Stream (new)",
+      "CQD",
+      "Создать Retention"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Meetings and Calling",
+    "difficulty": "средний",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/teams/meeting-policies-in-teams",
+    "group": 6
+  },
+  {
+    "id": 117,
+    "question": "Какая роль админа может просматривать Call analytics, но не менять политики?",
+    "answers": [
+      "Global Reader",
+      "Teams Communications Support Specialist",
+      "Teams Communications Administrator",
+      "Security Reader"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Monitoring & Troubleshooting",
+    "difficulty": "легкий",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/teams/monitoring-and-reporting-overview",
+    "group": 6
+  },
+  {
+    "id": 118,
+    "question": "Сценарий: В отчётах Usage нужно видеть число чатов, содержащих ключевое слово 'Confidential'. Какой инструмент использовать?",
+    "answers": [
+      "Call analytics",
+      "Graph reports",
+      "Microsoft Purview Content Explorer",
+      "CQD"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Security & Compliance",
+    "difficulty": "сложный",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/teams/security-compliance-overview",
+    "group": 6
+  },
+  {
+    "id": 119,
+    "question": "PowerShell beginner: Что делает `Connect-MicrosoftTeams`?",
+    "answers": [
+      "Аутентифицирует сессию PowerShell к Teams",
+      "Удаляет политику",
+      "Создаёт команду",
+      "Получает звонки"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "PowerShell Beginner",
+    "difficulty": "легкий",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/powershell/module/microsoftteams/?view=teams-ps",
+    "group": 6
+  },
+  {
+    "id": 120,
+    "question": "Сценарий: Сетевой инженер хочет проверить, удовлетворяет ли пропускная способность офисной сети требованиям Teams Calls 100 пользователей HD‑видео.",
+    "answers": [
+      "PowerShell",
+      "CQD",
+      "Network Planner › Personas",
+      "QoS GPO"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Monitoring & Troubleshooting",
+    "difficulty": "средний",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/teams/monitoring-and-reporting-overview",
+    "group": 6
+  },
+  {
+    "id": 121,
+    "question": "Лабораторное задание: Настроить автоматическое удаление сообщений приватных каналов через 30 дней. Выберите шаги.",
+    "answers": [
+      "Мониторинг",
+      "Выбрать scope Teams private channel messages",
+      "Создать Retention policy 30 дней",
+      "Publish policy"
+    ],
+    "correct": [
+      2,
+      1,
+      3
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Lab Scenario",
+    "difficulty": "сложный",
+    "type": "multiple",
+    "reference": "https://learn.microsoft.com/teams/tutorials-and-labs",
+    "group": 7
+  },
+  {
+    "id": 122,
+    "question": "Какой параметр Meeting policy отвечает за разрешение реакций (emoji) во встречах?",
+    "answers": [
+      "CloudRecording",
+      "AllowIPVideo",
+      "LiveCaptionsEnabled",
+      "AllowMeetingReactions"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Teams Policies and Configuration",
+    "difficulty": "легкий",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/teams/teams-policies",
+    "group": 7
+  },
+  {
+    "id": 123,
+    "question": "Сценарий: После миграции в TeamsOnly пользователи Outlook больше не видят Skype meeting add‑in. Как восстановить функциональность?",
+    "answers": [
+      "Убедиться, что Teams добавлен как Meeting provider в Outlook",
+      "Set-CsTeamsUpgradePolicy Islands",
+      "Enable SfB",
+      "Reinstall Skype add‑in"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Meetings and Calling",
+    "difficulty": "средний",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/teams/meeting-policies-in-teams",
+    "group": 7
+  },
+  {
+    "id": 124,
+    "question": "Сколько одновременно отображается видео-участников в режимах Gallery (на май 2025)?",
+    "answers": [
+      "25",
+      "49",
+      "100",
+      "9"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Meetings and Calling",
+    "difficulty": "легкий",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/teams/meeting-policies-in-teams",
+    "group": 7
+  },
+  {
+    "id": 125,
+    "question": "PowerShell: Как вывести список пользователей, у кого задан Calling policy Branch?",
+    "answers": [
+      "Get-CsOnlineUser | where {$_.TeamsCallingPolicy -eq 'Branch'}",
+      "Get-CsQoEReport",
+      "Get-Team",
+      "Set-CsTeamsCallingPolicy"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "PowerShell Intermediate",
+    "difficulty": "средний",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/powershell/module/teams/?view=teams-ps",
+    "group": 7
+  },
+  {
+    "id": 126,
+    "question": "Сценарий: Tenant скачивает CQD raw‑data для Power BI каждые 24 ч. Какой API рекомендуется?",
+    "answers": [
+      "Legacy SOAP",
+      "CQD Data API v2",
+      "Graph reports",
+      "Teams Export API"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Monitoring & Troubleshooting",
+    "difficulty": "средний",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/teams/monitoring-and-reporting-overview",
+    "group": 7
+  },
+  {
+    "id": 127,
+    "question": "В каком разделе Admin Center включается Teams Rooms Pro Management?",
+    "answers": [
+      "Network planner",
+      "Teams devices > Teams Rooms Pro Management",
+      "Security Center",
+      "Monitoring"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Teams Environment Management",
+    "difficulty": "средний",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/teams/manage-teams-skypeforbusiness-admin-center",
+    "group": 7
+  },
+  {
+    "id": 128,
+    "question": "Сценарий: Нужно временно включить режим Preview features для 50 тестовых пользователей.",
+    "answers": [
+      "Calling policy",
+      "Upgrade policy",
+      "Update policy › Pre‑release features",
+      "Retention"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Teams Policies and Configuration",
+    "difficulty": "легкий",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/teams/teams-policies",
+    "group": 7
+  },
+  {
+    "id": 129,
+    "question": "Сценарий: Отдел Legal требует экспорт чата двух пользователей за определённый диапазон.",
+    "answers": [
+      "Call analytics",
+      "Использовать eDiscovery Standard case и экспорт",
+      "CQD",
+      "Get-TeamChat"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Security & Compliance",
+    "difficulty": "средний",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/teams/security-compliance-overview",
+    "group": 7
+  },
+  {
+    "id": 130,
+    "question": "Какой параметр в Voice routing указывает приоритет маршрута?",
+    "answers": [
+      "PSTN usages priority",
+      "Dial plan tag",
+      "SBC weight",
+      "Number pattern order"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Meetings and Calling",
+    "difficulty": "сложный",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/teams/meeting-policies-in-teams",
+    "group": 7
+  },
+  {
+    "id": 131,
+    "question": "PowerShell: Что делает `Set-CsTeamsUpgradePolicy -PolicyName Islands -Global`?",
+    "answers": [
+      "Включает SfBOnly",
+      "Удаляет политику",
+      "Переводит в TeamsOnly",
+      "Устанавливает режим Islands для всех пользователей"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "PowerShell Intermediate",
+    "difficulty": "средний",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/powershell/module/teams/?view=teams-ps",
+    "group": 7
+  },
+  {
+    "id": 132,
+    "question": "Сценарий: Необходимо ограничить загрузку файлов более 100 МБ в чате Teams.",
+    "answers": [
+      "DLP",
+      "Calling policy",
+      "Настроить OneDrive upload limit через SharePoint",
+      "Meeting policy"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Teams Environment Management",
+    "difficulty": "сложный",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/teams/manage-teams-skypeforbusiness-admin-center",
+    "group": 7
+  },
+  {
+    "id": 133,
+    "question": "Какой отчёт показывает количество PSTN минут, использованных в текущем месяце?",
+    "answers": [
+      "Device usage",
+      "Audit log",
+      "CQD summary",
+      "PSTN & SMS usage report"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Monitoring & Troubleshooting",
+    "difficulty": "легкий",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/teams/monitoring-and-reporting-overview",
+    "group": 7
+  },
+  {
+    "id": 134,
+    "question": "Сценарий: Требуется, чтобы приглашённые гости могли создавать каналы только в определённых командах.",
+    "answers": [
+      "DLP",
+      "Sensitivity",
+      "Assign Channel moderation per team and deny guest create",
+      "Enable Org‑wide guest channel"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Teams Policies and Configuration",
+    "difficulty": "сложный",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/teams/teams-policies",
+    "group": 7
+  },
+  {
+    "id": 135,
+    "question": "Какой стандарт шифрования использует Teams для медиа в транзите?",
+    "answers": [
+      "IPsec",
+      "SSH",
+      "SSL3",
+      "SRTP/TLS 1.2 AES‑256"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Security & Compliance",
+    "difficulty": "средний",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/teams/security-compliance-overview",
+    "group": 7
+  },
+  {
+    "id": 136,
+    "question": "PowerShell beginner: Команда `Update‑Module MicrosoftTeams` …",
+    "answers": [
+      "Создаёт команду",
+      "Меняет Meeting policy",
+      "Обновляет модуль Teams до последней версии",
+      "Удаляет кэш"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "PowerShell Beginner",
+    "difficulty": "средний",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/powershell/module/microsoftteams/?view=teams-ps",
+    "group": 7
+  },
+  {
+    "id": 137,
+    "question": "Лабораторное задание: Разрешить только утверждённые приложения отделу HR. Выберите шаги.",
+    "answers": [
+      "Назначить политику группе HR",
+      "Разрешить только Approved apps",
+      "Перезапустить Teams",
+      "Создать App permission policy"
+    ],
+    "correct": [
+      3,
+      1,
+      0
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Lab Scenario",
+    "difficulty": "средний",
+    "type": "multiple",
+    "reference": "https://learn.microsoft.com/teams/tutorials-and-labs",
+    "group": 7
+  },
+  {
+    "id": 138,
+    "question": "Сценарий: User не может включить Together mode. Что проверить?",
+    "answers": [
+      "Audit",
+      "Tenant Live events",
+      "Calling policy",
+      "Meeting policy › Enable Together mode"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Meetings and Calling",
+    "difficulty": "средний",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/teams/meeting-policies-in-teams",
+    "group": 7
+  },
+  {
+    "id": 139,
+    "question": "Сколько tenant‑wide custom backgrounds можно загрузить (на 2025)?",
+    "answers": [
+      "Неограниченно",
+      "10",
+      "50",
+      "250"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Teams Policies and Configuration",
+    "difficulty": "легкий",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/teams/teams-policies",
+    "group": 7
+  },
+  {
+    "id": 140,
+    "question": "Сценарий: Требуется переадресовывать входящие PSTN звонки ночью на автоответчик.",
+    "answers": [
+      "Meeting policy",
+      "E2EE",
+      "Auto attendant + After hours call routing",
+      "CQD"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Meetings and Calling",
+    "difficulty": "средний",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/teams/meeting-policies-in-teams",
+    "group": 7
+  },
+  {
+    "id": 141,
+    "question": "Какой cmdlet экспортирует список команд в CSV?",
+    "answers": [
+      "Get-CsTeamSite",
+      "Get-Team | Export-Csv teams.csv -NoType",
+      "Export-CsOnlineUser",
+      "Backup-Team"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "PowerShell Beginner",
+    "difficulty": "средний",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/powershell/module/microsoftteams/?view=teams-ps",
+    "group": 8
+  },
+  {
+    "id": 142,
+    "question": "Сценарий: Compliance хочет включить eDiscovery (Premium) для определённого отдела.",
+    "answers": [
+      "Label",
+      "DLP",
+      "Create eDiscovery Premium case scope Security group",
+      "Unified Audit Log"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Security & Compliance",
+    "difficulty": "сложный",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/teams/security-compliance-overview",
+    "group": 8
+  },
+  {
+    "id": 143,
+    "question": "В каком разделе включается QoS маркировка трафика Teams?",
+    "answers": [
+      "Compliance",
+      "Azure Monitor",
+      "Endpoint Manager",
+      "Teams Admin Center › Meetings › Network"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Monitoring & Troubleshooting",
+    "difficulty": "средний",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/teams/monitoring-and-reporting-overview",
+    "group": 8
+  },
+  {
+    "id": 144,
+    "question": "Сценарий: Отдел R&D требует Whiteboard экспорт в SVG, функция недоступна.",
+    "answers": [
+      "DLP",
+      "Label",
+      "Whiteboard Export настройка управляется в Whiteboard Admin, не в Teams",
+      "Meeting policy"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Teams Environment Management",
+    "difficulty": "сложный",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/teams/manage-teams-skypeforbusiness-admin-center",
+    "group": 8
+  },
+  {
+    "id": 145,
+    "question": "Команда `Remove-CsOnlineVoiceRoute` делает…",
+    "answers": [
+      "Удаляет голосовой маршрут Direct Routing",
+      "Отключает E2EE",
+      "Назначает политику",
+      "Удаляет команду"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "PowerShell Intermediate",
+    "difficulty": "средний",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/powershell/module/teams/?view=teams-ps",
+    "group": 8
+  },
+  {
+    "id": 146,
+    "question": "Сценарий: Нужно проанализировать модель гарнитуры, вызывающей Echo. Что использовать? (несколько вариантов)",
+    "answers": [
+      "Teams log collector",
+      "Wireshark",
+      "CQD > Endpoint report",
+      "Call analytics > Device tab"
+    ],
+    "correct": [
+      3,
+      2
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Monitoring & Troubleshooting",
+    "difficulty": "сложный",
+    "type": "multiple",
+    "reference": "https://learn.microsoft.com/teams/monitoring-and-reporting-overview",
+    "group": 8
+  },
+  {
+    "id": 147,
+    "question": "Сценарий: Tenant хочет запретить чат между гостями и внутренними пользователями, но разрешить каналы.",
+    "answers": [
+      "Disable federation",
+      "Guest access chat off",
+      "Messaging policy › External user chat = Off",
+      "Retention"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Teams Policies and Configuration",
+    "difficulty": "средний",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/teams/teams-policies",
+    "group": 8
+  },
+  {
+    "id": 148,
+    "question": "Какая команда проверяет наличие TeamsPhone лицензии у пользователя?",
+    "answers": [
+      "Get-CsQoEReport",
+      "Get-Team",
+      "Get-CsOnlineUser -Identity user@contoso.com | Select -ExpandProperty Licenses",
+      "Get-TeamUser"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "PowerShell Intermediate",
+    "difficulty": "легкий",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/powershell/module/teams/?view=teams-ps",
+    "group": 8
+  },
+  {
+    "id": 149,
+    "question": "Сценарий: Запланировать публикацию команды шаблона 'Crisis management' только для региона EU.",
+    "answers": [
+      "Team template policies scoped by user location",
+      "Sensitivity label region",
+      "Not possible",
+      "Compliance location"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Teams Policies and Configuration",
+    "difficulty": "средний",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/teams/teams-policies",
+    "group": 8
+  },
+  {
+    "id": 150,
+    "question": "Какой максимальный размер файла можно загрузить в чат (OneDrive) при E5 (на 2025)?",
+    "answers": [
+      "250 ГБ",
+      "15 ГБ",
+      "100 ГБ",
+      "1 ТБ"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Teams Environment Management",
+    "difficulty": "легкий",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/teams/manage-teams-skypeforbusiness-admin-center",
+    "group": 8
+  },
+  {
+    "id": 151,
+    "question": "Сценарий: В Tenant Contoso включён Teams Rooms Pro. Необходимо включить автоматическое переключение камер (multi‑camera) \nтолько для переговорных, оснащённых двумя камерами Logitech Rally.",
+    "answers": [
+      "Meeting policy",
+      "PowerShell Set-Team",
+      "Device settings > Enable multi‑camera for specific Teams Rooms",
+      "Calling policy"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Teams Environment Management",
+    "difficulty": "сложный",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/teams/manage-teams-skypeforbusiness-admin-center",
+    "group": 8
+  },
+  {
+    "id": 152,
+    "question": "Сколько максимально Voice routing policies можно присвоить одному пользователю?",
+    "answers": [
+      "1",
+      "5",
+      "Неограниченно",
+      "10"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Meetings and Calling",
+    "difficulty": "средний",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/teams/meeting-policies-in-teams",
+    "group": 8
+  },
+  {
+    "id": 153,
+    "question": "Сценарий: При подключении гостя из домена secure.com BOT проверки контента должен автоматически запускаться.",
+    "answers": [
+      "External access allow",
+      "Meeting policy",
+      "App permission policy Allow bot; App setup policy Pin bot",
+      "Sensitivity label"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Teams Policies and Configuration",
+    "difficulty": "сложный",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/teams/teams-policies",
+    "group": 8
+  },
+  {
+    "id": 154,
+    "question": "PowerShell: Как массово включить QoS маркировку для UDP audio в Meeting policy `Default`?",
+    "answers": [
+      "New-CsTeamsQoSPolicy",
+      "Grant-CsTeamsMediaPolicy",
+      "Set-CsTeamsMeetingPolicy -Identity Default -MediaPortRangeEnabled $true",
+      "Set-CsOnlineVoiceRoutingPolicy"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "PowerShell Intermediate",
+    "difficulty": "средний",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/powershell/module/teams/?view=teams-ps",
+    "group": 8
+  },
+  {
+    "id": 155,
+    "question": "Сценарий: Нужно блокировать отправку IBAN банковских счетов только в каналах Finance‑team.",
+    "answers": [
+      "Retention",
+      "Meeting policy",
+      "Создать DLP policy scoped to Finance group, SensitiveInfoType = IBAN",
+      "Label"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Security & Compliance",
+    "difficulty": "сложный",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/teams/security-compliance-overview",
+    "group": 8
+  },
+  {
+    "id": 156,
+    "question": "Сценарий: В течение пилота CQD показал RTT 75 мс в Азии, но jitter <10 мс. Какой классификацией качества Microsoft это считается?",
+    "answers": [
+      "Poor",
+      "Unknown",
+      "Building",
+      "Good"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Monitoring & Troubleshooting",
+    "difficulty": "средний",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/teams/monitoring-and-reporting-overview",
+    "group": 8
+  },
+  {
+    "id": 157,
+    "question": "Какой cmdlet выводит текущую версию модуля Teams PowerShell?",
+    "answers": [
+      "Get-Module MicrosoftTeams",
+      "Get-TeamVersion",
+      "Show-Module",
+      "Get-CsVersion"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "PowerShell Intermediate",
+    "difficulty": "легкий",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/powershell/module/teams/?view=teams-ps",
+    "group": 8
+  },
+  {
+    "id": 158,
+    "question": "Сценарий: Требуется ограничить создание приватных каналов в глобальной политике, но разрешить владельцам Project‑X.",
+    "answers": [
+      "Teams policy PrivateChannelCreation = Off globally + per‑team override",
+      "External access",
+      "Compliance",
+      "App setup"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Teams Policies and Configuration",
+    "difficulty": "средний",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/teams/teams-policies",
+    "group": 8
+  },
+  {
+    "id": 159,
+    "question": "Edge location влияния на медиа трафик Teams выбирается на основе:",
+    "answers": [
+      "User Office IP",
+      "DNS SRV",
+      "Tenant region",
+      "Closest Azure Front Door POP"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Monitoring & Troubleshooting",
+    "difficulty": "сложный",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/teams/monitoring-and-reporting-overview",
+    "group": 8
+  },
+  {
+    "id": 160,
+    "question": "Сценарий: Audio Conferencing bridge должен использовать номер in‑country Germany только для German users.",
+    "answers": [
+      "Calling Plan US",
+      "Assign Toll number via Conferencing bridge + Service usage location",
+      "Policy PSTN usage",
+      "Direct Routing"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Meetings and Calling",
+    "difficulty": "средний",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/teams/meeting-policies-in-teams",
+    "group": 8
+  },
+  {
+    "id": 161,
+    "question": "Лабораторное задание: Для группы Executives включить водяной знак на видео и запретить скачивание записи. Выберите шаги.",
+    "answers": [
+      "Assign policy Exec group",
+      "Create Meeting policy",
+      "Enable Watermark",
+      "Disable recording download"
+    ],
+    "correct": [
+      1,
+      2,
+      3,
+      0
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Lab Scenario",
+    "difficulty": "сложный",
+    "type": "multiple",
+    "reference": "https://learn.microsoft.com/teams/tutorials-and-labs",
+    "group": 9
+  },
+  {
+    "id": 162,
+    "question": "При использовании cmdlet `Get-CsQoEReport` какие два параметра обязательны?",
+    "answers": [
+      "UserUri",
+      "PolicyName",
+      "TenantId",
+      "StartDate и EndDate"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "PowerShell Intermediate",
+    "difficulty": "средний",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/powershell/module/teams/?view=teams-ps",
+    "group": 9
+  },
+  {
+    "id": 163,
+    "question": "Сценарий: Требуется автосоздание команды при добавлении нового проекта в Azure DevOps.",
+    "answers": [
+      "Compliance",
+      "Power Automate connector Teams + Azure DevOps trigger",
+      "Label",
+      "Graph API manual"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Teams Environment Management",
+    "difficulty": "средний",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/teams/manage-teams-skypeforbusiness-admin-center",
+    "group": 9
+  },
+  {
+    "id": 164,
+    "question": "Какой стандарт шифрования используется при E2EE?",
+    "answers": [
+      "TLS 1.0",
+      "IPsec IKEv2",
+      "RC4",
+      "DTLS‑SRTP AES‑256"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Security & Compliance",
+    "difficulty": "сложный",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/teams/security-compliance-overview",
+    "group": 9
+  },
+  {
+    "id": 165,
+    "question": "Сценарий: Service health Advisory TE402381 связан с загрузкой файлов. Где проверить детали?",
+    "answers": [
+      "Graph alerts",
+      "Azure status",
+      "CQD Health",
+      "M365 Admin Center › Service health › TE402381"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Monitoring & Troubleshooting",
+    "difficulty": "средний",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/teams/monitoring-and-reporting-overview",
+    "group": 9
+  },
+  {
+    "id": 166,
+    "question": "PowerShell: Установить параметры LobbyBypass=none в Meeting policy `Guests`",
+    "answers": [
+      "Grant-Policy",
+      "Set-Team",
+      "New-CsOnlineSession",
+      "Set-CsTeamsMeetingPolicy -Identity Guests -AutoAdmittedUsers None"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "PowerShell Intermediate",
+    "difficulty": "средний",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/powershell/module/teams/?view=teams-ps",
+    "group": 9
+  },
+  {
+    "id": 167,
+    "question": "Сколько команд можно закрепить (pin) в App setup policy (на 2025)?",
+    "answers": [
+      "10",
+      "до 25",
+      "100",
+      "50"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Teams Policies and Configuration",
+    "difficulty": "легкий",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/teams/teams-policies",
+    "group": 9
+  },
+  {
+    "id": 168,
+    "question": "Сценарий: Compliance запросил историю редактирования сообщений сотрудника за последние 6 мес.",
+    "answers": [
+      "CQD",
+      "Graph chat export without application permission",
+      "Audit lite",
+      "Review Activities log via eDiscovery"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Security & Compliance",
+    "difficulty": "средний",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/teams/security-compliance-overview",
+    "group": 9
+  },
+  {
+    "id": 169,
+    "question": "Какой лимит признаков Sensitivity labels можно применить к одному Tenant (2025)?",
+    "answers": [
+      "Unlimited",
+      "50",
+      "1000",
+      "от 5000"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Security & Compliance",
+    "difficulty": "сложный",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/teams/security-compliance-overview",
+    "group": 9
+  },
+  {
+    "id": 170,
+    "question": "Сценарий: Пользователям необходимо переводить звонки с консультацией.",
+    "answers": [
+      "Calling policy: Consultative transfer On",
+      "CQD",
+      "Meeting policy",
+      "Retention"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Meetings and Calling",
+    "difficulty": "средний",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/teams/meeting-policies-in-teams",
+    "group": 9
+  },
+  {
+    "id": 171,
+    "question": "PowerShell: Проверить сколько дней осталось до истечения Access token Teams.",
+    "answers": [
+      "Get-Team",
+      "Get-CSToken",
+      "Get-CsOnlineSession",
+      "Get-CsAccessTokenLifetimePolicy"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "PowerShell Intermediate",
+    "difficulty": "сложный",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/powershell/module/teams/?view=teams-ps",
+    "group": 9
+  },
+  {
+    "id": 172,
+    "question": "Сценарий: Нужно блокировать отправку файлов .exe в чате.",
+    "answers": [
+      "Sensitivity",
+      "App permission",
+      "Network Planner",
+      "Teams DLP policy with File extension condition"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Security & Compliance",
+    "difficulty": "средний",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/teams/security-compliance-overview",
+    "group": 9
+  },
+  {
+    "id": 173,
+    "question": "Что такое Meeting templates (2025 preview)?",
+    "answers": [
+      "App templates",
+      "Preconfigured meeting options package",
+      "Teams templates",
+      "Label template"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Teams Policies and Configuration",
+    "difficulty": "средний",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/teams/teams-policies",
+    "group": 9
+  },
+  {
+    "id": 174,
+    "question": "Сценарий: Для RemoteAssist Hololens требуется включить NDI broadcast.",
+    "answers": [
+      "Customer Key",
+      "Calling policy",
+      "E5 license",
+      "Meeting policy › NDI Out = On"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Meetings and Calling",
+    "difficulty": "сложный",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/teams/meeting-policies-in-teams",
+    "group": 9
+  },
+  {
+    "id": 175,
+    "question": "Сценарий: Требуется запретить создание новых команд в отделе Accounting, но разрешить добавление пользователей в существующие.",
+    "answers": [
+      "Azure AD group‑based Team creation policy deny",
+      "Retention",
+      "Label",
+      "Disable owner create in Teams settings"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Teams Environment Management",
+    "difficulty": "сложный",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/teams/manage-teams-skypeforbusiness-admin-center",
+    "group": 9
+  },
+  {
+    "id": 176,
+    "question": "PowerShell: Каким командлетом экспортировать настройки Meeting policy в JSON?",
+    "answers": [
+      "Export-CsTeamsMeetingPolicy",
+      "Get-CsTeamsMeetingPolicy -Identity Sales | ConvertTo-Json > policy.json",
+      "Get-Team | Export",
+      "Backup-Team"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "PowerShell Advanced",
+    "difficulty": "средний",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/powershell/module/teams/?view=teams-ps",
+    "group": 9
+  },
+  {
+    "id": 177,
+    "question": "Сценарий: External user подключается по WebRTC и жалуется на видео-статус 360p. Где изменить битрейт анонимных пользователей?",
+    "answers": [
+      "Sensitivity",
+      "Meeting policy › Anonymous bitrate limit",
+      "CQD",
+      "Calling policy"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Meetings and Calling",
+    "difficulty": "средний",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/teams/meeting-policies-in-teams",
+    "group": 9
+  },
+  {
+    "id": 178,
+    "question": "Какой максимальный размер сообщения в чате Teams (символов, 2025)?",
+    "answers": [
+      "8000",
+      "2500",
+      "10000",
+      "4000"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Teams Policies and Configuration",
+    "difficulty": "легкий",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/teams/teams-policies",
+    "group": 9
+  },
+  {
+    "id": 179,
+    "question": "Сценарий: Периодически создаются временные команды для мероприятий. Нужно авто‑удалять их через 30 дней.",
+    "answers": [
+      "DLP",
+      "Group expiration policy 30 days",
+      "Retention",
+      "Label"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Teams Environment Management",
+    "difficulty": "средний",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/teams/manage-teams-skypeforbusiness-admin-center",
+    "group": 9
+  },
+  {
+    "id": 180,
+    "question": "PowerShell: Получить все Meeting templates в Tenant.",
+    "answers": [
+      "Get-CsTeamsMeetingTemplate",
+      "Get-TeamTemplate",
+      "Get-CsTeamsMeetingPolicy",
+      "Get-CsMeeting"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "PowerShell Advanced",
+    "difficulty": "средний",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/powershell/module/teams/?view=teams-ps",
+    "group": 9
+  },
+  {
+    "id": 181,
+    "question": "Сценарий: Требуется включить Watermark, Disable copy chat, Disable forward meeting.",
+    "answers": [
+      "Meeting policy AdvancedProtection preset",
+      "Sensitivity label",
+      "Compliance DLP",
+      "Calling policy"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Teams Policies and Configuration",
+    "difficulty": "сложный",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/teams/teams-policies",
+    "group": 10
+  },
+  {
+    "id": 182,
+    "question": "Какой отчёт показывает успешность PSTN перенаправлений Auto Attendant?",
+    "answers": [
+      "Voice interaction report",
+      "Audit log",
+      "Device health",
+      "CQD summary"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Monitoring & Troubleshooting",
+    "difficulty": "средний",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/teams/monitoring-and-reporting-overview",
+    "group": 10
+  },
+  {
+    "id": 183,
+    "question": "Сценарий: Security требует TLS 1.3 для шифрования клиент‑сервис. Реализуемо?",
+    "answers": [
+      "Azure setting",
+      "Необходимо изменить registry",
+      "Включается в Meeting policy",
+      "Teams использует mTLS TLS 1.2; TLS 1.3 не поддерживается на 2025"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Security & Compliance",
+    "difficulty": "сложный",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/teams/security-compliance-overview",
+    "group": 10
+  },
+  {
+    "id": 184,
+    "question": "Какой cmdlet отображает логи Teams Rooms устройств?",
+    "answers": [
+      "Export-CsDeviceLog",
+      "Get-CsTeamsDeviceLog",
+      "Get-CsQoEReport",
+      "Get-TeamDevice"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "PowerShell Advanced",
+    "difficulty": "средний",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/powershell/module/teams/?view=teams-ps",
+    "group": 10
+  },
+  {
+    "id": 185,
+    "question": "Лабораторное задание: Включить Busy‑on‑Busy для отдела Support. Выберите шаги.",
+    "answers": [
+      "Test call",
+      "Assign policy Support",
+      "Create Calling policy",
+      "Enable BusyOnBusy"
+    ],
+    "correct": [
+      2,
+      3,
+      1
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Lab Scenario",
+    "difficulty": "средний",
+    "type": "multiple",
+    "reference": "https://learn.microsoft.com/teams/tutorials-and-labs",
+    "group": 10
+  },
+  {
+    "id": 186,
+    "question": "Сценарий: User отправляет приглашения с Teams link, но звонки идут через Zoom. Как изменить провайдера по умолчанию?",
+    "answers": [
+      "Upgrade policy",
+      "Set-MeetingProvider Teams via PowerShell or Outlook Options",
+      "App setup",
+      "Label"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Meetings and Calling",
+    "difficulty": "средний",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/teams/meeting-policies-in-teams",
+    "group": 10
+  },
+  {
+    "id": 187,
+    "question": "Максимальное число одновременно организуемых Live events per tenant (24 ч)?",
+    "answers": [
+      "100",
+      "5",
+      "15",
+      "50"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Meetings and Calling",
+    "difficulty": "сложный",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/teams/meeting-policies-in-teams",
+    "group": 10
+  },
+  {
+    "id": 188,
+    "question": "Сценарий: Нужно добавить вторую стену видео (dual screen) в Teams Rooms на Windows.",
+    "answers": [
+      "VMR",
+      "NDI",
+      "Teams Rooms layout FrontRow dual display",
+      "Teams PWA"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Teams Environment Management",
+    "difficulty": "средний",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/teams/manage-teams-skypeforbusiness-admin-center",
+    "group": 10
+  },
+  {
+    "id": 189,
+    "question": "PowerShell: Удалить PSTN Usage 'International' из VoiceRoute.",
+    "answers": [
+      "New-Usage",
+      "Set-CsOnlineVoiceRoute -Identity Global -PstnUsages @{remove='International'}",
+      "Grant-CsVoice",
+      "Remove-CsOnlineVoiceRoute"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "PowerShell Advanced",
+    "difficulty": "средний",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/powershell/module/teams/?view=teams-ps",
+    "group": 10
+  },
+  {
+    "id": 190,
+    "question": "Сценарий: Требуется анализ использования Whiteboard по отделам.",
+    "answers": [
+      "M365 Usage analytics PowerBI Whiteboard tab",
+      "Graph delta",
+      "Audit",
+      "CQD"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Monitoring & Troubleshooting",
+    "difficulty": "средний",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/teams/monitoring-and-reporting-overview",
+    "group": 10
+  },
+  {
+    "id": 191,
+    "question": "Где отключить On‑hold music для консультационных переводов?",
+    "answers": [
+      "Compliance",
+      "Calling policy > Music On Hold",
+      "Org-wide settings",
+      "Meeting policy"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Teams Policies and Configuration",
+    "difficulty": "средний",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/teams/teams-policies",
+    "group": 10
+  },
+  {
+    "id": 192,
+    "question": "PowerShell: Команда для изменения Size private channel до 1000 пользователей доступна?",
+    "answers": [
+      "Set-TeamChannel -MaxMembers",
+      "Graph PATCH",
+      "New-CsTeamsChannelPolicy",
+      "Недоступна: лимит жёстко 250 приватный канал"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "PowerShell Advanced",
+    "difficulty": "сложный",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/powershell/module/teams/?view=teams-ps",
+    "group": 10
+  },
+  {
+    "id": 193,
+    "question": "Сценарий: Compliance требует сохраниение контента Loop components в Teams чатах.",
+    "answers": [
+      "Not supported",
+      "Label only",
+      "Loop content сохраняется в Exchange Online; Retention применять через Exchange location",
+      "SharePoint Retention"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Security & Compliance",
+    "difficulty": "сложный",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/teams/security-compliance-overview",
+    "group": 10
+  },
+  {
+    "id": 194,
+    "question": "Какой порт требуется открыть для Teams SIP Proxy Direct Routing?",
+    "answers": [
+      "5061 TCP/TLS",
+      "3478 UDP",
+      "25 TCP",
+      "80 TCP"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Meetings and Calling",
+    "difficulty": "средний",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/teams/meeting-policies-in-teams",
+    "group": 10
+  },
+  {
+    "id": 195,
+    "question": "Сценарий: В Call Analytics отображается 'Low Send Bitrate'. Возможная причина?",
+    "answers": [
+      "TLS error",
+      "Камера 360p + ограничение Wi‑Fi uplink",
+      "Device CPU",
+      "Дуплекс конфликт"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Monitoring & Troubleshooting",
+    "difficulty": "средний",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/teams/monitoring-and-reporting-overview",
+    "group": 10
+  },
+  {
+    "id": 196,
+    "question": "Сценарий: Отключить реакцию 'Like' в канале 'Announcements'.",
+    "answers": [
+      "Messaging policy",
+      "Calling policy",
+      "Channel moderation: Allow reactions Off",
+      "Label"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Teams Policies and Configuration",
+    "difficulty": "средний",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/teams/teams-policies",
+    "group": 10
+  },
+  {
+    "id": 197,
+    "question": "PowerShell: Проверить количество активаций Teams Rooms Basic лицензий.",
+    "answers": [
+      "Get-CsOnlineUser",
+      "Get-Team",
+      "Get-CsLicense",
+      "Get-MsolAccountSku / Graph"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "PowerShell Advanced",
+    "difficulty": "средний",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/powershell/module/teams/?view=teams-ps",
+    "group": 10
+  },
+  {
+    "id": 198,
+    "question": "Сценарий: Tenant хочет принудительно включить Together mode для встреч >20 пользователей.",
+    "answers": [
+      "App setup",
+      "Meeting policy Auto Together = On",
+      "Label",
+      "Device policy"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Meetings and Calling",
+    "difficulty": "средний",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/teams/meeting-policies-in-teams",
+    "group": 10
+  },
+  {
+    "id": 199,
+    "question": "Какой отчёт показывает отношение Good/Bad по колонке 'Reflected Jitter'?",
+    "answers": [
+      "CQD Advanced report Stream quality",
+      "Live events",
+      "Audit",
+      "Usage"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Monitoring & Troubleshooting",
+    "difficulty": "средний",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/teams/monitoring-and-reporting-overview",
+    "group": 10
+  },
+  {
+    "id": 200,
+    "question": "Как включить режим Public preview для отдельного пользователя?",
+    "answers": [
+      "Calling policy",
+      "Label",
+      "Meeting policy",
+      "Update policy › Public preview"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Teams Policies and Configuration",
+    "difficulty": "средний",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/teams/teams-policies",
+    "group": 10
+  },
+  {
+    "id": 201,
+    "question": "PowerShell: cmdlet для выгрузки Teams device inventory?",
+    "answers": [
+      "Get-CsOnlineDevice",
+      "Get-TeamDevice",
+      "Export-Device",
+      "Get-CsTeamsDevice"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "PowerShell Advanced",
+    "difficulty": "средний",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/powershell/module/teams/?view=teams-ps",
+    "group": 11
+  },
+  {
+    "id": 202,
+    "question": "Максимальное кол-во каналов в команде (2025)?",
+    "answers": [
+      "200",
+      "Неограниченно",
+      "500",
+      "1000 включая архивные"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Teams Environment Management",
+    "difficulty": "средний",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/teams/manage-teams",
+    "group": 11
+  },
+  {
+    "id": 203,
+    "question": "Сценарий: Нужно запретить Forwarding voicemail для Sales.",
+    "answers": [
+      "Calling policy › VoicemailForwarding Off",
+      "Meeting policy",
+      "Label",
+      "DLP"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Meetings and Calling",
+    "difficulty": "средний",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/teams/meeting-policies-in-teams",
+    "group": 11
+  },
+  {
+    "id": 204,
+    "question": "В каком отчёте можно увидеть Network MOS по подразделениям?",
+    "answers": [
+      "CQD Advanced building report",
+      "Live event",
+      "Usage report",
+      "Audit"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Monitoring & Troubleshooting",
+    "difficulty": "средний",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/teams/monitoring-and-reporting-overview",
+    "group": 11
+  },
+  {
+    "id": 205,
+    "question": "Команда `Set-CsTenantFederationConfiguration` меняет…",
+    "answers": [
+      "параметры федерации tenant‑wide",
+      "Retention",
+      "Meeting policy",
+      "Label"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "PowerShell Advanced",
+    "difficulty": "сложный",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/powershell/module/teams/?view=teams-ps",
+    "group": 11
+  },
+  {
+    "id": 206,
+    "question": "Сценарий: Гостям нужно разрешить загрузку файлов, но не удаление.",
+    "answers": [
+      "SharePoint permissions Guest Contribute w/o delete",
+      "DLP",
+      "Guest policy",
+      "Label"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Teams Environment Management",
+    "difficulty": "средний",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/teams/manage-teams",
+    "group": 11
+  },
+  {
+    "id": 207,
+    "question": "Какой метод Graph создаёт online‑meeting?",
+    "answers": [
+      "PATCH /teams",
+      "GET /me/events",
+      "POST /users/{id}/onlineMeetings",
+      "PUT /groups"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Meetings and Calling",
+    "difficulty": "средний",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/teams/meeting-policies-in-teams",
+    "group": 11
+  },
+  {
+    "id": 208,
+    "question": "Сценарий: Требуется Customer Key rotation каждые 12 мес.",
+    "answers": [
+      "Upload new key, assign, wait replication, delete old",
+      "Label",
+      "Not supported",
+      "Disable CK"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Security & Compliance",
+    "difficulty": "сложный",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/teams/security-compliance-overview",
+    "group": 11
+  },
+  {
+    "id": 209,
+    "question": "PowerShell: Получить статистику вызовов пользователя за 30 дней",
+    "answers": [
+      "Get-CsUserSessionSummary",
+      "Export-CsCall",
+      "Get-CsQoEReport",
+      "Get-TeamCall"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "PowerShell Advanced",
+    "difficulty": "средний",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/powershell/module/teams/?view=teams-ps",
+    "group": 11
+  },
+  {
+    "id": 210,
+    "question": "Сценарий: Нужно запретить Reaction 'Love' в чатах Marketing.",
+    "answers": [
+      "Meeting policy",
+      "Messaging policy → Reactions customization",
+      "App policy",
+      "Label"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Teams Policies and Configuration",
+    "difficulty": "средний",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/teams/teams-policies",
+    "group": 11
+  },
+  {
+    "id": 211,
+    "question": "Какой компонент хранит Loop компоненты Teams?",
+    "answers": [
+      "SharePoint",
+      "OneDrive",
+      "Exchange Online mailbox",
+      "Teams DB"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Security & Compliance",
+    "difficulty": "средний",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/teams/security-compliance-overview",
+    "group": 11
+  },
+  {
+    "id": 212,
+    "question": "Лаб: Назначить Direct Routing политику пользователям Finland.",
+    "answers": [
+      "Grant to users FI",
+      "Create Voice routing policy FI",
+      "Add PSTN usage FI"
+    ],
+    "correct": [
+      1,
+      2,
+      0
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Lab Scenario",
+    "difficulty": "средний",
+    "type": "multiple",
+    "reference": "https://learn.microsoft.com/teams/tutorials-and-labs",
+    "group": 11
+  },
+  {
+    "id": 213,
+    "question": "Максимум контентных камер в Teams Rooms на Windows (2025)?",
+    "answers": [
+      "Неограниченно",
+      "До 4",
+      "Только 1",
+      "До 1 контентная + 2 фронт"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Meetings and Calling",
+    "difficulty": "средний",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/teams/meeting-policies-in-teams",
+    "group": 11
+  },
+  {
+    "id": 214,
+    "question": "Сценарий: Требуется отслеживать отправку SSN в чатах.",
+    "answers": [
+      "Policy tip off",
+      "DLP Sensitive Info SSN",
+      "Retention",
+      "Label"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Security & Compliance",
+    "difficulty": "средний",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/teams/security-compliance-overview",
+    "group": 11
+  },
+  {
+    "id": 215,
+    "question": "PowerShell: Очистить кэш логов Teams Rooms устройства.",
+    "answers": [
+      "Remove-Log",
+      "Reset-Device",
+      "Restart-CsDevice",
+      "Invoke-CsTeamsDeviceAction -Action ClearCache"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "PowerShell Advanced",
+    "difficulty": "средний",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/powershell/module/teams/?view=teams-ps",
+    "group": 11
+  },
+  {
+    "id": 216,
+    "question": "Сценарий: Admin хочет видеть CPU usage Teams Rooms в реальном времени.",
+    "answers": [
+      "Azure Monitor",
+      "Teams Rooms Pro Management portal",
+      "Graph",
+      "CQD"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Monitoring & Troubleshooting",
+    "difficulty": "средний",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/teams/monitoring-and-reporting-overview",
+    "group": 11
+  },
+  {
+    "id": 217,
+    "question": "Какой канал обновлений содержит функции GA?",
+    "answers": [
+      "Public preview",
+      "Targeted",
+      "Current channel",
+      "Ring 0"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Teams Policies and Configuration",
+    "difficulty": "средний",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/teams/teams-policies",
+    "group": 11
+  },
+  {
+    "id": 218,
+    "question": "Сценарий: План расширить диапазон портов медиа.",
+    "answers": [
+      "Meeting policy MediaPortRange",
+      "Azure firewall",
+      "Label",
+      "Call queue"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Meetings and Calling",
+    "difficulty": "средний",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/teams/meeting-policies-in-teams",
+    "group": 11
+  },
+  {
+    "id": 219,
+    "question": "PowerShell advanced: Добавить EmergencyAddressLocation к user.",
+    "answers": [
+      "Grant-CsTeamsLocation",
+      "Add-Location",
+      "Set-CsTeamsCallingPolicy",
+      "Set-CsOnlineUser -Identity user -EmergencyLocationId <GUID>"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "PowerShell Advanced",
+    "difficulty": "сложный",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/powershell/module/teams/?view=teams-ps",
+    "group": 11
+  },
+  {
+    "id": 220,
+    "question": "Сценарий: Обновить Teams app на VDI лаптопах автоматически.",
+    "answers": [
+      "Intune script only",
+      "Graph",
+      "Use Machine‑wide installer with auto‑update",
+      "Manual download"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Teams Environment Management",
+    "difficulty": "средний",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/teams/manage-teams",
+    "group": 11
+  },
+  {
+    "id": 221,
+    "question": "Какой отчёт показывает Top failing SBC?",
+    "answers": [
+      "Usage",
+      "Direct Routing health dashboard",
+      "CQD device",
+      "Audit"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Monitoring & Troubleshooting",
+    "difficulty": "средний",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/teams/monitoring-and-reporting-overview",
+    "group": 12
+  },
+  {
+    "id": 222,
+    "question": "Сценарий: Хранить записи встреч Asia Pacific 365 дней, EU ‑ 180.",
+    "answers": [
+      "CQD",
+      "Retention policy adaptive scope by location",
+      "Meeting policy",
+      "Label"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Security & Compliance",
+    "difficulty": "сложный",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/teams/security-compliance-overview",
+    "group": 12
+  },
+  {
+    "id": 223,
+    "question": "PowerShell: Перевести Auto Attendant в AfterHours menu.",
+    "answers": [
+      "Grant-VoicePolicy",
+      "Set-Team",
+      "Set-CsAutoAttendant -TimeRange AfterHours",
+      "Set-CsTeamsUpgradePolicy"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "PowerShell Advanced",
+    "difficulty": "средний",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/powershell/module/teams/?view=teams-ps",
+    "group": 12
+  },
+  {
+    "id": 224,
+    "question": "Сценарий: Требуется отчёт по активным Loop components.",
+    "answers": [
+      "CQD",
+      "Usage report",
+      "M365 Content explorer Loop signals",
+      "Audit"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Monitoring & Troubleshooting",
+    "difficulty": "средний",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/teams/monitoring-and-reporting-overview",
+    "group": 12
+  },
+  {
+    "id": 225,
+    "question": "Сценарий: Требуется временно заблокировать создание приватных каналов во всех командах.",
+    "answers": [
+      "Teams policy › PrivateChannelCreation = Off",
+      "Azure AD: deny group owner create",
+      "Sensitivity label Private"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Teams Policies and Configuration",
+    "difficulty": "средний",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/teams/teams-policies",
+    "group": 12
+  },
+  {
+    "id": 226,
+    "question": "PowerShell: Как просмотреть все Meeting templates в tenant?",
+    "answers": [
+      "Get-TeamTemplate",
+      "Get-CsOnlineMeeting",
+      "Get-CsMeetingPolicy",
+      "Get-CsTeamsMeetingTemplate"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "PowerShell Advanced",
+    "difficulty": null,
+    "type": "single",
+    "reference": "https://learn.microsoft.com/powershell/module/teams/?view=teams-ps",
+    "group": 12
+  },
+  {
+    "id": 227,
+    "question": "Сценарий: В отделе Legal нужно автоматически включать транскрипции и запрещать скачивание.",
+    "answers": [
+      "Calling policy",
+      "Label",
+      "Meeting policy – Transcription=On, AllowTranscriptionDownload=False",
+      "DLP"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Meetings and Calling",
+    "difficulty": null,
+    "type": "single",
+    "reference": "https://learn.microsoft.com/teams/meeting-policies-in-teams",
+    "group": 12
+  },
+  {
+    "id": 228,
+    "question": "Какой отчёт в Admin Center показывает активные Loop компоненты?",
+    "answers": [
+      "Audit log",
+      "CQD",
+      "Microsoft 365 Usage analytics – Loop",
+      "Device usage"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Monitoring & Troubleshooting",
+    "difficulty": null,
+    "type": "single",
+    "reference": "https://learn.microsoft.com/teams/monitoring-and-reporting-overview",
+    "group": 12
+  },
+  {
+    "id": 229,
+    "question": "Сценарий: Требуется, чтобы внешние участники принимали NDA перед присоединением ко встрече.",
+    "answers": [
+      "Label",
+      "Meeting policy",
+      "Lobby customization with Consent page (Teams Premium)",
+      "DLP"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Meetings and Calling",
+    "difficulty": "сложный",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/teams/meeting-policies-in-teams",
+    "group": 12
+  },
+  {
+    "id": 230,
+    "question": "Максимальное количество уведомлений Quality alerts в день?",
+    "answers": [
+      "500",
+      "Unlimited",
+      "100",
+      "1000"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Monitoring & Troubleshooting",
+    "difficulty": null,
+    "type": "single",
+    "reference": "https://learn.microsoft.com/teams/monitoring-and-reporting-overview",
+    "group": 12
+  },
+  {
+    "id": 231,
+    "question": "PowerShell: Увеличить MaxFileSize 500МБ для записи Teams Meeting",
+    "answers": [
+      "Graph",
+      "Set-ODLimits",
+      "Set-CsTeamsMeetingPolicy -Identity Global -RecordingFileSizeMB 500",
+      "Set-TeamFile"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "PowerShell Advanced",
+    "difficulty": "сложный",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/powershell/module/teams/?view=teams-ps",
+    "group": 12
+  },
+  {
+    "id": 232,
+    "question": "Сценарий: Compliance требует сохранять сообщения чатов CEO навсегда.",
+    "answers": [
+      "DLP",
+      "Label",
+      "Retention policy Preserve forever scoped to CEO mailbox",
+      "eDiscovery hold"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Security & Compliance",
+    "difficulty": "средний",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/teams/security-compliance-overview",
+    "group": 12
+  },
+  {
+    "id": 233,
+    "question": "Какой компонент Teams отвечает за hybrid-event Q&A?",
+    "answers": [
+      "Loop",
+      "Teams webinar with Q&A app",
+      "Yammer",
+      "Live event"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Meetings and Calling",
+    "difficulty": null,
+    "type": "single",
+    "reference": "https://learn.microsoft.com/teams/meeting-policies-in-teams",
+    "group": 12
+  },
+  {
+    "id": 234,
+    "question": "Сценарий: Нужно отчистить кэш Teams на всех устройствах с Intune.",
+    "answers": [
+      "Meeting policy",
+      "Graph",
+      "Label",
+      "Intune Win32 app script delete %AppData%\\Microsoft\\Teams\\Cache"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Teams Environment Management",
+    "difficulty": null,
+    "type": "single",
+    "reference": "https://learn.microsoft.com/teams/manage-teams",
+    "group": 12
+  },
+  {
+    "id": 235,
+    "question": "Лабораторное задание: Автоматически маркировать новые команды HR конфиденциальной меткой. Выберите шаги.",
+    "answers": [
+      "Create Sensitivity label HighlyConf",
+      "Set privacy=Private, GuestAccess=Block",
+      "Auto-apply to new groups"
+    ],
+    "correct": [
+      0,
+      1,
+      2
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Lab Scenario",
+    "difficulty": "сложный",
+    "type": "multiple",
+    "reference": "https://learn.microsoft.com/teams/tutorials-and-labs",
+    "group": 12
+  },
+  {
+    "id": 236,
+    "question": "Какой диапазон портов UDP медиа рекомендуется для QoS?",
+    "answers": [
+      "3478‑3481",
+      "80",
+      "25",
+      "50000‑50059"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Monitoring & Troubleshooting",
+    "difficulty": "легкий",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/teams/monitoring-and-reporting-overview",
+    "group": 12
+  },
+  {
+    "id": 237,
+    "question": "Сценарий: User жалуется на error 'Camera not available' в Teams Rooms Android.",
+    "answers": [
+      "CQD",
+      "Audit",
+      "Проверить Teams Rooms Pro Management > Device health",
+      "Graph"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Monitoring & Troubleshooting",
+    "difficulty": null,
+    "type": "single",
+    "reference": "https://learn.microsoft.com/teams/monitoring-and-reporting-overview",
+    "group": 12
+  },
+  {
+    "id": 238,
+    "question": "PowerShell: Команда для создания Teams Rooms Standard provisioning package?",
+    "answers": [
+      "Set-CsDevicePolicy",
+      "New-CsTeamsDeviceConfiguration",
+      "Get-CsRooms",
+      "New-TeamsPackage"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "PowerShell Advanced",
+    "difficulty": "сложный",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/powershell/module/teams/?view=teams-ps",
+    "group": 12
+  },
+  {
+    "id": 239,
+    "question": "Сценарий: Запрет гостям загружать файлы .pptx в каналы.",
+    "answers": [
+      "Label",
+      "SharePoint conditional access + Block pptx by guest",
+      "DLP",
+      "Messaging policy"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Security & Compliance",
+    "difficulty": null,
+    "type": "single",
+    "reference": "https://learn.microsoft.com/teams/security-compliance-overview",
+    "group": 12
+  },
+  {
+    "id": 240,
+    "question": "Какой лимит Meeting templates на tenant (2025 Preview)?",
+    "answers": [
+      "50",
+      "100",
+      "unlimited",
+      "20"
+    ],
+    "correct": [
+      0
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Teams Policies and Configuration",
+    "difficulty": null,
+    "type": "single",
+    "reference": "https://learn.microsoft.com/teams/teams-policies",
+    "group": 12
+  },
+  {
+    "id": 241,
+    "question": "Сценарий: Tenant хочет анализировать latency на iOS устройствах.",
+    "answers": [
+      "Graph",
+      "Audit",
+      "CQD endpoint report filtered by OS=iOS",
+      "Usage"
+    ],
+    "correct": [
+      2
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Monitoring & Troubleshooting",
+    "difficulty": null,
+    "type": "single",
+    "reference": "https://learn.microsoft.com/teams/monitoring-and-reporting-overview",
+    "group": 13
+  },
+  {
+    "id": 242,
+    "question": "PowerShell: Экспорт всех Voice routes в CSV",
+    "answers": [
+      "Backup-CsVoice",
+      "Get-CsOnlineVoiceRoute | Export-Csv routes.csv -NoType",
+      "Get-Team",
+      "Get-CsVoicePolicy"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "PowerShell Advanced",
+    "difficulty": null,
+    "type": "single",
+    "reference": "https://learn.microsoft.com/powershell/module/teams/?view=teams-ps",
+    "group": 13
+  },
+  {
+    "id": 243,
+    "question": "Сценарий: Нужно включить Hardware OBFM для Teams Panels.",
+    "answers": [
+      "Meeting policy",
+      "Device settings in Teams Admin Center Panels",
+      "CQD",
+      "Label"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Teams Environment Management",
+    "difficulty": "средний",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/teams/manage-teams",
+    "group": 13
+  },
+  {
+    "id": 244,
+    "question": "Максимум участников Webinar (Teams Premium) на 2025?",
+    "answers": [
+      "1000",
+      "300",
+      "Live event 20000",
+      "10000"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Meetings and Calling",
+    "difficulty": null,
+    "type": "single",
+    "reference": "https://learn.microsoft.com/teams/meeting-policies-in-teams",
+    "group": 13
+  },
+  {
+    "id": 245,
+    "question": "Сценарий: Требуется блокировать клавишу PrintScreen в DLP.",
+    "answers": [
+      "Label",
+      "Guest access",
+      "Teams DLP",
+      "Endpoint DLP policy with Restrict PrintScreen"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Security & Compliance",
+    "difficulty": null,
+    "type": "single",
+    "reference": "https://learn.microsoft.com/teams/security-compliance-overview",
+    "group": 13
+  },
+  {
+    "id": 246,
+    "question": "PowerShell: В каком cmdlet задаётся MediaBitRateKb?",
+    "answers": [
+      "New-CsQoSPolicy",
+      "Set-CsTeamsCallingPolicy",
+      "Set-Team",
+      "Set-CsTeamsMeetingPolicy"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "PowerShell Advanced",
+    "difficulty": null,
+    "type": "single",
+    "reference": "https://learn.microsoft.com/powershell/module/teams/?view=teams-ps",
+    "group": 13
+  },
+  {
+    "id": 247,
+    "question": "Лабораторное задание: Настроить Teams Panel для переговорной. Выберите шаги.",
+    "answers": [
+      "Configure Calendar Service",
+      "Assign account to Panel",
+      "Enable OneTouchJoin"
+    ],
+    "correct": [
+      2,
+      1,
+      0
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Lab Scenario",
+    "difficulty": "средний",
+    "type": "multiple",
+    "reference": "https://learn.microsoft.com/teams/tutorials-and-labs",
+    "group": 13
+  },
+  {
+    "id": 248,
+    "question": "Сценарий: Нужно отчёт Top 10 команд с наибольшими файлами.",
+    "answers": [
+      "CQD",
+      "Audit",
+      "Usage analytics",
+      "SharePoint storage report filtered by Teams sites"
+    ],
+    "correct": [
+      3
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Monitoring & Troubleshooting",
+    "difficulty": null,
+    "type": "single",
+    "reference": "https://learn.microsoft.com/teams/monitoring-and-reporting-overview",
+    "group": 13
+  },
+  {
+    "id": 249,
+    "question": "Какой DSCP маркер используется для видеотрафика Teams по умолчанию?",
+    "answers": [
+      "46",
+      "34 (AF41)",
+      "28",
+      "0"
+    ],
+    "correct": [
+      1
+    ],
+    "explanation": "См. ссылку в reference.",
+    "category": "Monitoring & Troubleshooting",
+    "difficulty": "сложный",
+    "type": "single",
+    "reference": "https://learn.microsoft.com/teams/monitoring-and-reporting-overview",
+    "group": 13
+  }
+]
