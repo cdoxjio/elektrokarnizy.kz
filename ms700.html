@@ -1,162 +1,683 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MS-700 Certification Practice</title>
-  <script src="https://cdn.tailwindcss.com"></script>
   <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
   <meta http-equiv="Pragma" content="no-cache">
   <meta http-equiv="Expires" content="0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The MS-700 certification</title>
+  <script src="https://cdn.tailwindcss.com"></script>
   <style>
     body { font-family: 'Segoe UI', Arial, sans-serif; }
+    .fade { transition: all 0.5s; }
+    .question-area { max-width: 1200px; margin: 0 auto; }
+    .question-area p { margin-bottom: 0.7em; }
     .mint-bg {
       background: linear-gradient(120deg, #e6fff4 0%, #f6fefc 100%);
     }
-    .groups-link-bar {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-      gap: 0.5em;
-      margin: 2em auto;
-      justify-items: center;
-    }
+   .groups-link-bar {
+  display: grid;
+  grid-template-columns: repeat(11, minmax(0, 1fr));
+  gap: 0.5em;
+  justify-items: center;
+  align-items: center;
+  margin-bottom: 0.1em;
+  margin-top: 2em;
+}
+@media (max-width: 1200px) {
+  .groups-link-bar {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+}
+@media (max-width: 900px) {
+  .groups-link-bar {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+@media (max-width: 600px) {
+  .groups-link-bar {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
     .group-link {
-      padding: 0.4em 0.8em;
+      padding: 0.1em 0.7em;
       border-radius: 6px;
-      background: #E4EFFF;
-      color: #3855A3;
+      font-size: 1em;
+      text-decoration: underline dotted;
+      color: #205070;
+      background: none;
+      border: none;
       cursor: pointer;
-      font-weight: 600;
+      transition: background 0.2s, color 0.2s;
+      outline: none;
       user-select: none;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      font-weight: 600;
     }
     .group-link.active {
-      background: #B22234;
       color: #fff;
+      background: #B22234;
+      text-decoration: none;
+      font-weight: bold;
     }
-    .question-area {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 1em;
-      background: #fff;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    .group-link:focus-visible {
+      outline: 2px solid #B22234;
+      outline-offset: 1px;
     }
-    .options-list {
-      list-style: decimal inside;
+    .random-link {
+      padding: 0.1em 0.7em;
+      border-radius: 6px;
+      font-size: 1em;
+      color: #137ca8;
+      text-decoration: underline dotted;
+      cursor: pointer;
+      font-weight: 600;
+      letter-spacing: 0.01em;
+      background: none;
+      border: none;
+      margin-top: 0.7em;
+      margin-bottom: 1em;
+      margin-left: 0.3em;
+      margin-right: 0.3em;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      transition: color 0.15s;
+      display: inline-block;
+    }
+    .random-link:hover { color: #1e80c1; }
+    .multiple-hint {
+      color: #147f8a;
+      background: #e6fafd;
+      border: 1.5px solid #b1ebf5;
+      border-radius: 1em;
+      padding: 0.38em 0.7em;
+      margin-bottom: 1.1em;
+      margin-top: 0.2em;
+      font-weight: 700;
+      text-align: center;
+      font-size: 1.02em;
+      letter-spacing: 0.01em;
+      display: block;
+      width: fit-content;
+      max-width: 98%;
+      margin-left: auto;
+      margin-right: auto;
+      font-family: 'Segoe UI', Arial, sans-serif;
+    }
+    .nav-link {
+      padding: 0.1em 0.7em;
+      border-radius: 6px;
+      font-size: 1em;
+      text-decoration: underline dotted;
+      color: #205070;
+      background: none;
+      border: none;
+      cursor: pointer;
+      transition: background 0.2s, color 0.2s;
+      outline: none;
+      user-select: none;
+      font-weight: 500;
+    }
+    .nav-link.disabled,
+    .nav-link[aria-disabled="true"] {
+      color: #aaa;
+      pointer-events: none;
+      opacity: 0.6;
+      text-decoration: none;
+      cursor: not-allowed;
+    }
+    .nav-link.finish {
+      color: #B22234;
+      font-weight: bold;
+      text-decoration: underline;
+    }
+    .nav-link:focus-visible {
+      outline: 2px solid #B22234;
+      outline-offset: 1px;
+    }
+    .main-headline {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      font-size: 2.05rem;
+      font-weight: 800;
+      letter-spacing: 0.06em;
+      line-height: 1.12;
+      text-align: center;
+      background: linear-gradient(90deg, #13c4a3 10%, #1e80c1 90%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-fill-color: transparent;
+      text-shadow: 0 2px 8px rgba(30,128,193,0.08);
+      margin-bottom: 0.19em;
+      margin-top: 0.7em;
+      transition: font-size 0.2s;
+    }
+    @media (max-width: 640px) {
+      .main-headline { font-size: 1.05rem; }
+    }
+    .main-subhead {
+      color: #185476;
+      font-weight: 600;
+      font-size: 1.10rem;
+      text-align: center;
+      letter-spacing: 0.01em;
+      margin-bottom: 0.5em;
+      margin-top: 0;
+    }
+    .mini-stats {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.33em;
+      margin-left: 0.3em;
+      font-size: 0.94em;
+    }
+    .mini-badge {
+      display: inline-block;
+      min-width: 1.6em;
+      text-align: center;
+      padding: 0.06em 0.48em 0.1em 0.38em;
+      font-size: 0.92em;
+      border-radius: 1em;
+      font-weight: 600;
+      line-height: 1.15;
+      font-family: 'Segoe UI', Arial, sans-serif;
+    }
+    .mini-badge.ok {
+      background: #d7fff1;
+      color: #157c5c;
+      border: 1px solid #c0eed6;
+    }
+    .mini-badge.err {
+      background: #fff1f3;
+      color: #a83c48;
+      border: 1px solid #efbfc7;
+    }
+    .mini-badge.cur-q {
+      background: #e6fafd;
+      color: #188a89;
+      border: 1px solid #b1ebf5;
+      font-weight: 700;
+    }
+    .wrong-list {
+      margin: 1.5em auto 0.8em auto;
+      max-width: 700px;
+      padding: 1.1em 1.7em 1.1em 1.7em;
+      background: #fffafc;
+      border: 1.3px solid #ffe7ed;
+      border-radius: 1.3em;
+      font-family: 'Segoe UI', Arial, sans-serif;
+    }
+    .wrong-qtitle {
+      font-size: 1em;
+      font-weight: 600;
+      color: #b22234;
+      margin-bottom: 0.12em;
+      margin-top: 0.48em;
+      font-family: 'Segoe UI', Arial, sans-serif;
+    }
+    .retry-link {
+      color: #12709d;
+      font-weight: 700;
+      text-decoration: underline;
+      cursor: pointer;
+      font-size: 1.09em;
+      margin: 0 0.7em;
+    }
+    .retry-link:hover { color: #1e80c1; }
+    .font-for-questions {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      font-size: 1.24em;
+      font-weight: 400;
+      letter-spacing: 0.01em;
+      line-height: 1.45;
+      color: #16344c;
+    }
+    @media (max-width: 640px) {
+      .font-for-questions { font-size: 1em; }
+    }
+    .answer-btn-text {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      font-size: 1.13em;
+      color: #185476;
+      font-weight: 400;
+      letter-spacing: 0.005em;
+    }
+    .modern-timer {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.33em;
+      font-family: 'Segoe UI', monospace;
+      font-size: 1em;
+      background: linear-gradient(90deg,#f1fbfb,#aeeffb 90%);
+      color: #18798a;
+      border-radius: 1em;
+      padding: 0.18em 0.95em 0.18em 0.85em;
+      box-shadow: 0 1px 6px rgba(19,196,163,0.10);
+      font-weight: 600;
+      margin-left: 1.1em;
+      border: 1px solid #c1e7ef;
+      letter-spacing: 0.04em;
+      min-width: 72px;
+    }
+    .modern-timer svg {
+      margin-right: 0.12em;
+      opacity: 0.85;
+      width: 1.09em;
+      height: 1.09em;
+      vertical-align: -0.2em;
+    }
+    .next-group-btn {
+      font-size: 1em !important;
+      padding: 0.43em 1.15em !important;
+      border-radius: 1.1em !important;
+      font-weight: 700 !important;
+      background: linear-gradient(90deg, #44d5e6 20%, #52c86d 90%);
+      color: #fff !important;
+      border: none;
+      box-shadow: 0 2px 6px rgba(44,213,230,0.11);
+      transition: background 0.17s;
       margin-top: 1em;
+      margin-bottom: 0.7em;
+      letter-spacing: 0.01em;
+    }
+    .next-group-btn:hover {
+      background: linear-gradient(90deg, #37aac7 0%, #1d9457 100%);
+    }
+    .footer-info {
+      color: #768391;
+      background: none;
+      font-size: 0.98em;
+      padding: 1.4em 0 0.6em 0;
+      text-align: center;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      margin-bottom: 0.6em;
+      margin-top: 2em;
+      line-height: 1.4;
+      letter-spacing: 0.01em;
+      border: none;
     }
   </style>
 </head>
 <body class="mint-bg min-h-screen flex flex-col items-center">
+  <div id="app" class="w-full flex flex-col items-center justify-center min-h-screen"></div>
+  <div id="footerInfo"></div>
+<script>
 
-  <header class="text-center p-6">
-    <h1 class="text-3xl font-bold">MS-700 Certification Practice</h1>
-    <nav class="groups-link-bar"></nav>
-    <a href="#" class="random-link">Random Question</a>
-  </header>
+const QUESTIONS = [];
+const QUESTIONS_PER_GROUP = 20;
 
-  <main class="question-area p-6 bg-white rounded-xl shadow-lg fade">
-    <p class="question-text font-semibold"></p>
-    <ul class="options-list"></ul>
-    <a href="#" class="ask-again">Ask me another question</a>
-  </main>
+let QUESTIONS_LOADED = false;
+let LOAD_ERROR = false;
+let allQuestionsMode = false;
 
-  <script>
-    const QUESTIONS = [];
-    let QUESTIONS_LOADED = false;
-    let LOAD_ERROR = false;
-    let groups = [];
-    let currentGroupIndex = 0;
-    let currentQuestionIndex = 0;
+fetch('ms700_questions.json')
+  .then(r => r.json())
+  .then(qs => { QUESTIONS.push(...qs); QUESTIONS_LOADED = true; start(); })
+  .catch(() => {
+    LOAD_ERROR = true;
+    render();
+  });
 
-    // Fetch questions and shuffle answers only
-    fetch('ms700_questions.json')
-      .then(r => r.json())
-      .then(qs => {
-        QUESTIONS.push(...qs.map(q => {
-          const correctAnswer = q.answers[0];
-          const shuffledAnswers = shuffle([...q.answers]);
-          const correctIndex = shuffledAnswers.indexOf(correctAnswer);
+function chunkArray(array, size) {
+  const result = [];
+  for (let i = 0; i < array.length; i += size) {
+    result.push(array.slice(i, i + size));
+  }
+  return result;
+}
+function shuffle(arr) {
+  let a = arr.slice();
+  for (let i = a.length - 1; i > 0; i--) {
+    let j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+const ABC = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
+let groupIdx = 0, qIdx = 0, showAnswer = false, groupResults = [], timer = 0, timeActive = true;
+let interval = null, groups = [], group = [], q = {};
+let allSelected = [];
+let retryMode = false;
 
-          return {
-            ...q,
-            answers: shuffledAnswers,
-            correct: correctIndex
-          };
-        }));
-        QUESTIONS_LOADED = true;
-        start();
-      })
-      .catch(() => {
-        LOAD_ERROR = true;
-        render();
-      });
+function getCurrentGroupStats() {
+  let ok = 0, err = 0;
+  for (let i = 0; i < groupResults.length; i++) {
+    if (groupResults[i] === true) ok++;
+    if (groupResults[i] === false) err++;
+  }
+  return {ok, err};
+}
 
-    // Shuffle function to randomize answers
-    function shuffle(array) {
-      let a = array.slice();
-      for (let i = a.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [a[i], a[j]] = [a[j], a[i]];
+function render() {
+  const app = document.getElementById('app');
+  app.innerHTML = '';
+
+  document.getElementById('footerInfo').innerHTML = `
+    <div class="footer-info">
+      Questions are collected from open internet sources and provided for personal learning only.
+    </div>
+  `;
+
+  if (LOAD_ERROR) {
+    app.innerHTML = `<div class="mt-20 text-center">
+      <div class="text-3xl text-red-700 font-bold mb-2">Failed to load questions</div>
+      <div class="text-base text-red-700">Please check your ms700_questions.json file.</div>
+    </div>`;
+    return;
+  }
+  if (!QUESTIONS_LOADED) {
+    app.innerHTML = `<div class="mt-20 text-center">
+      <div class="text-2xl text-gray-600 font-bold mb-3 animate-pulse">Loading questions...</div>
+    </div>`;
+    return;
+  }
+
+  let topTitle = `
+    <div class="w-full flex flex-col items-center mb-1 mt-2">
+      <div class="main-headline">The MS-700 certification</div>
+      <div class="main-subhead">Microsoft 365 Certified: Teams Administrator Associate</div>
+    </div>
+  `;
+
+  let groupTabs = allQuestionsMode ? '' : `
+    <div class="groups-link-bar" role="tablist" aria-label="Question groups">
+      ${groups.map((g, idx) =>
+        `<a href="javascript:void(0);" role="button" tabindex="0"
+            aria-current="${idx===groupIdx ? 'true' : 'false'}"
+            class="group-link${idx===groupIdx ? ' active' : ''}"
+            onclick="goToGroup(${idx})"
+            onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();goToGroup(${idx});}"
+        >
+            Group ${idx+1}
+        </a>`
+      ).join('')}
+    </div>
+    <div style="text-align:center">
+      <a class="random-link group-link" onclick="startAllQuestionsRandom()" href="javascript:void(0);">Start test with all questions (random order)</a>
+    </div>
+  `;
+
+  let backToGroupsLink = allQuestionsMode
+    ? `<div style="text-align:center">
+         <a class="random-link group-link" onclick="start()" href="javascript:void(0);">Back to groups mode</a>
+       </div>` : '';
+
+  app.innerHTML = topTitle + groupTabs + backToGroupsLink + mainContent();
+}
+
+function formatQuestion(text) {
+  let paragraphs = [];
+  if (text.indexOf('\n\n') >= 0) {
+    paragraphs = text.split(/\n{2,}/);
+  } else {
+    paragraphs = text.split(/([.?!]\s+)/g).reduce((acc, part, idx, arr) => {
+      if (part.match(/[.?!]\s+/)) {
+        acc[acc.length - 1] += part;
+      } else {
+        acc.push(part);
       }
-      return a;
+      return acc;
+    }, []);
+  }
+  return paragraphs.map(p => `<p>${p.trim()}</p>`).join('');
+}
+
+function mainContent() {
+  let {ok, err} = getCurrentGroupStats();
+  let qStatus = '';
+  if (groupResults[qIdx] === true) {
+    qStatus = `<span class="mini-badge ok cur-q" title="Correct">✔</span>`;
+  } else if (groupResults[qIdx] === false) {
+    qStatus = `<span class="mini-badge err cur-q" title="Incorrect">✖</span>`;
+  }
+
+  let timerBox = `
+    <span class="modern-timer" title="Time spent">
+      <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="9" />
+        <polyline points="12 7 12 12 15 15" />
+      </svg>
+      ${Math.floor(timer/60)}:${String(timer%60).padStart(2,'0')}
+    </span>
+  `;
+
+  let counterBlock = `<div class="flex flex-wrap items-center gap-4 justify-center mb-3">
+    <div class="bg-white/70 text-mint-700 px-2 py-0.5 rounded-md text-xs font-semibold border border-mint-200 flex items-center">
+      Group ${groupIdx+1}/${groups.length}
+      <span class="mini-stats">
+        <span class="mini-badge ok" title="Correct in group">✔ ${ok}</span>
+        <span class="mini-badge err" title="Incorrect in group">✖ ${err}</span>
+      </span>
+    </div>
+    <div class="bg-white/70 text-mint-700 px-2 py-0.5 rounded-md text-xs font-semibold border border-mint-200 flex items-center">
+      Question ${qIdx+1}/${group.length}
+      ${qStatus}
+    </div>
+    ${timerBox}
+  </div>`;
+
+  let selectHint = "";
+  if (!showAnswer && q && q.correct && q.correct.length > 1) {
+    selectHint = `<div class="multiple-hint" role="alert">
+      Multiple answers possible! There may be <b>two or more</b> correct answers.
+    </div>`;
+  }
+
+  if (!timeActive && groupResults.length === group.length) {
+    let wrongs = [];
+    for (let i = 0; i < groupResults.length; i++) {
+      if (groupResults[i] === false) wrongs.push(i);
     }
-
-    // Split questions into groups of 20
-    function chunkArray(array, size) {
-      const result = [];
-      for (let i = 0; i < array.length; i += size) {
-        result.push(array.slice(i, i + size));
-      }
-      return result;
+    let retryBtn = '';
+    if (wrongs.length > 0 && !retryMode) {
+      retryBtn = `<a class="retry-link" onclick="retryWrongQuestions()" href="javascript:void(0);">Retry incorrect answers (${wrongs.length})</a>`;
     }
-
-    // Start the application
-    function start() {
-      groups = chunkArray(QUESTIONS, 20); // Groups of 20 questions
-      render();
+    let wrongList = '';
+    if (wrongs.length > 0) {
+      wrongList = `<div class="wrong-list">
+        <div class="font-semibold mb-2 text-lg text-balance" style="color:#a83c48;">Incorrectly answered questions:</div>
+        <ol style="padding-left:1em;">
+          ${wrongs.map((idx, widx) =>
+            `<li class="mb-4">
+              <div class="wrong-qtitle">Question ${idx+1}:</div>
+              <div class="font-for-questions">${formatQuestion(group[idx].question)}</div>
+            </li>`
+          ).join('')}
+        </ol>
+      </div>`;
     }
+    return `
+      <div class="rounded-2xl shadow p-6 text-center max-w-md bg-white fade">
+        <h2 class="text-xl font-bold mb-2">Group Results</h2>
+        <div class="flex flex-row gap-3 justify-center items-center mt-2 mb-4">
+          <span class="mini-badge ok" title="Correct">✔ ${ok}</span>
+          <span class="mini-badge err" title="Incorrect">✖ ${err}</span>
+        </div>
+        <p class="mb-2 text-base">Time: <span class="font-mono">${Math.floor(timer/60)}:${String(timer%60).padStart(2,'0')}</span></p>
+        ${retryBtn}
+        ${groups.length && groupIdx + 1 < groups.length && !retryMode && !allQuestionsMode
+          ? `<button onclick="nextGroup()" class="next-group-btn">Next Group</button>`
+          : `<div class="text-lg mt-4 font-semibold">Test complete!</div>`
+        }
+      </div>
+      ${wrongList}`;
+  }
 
-    // Render the navigation links for groups
-    function render() {
-      if (LOAD_ERROR) {
-        document.getElementById('app').innerHTML = 'Error loading questions.';
-        return;
-      }
-      if (!QUESTIONS_LOADED) {
-        document.getElementById('app').innerHTML = 'Loading...';
-        return;
-      }
+  let navLinks = `
+    <div class="flex flex-row flex-wrap gap-4 justify-center mt-8 text-base">
+      <a href="javascript:void(0);" class="nav-link${qIdx === 0 ? ' disabled' : ''}" role="button" tabindex="0"
+        aria-disabled="${qIdx === 0 ? 'true' : 'false'}"
+        onclick="prevQuestion()" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();prevQuestion();}">
+        &larr; Previous
+      </a>
+      <a href="javascript:void(0);" class="nav-link${qIdx === group.length - 1 ? ' disabled' : ''}" role="button" tabindex="0"
+        aria-disabled="${qIdx === group.length - 1 ? 'true' : 'false'}"
+        onclick="gotoNextQuestion()" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();gotoNextQuestion();}">
+        Next &rarr;
+      </a>
+      <a href="javascript:void(0);" class="nav-link finish" role="button" tabindex="0"
+        onclick="finishGroup()" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();finishGroup();}">
+        Finish
+      </a>
+    </div>
+  `;
 
-      let nav = '<nav class="groups-link-bar">';
-      groups.forEach((group, idx) => {
-        nav += `<button class="group-link" onclick="showGroup(${idx})">Group ${idx + 1}</button>`;
-      });
-      nav += '</nav>';
+  return counterBlock + `
+    <div class="rounded-3xl shadow-2xl p-10 w-full max-w-4xl question-area bg-white flex flex-col gap-2 fade border border-mint-100">
+      <div class="mb-4 font-for-questions">${formatQuestion(q.question)}</div>
+      ${selectHint}
+      <div class="flex flex-col gap-4 mb-2" role="group" aria-label="Answer choices">
+        ${q.answers.map((a,i) => {
+          let isCorrect = q.correct.includes(i);
+          let isSelected = (allSelected[groupIdx] && allSelected[groupIdx][qIdx] || []).includes(i);
+          let color = 'border-slate-300 bg-white hover:bg-blue-50';
+          let label = '';
+          let labelColor = '';
+          if (showAnswer) {
+            if (isCorrect && isSelected) { color = 'border-green-600 bg-green-50 ring-2 ring-green-200'; label = 'Correct'; labelColor='bg-green-100 text-green-800'; }
+            else if (isCorrect && !isSelected) { color = 'border-green-500 bg-green-50 ring-2 ring-green-200'; label = 'Correct'; labelColor='bg-green-100 text-green-800'; }
+            else if (!isCorrect && isSelected) { color = 'border-red-500 bg-red-50 ring-2 ring-red-200'; label = 'Wrong'; labelColor='bg-red-100 text-red-800'; }
+          } else if (isSelected) {
+            color = 'border-blue-600 bg-blue-50 ring-2 ring-blue-200';
+            label = 'Your choice';
+            labelColor='bg-blue-100 text-blue-800';
+          }
+          return `<button class="w-full flex items-center justify-between text-left rounded-2xl py-3 px-4 answer-btn-text font-for-questions shadow border transition ${color}"
+            ${showAnswer ? 'disabled' : ''}
+            aria-pressed="${isSelected ? 'true' : 'false'}"
+            tabindex="0"
+            onclick="toggleSelect(${i})"
+            onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleSelect(${i});}"
+          >
+            <span>
+              <span class="inline-block font-bold mr-3 text-xl text-blue-800">${ABC[i]||''}.</span>
+              ${a}
+              ${isSelected && !showAnswer ? '<span class="ml-2 text-blue-700 font-bold">✔ (selected)</span>' : ''}
+            </span>
+            ${label ? `<span class="ml-3 px-3 py-1 rounded-xl text-base ${labelColor}">${label}</span>` : ''}
+          </button>`;
+        }).join('')}
+      </div>
+      <div class="mt-6 flex justify-center">
+        ${
+          !showAnswer
+          ? `<button onclick="checkAnswer()" class="next-group-btn" ${getSelected().length===0?'disabled':''}>Check</button>`
+          : `<button onclick="next()" class="next-group-btn">Next Question</button>`
+        }
+      </div>
+      ${navLinks}
+    </div>`;
+}
 
-      document.getElementById('app').innerHTML = nav + '<div id="question-container"></div>';
-      showGroup(0);
+// Остальные функции для работы теста — без изменений:
+
+function start() {
+  allQuestionsMode = false;
+  const validQuestions = QUESTIONS.filter(q => q && (q.question || q.text));
+  groups = [];
+  for (let i = 0; i < validQuestions.length; i += QUESTIONS_PER_GROUP) {
+    groups.push(validQuestions.slice(i, i + QUESTIONS_PER_GROUP));
+  }
+  groupIdx = 0;
+  goToGroup(0);
+
+  allQuestionsMode = false;
+  groups = chunkArray(shuffle(QUESTIONS), 20); // по 20 вопроса в группе, можешь изменить размер
+  groupIdx = 0;
+  goToGroup(0);
+}
+function startAllQuestionsRandom() {
+  allQuestionsMode = true;
+  groups = [shuffle(QUESTIONS)];
+  groupIdx = 0;
+  goToGroup(0);
+}
+function goToGroup(idx) {
+  groupIdx = idx;
+  group = groups[groupIdx];
+  qIdx = 0;
+  groupResults = Array(group.length).fill(null);
+  showAnswer = false;
+  timer = 0;
+  timeActive = true;
+  allSelected[groupIdx] = Array(group.length).fill().map(() => []);
+  retryMode = false;
+  q = group[qIdx];
+  if (interval) clearInterval(interval);
+  interval = setInterval(() => { if (timeActive) { timer++; render(); } }, 1000);
+  render();
+}
+function getSelected() { return allSelected[groupIdx][qIdx] || []; }
+function toggleSelect(i) {
+  if (showAnswer) return;
+  const arr = allSelected[groupIdx][qIdx] || [];
+  if (arr.includes(i)) {
+    allSelected[groupIdx][qIdx] = arr.filter(x => x !== i);
+  } else {
+    if (q.correct.length === 1) {
+      allSelected[groupIdx][qIdx] = [i];
+    } else {
+      allSelected[groupIdx][qIdx] = [...arr, i];
     }
-
-    // Show questions from a specific group
-    function showGroup(groupIdx) {
-      currentGroupIndex = groupIdx;
-      currentQuestionIndex = 0;
-      const group = groups[groupIdx];
-      let questionHtml = '';
-      group.forEach((q, idx) => {
-        questionHtml += `<div class="question-area p-4 bg-white rounded shadow my-2">`;
-        questionHtml += `<p class="font-semibold">${idx + 1}. ${q.question}</p><ul>`;
-        q.answers.forEach((ans, ansIdx) => {
-          const optionLetter = String.fromCharCode(65 + ansIdx); // A, B, C, D...
-          questionHtml += `<li>${optionLetter}. ${ans}</li>`;
-        });
-        questionHtml += `</ul></div>`;
-      });
-      document.getElementById('question-container').innerHTML = questionHtml;
-    }
-
-  </script>
-
+  }
+  render();
+}
+function checkAnswer() {
+  showAnswer = true;
+  const selected = getSelected().sort();
+  const correct = (q.correct || []).sort();
+  groupResults[qIdx] = JSON.stringify(selected) === JSON.stringify(correct);
+  render();
+}
+function next() {
+  showAnswer = false;
+  if (qIdx < group.length - 1) {
+    qIdx++;
+    q = group[qIdx];
+    render();
+  } else {
+    finishGroup();
+  }
+}
+function prevQuestion() {
+  if (qIdx > 0) {
+    qIdx--;
+    q = group[qIdx];
+    showAnswer = false;
+    render();
+  }
+}
+function gotoNextQuestion() {
+  if (qIdx < group.length - 1) {
+    qIdx++;
+    q = group[qIdx];
+    showAnswer = false;
+    render();
+  }
+}
+function finishGroup() {
+  timeActive = false;
+  showAnswer = false;
+  render();
+}
+function nextGroup() {
+  goToGroup(groupIdx + 1);
+}
+function retryWrongQuestions() {
+  retryMode = true;
+  let wrongIdxs = groupResults.map((v, idx) => v === false ? idx : null).filter(x => x !== null);
+  group = wrongIdxs.map(idx => group[idx]);
+  qIdx = 0;
+  groupResults = Array(group.length).fill(null);
+  allSelected[groupIdx] = Array(group.length).fill().map(() => []);
+  showAnswer = false;
+  timeActive = true;
+  timer = 0;
+  q = group[qIdx];
+  if (interval) clearInterval(interval);
+  interval = setInterval(() => { if (timeActive) { timer++; render(); } }, 1000);
+  render();
+}
+</script>
 </body>
 </html>
