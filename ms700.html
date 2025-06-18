@@ -1,33 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MS-700 Certification Practice</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
     body { font-family: 'Segoe UI', Arial, sans-serif; }
-    .fade { transition: all 0.5s; }
-    .question-area { max-width: 1200px; margin: 0 auto; }
-    .question-area p { margin-bottom: 0.7em; }
     .mint-bg {
       background: linear-gradient(120deg, #e6fff4 0%, #f6fefc 100%);
     }
-    /* --- Динамическая сетка групп --- */
     .groups-link-bar {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
       gap: 0.5em;
+      margin: 2em auto;
       justify-items: center;
-      align-items: center;
-      margin: 2em 0 0.1em;
     }
     .group-link {
       padding: 0.4em 0.8em;
       border-radius: 6px;
       background: #E4EFFF;
       color: #3855A3;
-      text-decoration: none;
+      cursor: pointer;
       font-weight: 600;
       user-select: none;
     }
@@ -35,140 +30,102 @@
       background: #B22234;
       color: #fff;
     }
-    .group-link:focus-visible {
-      outline: 2px solid #B22234;
-      outline-offset: 1px;
-    }
-    .random-link {
-      display: inline-block;
-      margin: 1.5em 0;
-      padding: 0.5em 1.2em;
-      background: #f0f0f0;
-      border-radius: 6px;
-      text-decoration: none;
-      color: #333;
-      font-weight: 600;
-      user-select: none;
-    }
-    .random-link:focus-visible {
-      outline: 2px solid #B22234;
-      outline-offset: 1px;
-    }
-    .ask-again {
-      display: block;
-      margin: 2em auto 1em auto;
-      text-decoration: none;
-      font-style: italic;
-      color: #555;
-    }
-    .ask-again:focus-visible {
-      outline: 2px solid #B22234;
-      outline-offset: 1px;
+    .question-area {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 1em;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
     .options-list {
       list-style: decimal inside;
-      margin-bottom: 1em;
+      margin-top: 1em;
     }
   </style>
 </head>
 <body class="mint-bg">
-  <header class="text-center p-6">
-    <h1 class="text-3xl font-bold">MS-700 Certification Practice</h1>
-    <nav class="groups-link-bar"></nav>
-    <a href="#" class="random-link">Random Question</a>
-  </header>
 
-  <main class="question-area p-6 bg-white rounded-xl shadow-lg fade">
-    <p class="question-text"></p>
-    <ul class="options-list"></ul>
-    <a href="#" class="ask-again">Ask me another question</a>
-  </main>
+<header class="text-center p-6">
+  <h1 class="text-3xl font-bold">MS-700 Certification Practice</h1>
+  <nav class="groups-link-bar"></nav>
+</header>
 
-  <script>
-    // Разбивает массив на чанки по size, но пропускает пустые
-    function chunkArray(arr, size) {
-      const out = [];
-      for (let i = 0; i < arr.length; i += size) {
-        const chunk = arr.slice(i, i + size);
-        if (chunk.length) out.push(chunk);
-      }
-      return out;
+<main class="question-area">
+  <p class="question-text font-semibold"></p>
+  <ul class="options-list"></ul>
+</main>
+
+<script>
+  let groups = [];
+
+  // Загрузка и разбивка вопросов на группы
+  fetch('data.json')
+    .then(res => res.json())
+    .then(data => {
+      const questions = Array.isArray(data) ? data : data.questions || [];
+      groups = chunkArray(questions, 20);
+      renderGroupLinks();
+      if (groups.length) displayGroup(0);
+    })
+    .catch(err => alert('Ошибка загрузки JSON: ' + err));
+
+  // Разбивает массив на группы по size
+  function chunkArray(array, size) {
+    let result = [];
+    for (let i = 0; i < array.length; i += size) {
+      result.push(array.slice(i, i + size));
     }
+    return result;
+  }
 
-    // Загружаем JSON (поддерживается { questions: [...] } или сам массив)
-    fetch('data.json')
-      .then(res => res.json())
-      .then(data => {
-        // Нормализуем структуру
-        const raw = Array.isArray(data) ? data : (data.questions || []);
-        // Фильтруем только валидные вопросы с текстом и опциями
-        const questions = raw.filter(q =>
-          q && typeof q.text === 'string' &&
-          Array.isArray(q.options) && q.options.length
-        );
-        // Группируем по 20
-        const groups = chunkArray(questions, 20);
+  // Рендер вкладок-групп
+  function renderGroupLinks() {
+    const nav = document.querySelector('.groups-link-bar');
+    nav.innerHTML = '';
+    groups.forEach((_, idx) => {
+      const link = document.createElement('div');
+      link.textContent = `Group ${idx + 1}`;
+      link.className = 'group-link';
+      link.onclick = () => {
+        document.querySelectorAll('.group-link').forEach(l => l.classList.remove('active'));
+        link.classList.add('active');
+        displayGroup(idx);
+      };
+      nav.appendChild(link);
+    });
+    if (nav.firstChild) nav.firstChild.classList.add('active');
+  }
 
-        const nav = document.querySelector('.groups-link-bar');
+  let currentGroupIndex = 0;
+  let currentQuestionIndex = 0;
 
-        // Создаем вкладки только для непустых групп
-        groups.forEach((grp, idx) => {
-          const a = document.createElement('a');
-          a.href = '#';
-          a.textContent = `Group ${idx + 1}`;
-          a.className = 'group-link';
-          a.addEventListener('click', e => {
-            e.preventDefault();
-            displayGroup(idx);
-          });
-          nav.appendChild(a);
-        });
+  // Отображение группы
+  function displayGroup(idx) {
+    currentGroupIndex = idx;
+    currentQuestionIndex = 0; // начинаем с первого вопроса группы
+    showQuestion();
+  }
 
-        // Отображает выбранную группу
-        function displayGroup(i) {
-          document.querySelectorAll('.group-link').forEach((lnk, j) =>
-            lnk.classList.toggle('active', i === j)
-          );
-          const grp = groups[i];
-          showQuestion(grp[Math.floor(Math.random() * grp.length)]);
-        }
+  // Отображение вопроса текущей группы по текущему индексу
+  function showQuestion() {
+    const qArea = document.querySelector('.question-text');
+    const opts = document.querySelector('.options-list');
+    const group = groups[currentGroupIndex];
 
-        // Показывает один вопрос и варианты
-        function showQuestion(q) {
-          document.querySelector('.question-text').textContent = q.text;
-          const ul = document.querySelector('.options-list');
-          ul.innerHTML = '';
-          q.options.forEach(opt => {
-            const li = document.createElement('li');
-            li.textContent = opt;
-            ul.appendChild(li);
-          });
-        }
+    if (!group || !group[currentQuestionIndex]) return;
 
-        // Инициализация: показываем первую группу, если она есть
-        if (groups.length) displayGroup(0);
+    const q = group[currentQuestionIndex];
+    qArea.textContent = q.text;
 
-        // Случайный вопрос из всех
-        document.querySelector('.random-link').addEventListener('click', e => {
-          e.preventDefault();
-          const q = questions[Math.floor(Math.random() * questions.length)];
-          showQuestion(q);
-          document.querySelectorAll('.group-link').forEach(l => l.classList.remove('active'));
-        });
+    opts.innerHTML = '';
+    q.options.forEach(option => {
+      const li = document.createElement('li');
+      li.textContent = option;
+      opts.appendChild(li);
+    });
+  }
+</script>
 
-        // «Ask me another question» внутри текущей группы
-        document.querySelector('.ask-again').addEventListener('click', e => {
-          e.preventDefault();
-          const active = document.querySelector('.group-link.active');
-          if (!active) return;
-          const idx = Array.from(document.querySelectorAll('.group-link')).indexOf(active);
-          displayGroup(idx);
-        });
-      })
-      .catch(err => {
-        console.error('Не удалось загрузить data.json:', err);
-        alert('Ошибка загрузки вопросов.');
-      });
-  </script>
 </body>
 </html>
