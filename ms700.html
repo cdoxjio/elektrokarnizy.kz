@@ -7,85 +7,45 @@
   <meta http-equiv="Pragma" content="no-cache">
   <meta http-equiv="Expires" content="0">
   <title>The MS-700 Certification</title>
-  <script src="https://cdn.tailwindcss.com"></script>
   <style>
-    body { font-family: 'Segoe UI', Arial, sans-serif; }
-    .fade { transition: all 0.5s; }
-    .question-area { max-width: 1200px; margin: 0 auto; }
-    .question-area p { margin-bottom: 0.7em; }
-    .mint-bg {
-      background: linear-gradient(120deg, #e6fff4 0%, #f6fefc 100%);
+    body {
+      background-color: #f0fdf4;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
     }
-    .group-link {
-      padding: 0.1em 0.7em;
-      border-radius: 6px;
-      font-size: 1em;
-      text-decoration: underline dotted;
-      color: #205070;
-      background: none;
-      border: none;
-      cursor: pointer;
-      transition: background 0.2s, color 0.2s;
-      outline: none;
-      user-select: none;
-      font-family: 'Segoe UI', Arial, sans-serif;
-      font-weight: 600;
-    }
-    .group-link.active {
-      color: #fff;
-      background: #B22234;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    .group-link:focus-visible {
-      outline: 2px solid #B22234;
-      outline-offset: 1px;
-    }
-    .random-link {
-      padding: 0.1em 0.7em;
-      border-radius: 6px;
-      font-size: 1em;
-      color: #137ca8;
-      text-decoration: underline dotted;
-      cursor: pointer;
-      font-weight: 600;
-      letter-spacing: 0.01em;
-      background: none;
-      border: none;
-      margin-top: 0.7em;
-      margin-bottom: 1em;
-      margin-left: 0.3em;
-      margin-right: 0.3em;
-      font-family: 'Segoe UI', Arial, sans-serif;
-      transition: color 0.15s;
-      display: inline-block;
-    }
-    .random-link:hover { color: #1e80c1; }
-    .multiple-hint {
-      color: #147f8a;
-      background: #e6fafd;
-      border: 1.5px solid #b1ebf5;
-      border-radius: 1em;
-      padding: 0.38em 0.7em;
-      margin-bottom: 1.1em;
-      margin-top: 0.2em;
-      font-weight: 700;
+    header {
+      background-color: #4CAF50;
+      color: white;
+      padding: 20px;
       text-align: center;
-      font-size: 1.02em;
-      letter-spacing: 0.01em;
-      display: block;
-      width: fit-content;
-      max-width: 98%;
-      margin-left: auto;
-      margin-right: auto;
-      font-family: 'Segoe UI', Arial, sans-serif;
     }
-    .answer-btn-text {
-      font-family: 'Segoe UI', Arial, sans-serif;
-      font-size: 1.13em;
-      color: #185476;
-      font-weight: 400;
-      letter-spacing: 0.005em;
+    .question-container {
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+      max-width: 800px;
+      margin: auto;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .answers {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    button:disabled {
+      background-color: #cccccc;
     }
     .answer-button {
       text-align: left;
@@ -106,216 +66,108 @@
     }
   </style>
 </head>
-<body class="mint-bg min-h-screen flex flex-col items-center">
+<body>
 
-  <div id="app" class="w-full flex flex-col items-center justify-center min-h-screen"></div>
-  <div id="footerInfo"></div>
+<header>
+  <h1>The MS-700 Certification</h1>
+  <p>Microsoft Teams Administrator Associate Exam</p>
+</header>
+
+<div id="question-container" class="question-container">
+  <div id="question"></div>
+  <div id="answers" class="answers"></div>
+  <button id="next-question" onclick="nextQuestion()" disabled>Next Question</button>
+</div>
+
+<div class="footer">
+  <p>Questions provided for personal learning. All rights reserved.</p>
+</div>
 
 <script>
-  const QUESTIONS = [];
-  let QUESTIONS_LOADED = false;
-  let LOAD_ERROR = false;
-  let allQuestionsMode = false;
+  let currentQuestionIndex = 0;
+  let questions = [];
 
-  fetch('https://raw.githubusercontent.com/cdoxjio/elektrokarnizy.kz/main/ms700_questions.json')
-    .then(r => r.json())
-    .then(qs => { QUESTIONS.push(...qs); QUESTIONS_LOADED = true; start(); })
-    .catch(() => {
-      LOAD_ERROR = true;
-      render();
+  // Fetch questions from the provided JSON file (now using GitHub raw URL)
+  async function loadQuestions() {
+    try {
+      // Load the JSON file from GitHub
+      const response = await fetch('https://raw.githubusercontent.com/cdoxjio/elektrokarnizy.kz/main/ms700_questions.json');
+      const data = await response.json();
+      questions = data; // Store the questions in the 'questions' array
+      displayQuestion();
+    } catch (error) {
+      console.error("Error loading the questions:", error);
+      alert("Failed to load questions!");
+    }
+  }
+
+  function shuffleAnswers(answers, correctIndices) {
+    const shuffledAnswers = [...answers];
+    const correctAnswers = [];
+
+    // Shuffle answers and track the new positions of correct answers
+    for (let i = shuffledAnswers.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [shuffledAnswers[i], shuffledAnswers[j]] = [shuffledAnswers[j], shuffledAnswers[i]];
+    }
+
+    // Find new positions of correct answers after shuffle
+    correctIndices.forEach(index => {
+      const newIndex = shuffledAnswers.indexOf(answers[index]);
+      correctAnswers.push(newIndex);
     });
 
-  function chunkArray(array, size) {
-    const result = [];
-    for (let i = 0; i < array.length; i += size) {
-      result.push(array.slice(i, i + size));
-    }
-    return result;
-  }
-  
-  function shuffle(arr) {
-    let a = arr.slice();
-    for (let i = a.length - 1; i > 0; i--) {
-      let j = Math.floor(Math.random() * (i + 1));
-      [a[i], a[j]] = [a[j], a[i]];
-    }
-    return a;
-  }
-  
-  const ABC = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
-  let groupIdx = 0, qIdx = 0, showAnswer = false, groupResults = [], timer = 0, timeActive = true;
-  let interval = null, groups = [], group = [], q = {};
-  let allSelected = [];
-  let retryMode = false;
-
-  function getCurrentGroupStats() {
-    let ok = 0, err = 0;
-    for (let i = 0; i < groupResults.length; i++) {
-      if (groupResults[i] === true) ok++;
-      if (groupResults[i] === false) err++;
-    }
-    return {ok, err};
+    return { shuffledAnswers, correctAnswers };
   }
 
-  function render() {
-    const app = document.getElementById('app');
-    app.innerHTML = '';
+  function displayQuestion() {
+    const question = questions[currentQuestionIndex];
+    const questionText = question.question;
+    const answers = question.answers;
+    const correctIndices = question.correct;
 
-    document.getElementById('footerInfo').innerHTML = `
-      <div class="footer-info">
-        Questions are collected from open internet sources and provided for personal learning only.
-      </div>
-    `;
+    const { shuffledAnswers, correctAnswers } = shuffleAnswers(answers, correctIndices);
 
-    if (LOAD_ERROR) {
-      app.innerHTML = `<div class="mt-20 text-center">
-        <div class="text-3xl text-red-700 font-bold mb-2">Failed to load questions</div>
-        <div class="text-base text-red-700">Please check your ms700_questions.json file.</div>
-      </div>`;
-      return;
-    }
-    if (!QUESTIONS_LOADED) {
-      app.innerHTML = `<div class="mt-20 text-center">
-        <div class="text-2xl text-gray-600 font-bold mb-3 animate-pulse">Loading questions...</div>
-      </div>`;
-      return;
-    }
+    // Display question text
+    document.getElementById("question").innerText = questionText;
 
-    let topTitle = `
-      <div class="w-full flex flex-col items-center mb-1 mt-2">
-        <div class="main-headline">The MS-700 certification</div>
-        <div class="main-subhead">Microsoft 365 Certified: Teams Administrator Associate</div>
-      </div>
-    `;
+    // Display shuffled answers
+    const answersContainer = document.getElementById("answers");
+    answersContainer.innerHTML = '';
+    shuffledAnswers.forEach((answer, index) => {
+      const button = document.createElement("button");
+      button.classList.add("answer-button");
+      button.innerText = answer;
+      button.onclick = () => checkAnswer(index, correctAnswers);
+      answersContainer.appendChild(button);
+    });
 
-    let groupTabs = allQuestionsMode ? '' : `
-      <div class="groups-link-bar" role="tablist" aria-label="Question groups">
-        ${groups.map((g, idx) =>
-          `<a href="javascript:void(0);" role="button" tabindex="0"
-              aria-current="${idx===groupIdx ? 'true' : 'false'}"
-              class="group-link${idx===groupIdx ? ' active' : ''}"
-              onclick="goToGroup(${idx})"
-              onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();goToGroup(${idx});}"
-          >
-              Group ${idx+1}
-          </a>`
-        ).join('')}
-      </div>
-      <div style="text-align:center">
-        <a class="random-link group-link" onclick="startAllQuestionsRandom()" href="javascript:void(0);">Start test with all questions (random order)</a>
-      </div>
-    `;
-
-    let backToGroupsLink = allQuestionsMode
-      ? `<div style="text-align:center">
-           <a class="random-link group-link" onclick="start()" href="javascript:void(0);">Back to groups mode</a>
-         </div>` : '';
-
-    app.innerHTML = topTitle + groupTabs + backToGroupsLink + mainContent();
+    // Enable "Next Question" button
+    document.getElementById("next-question").disabled = false;
   }
 
-  function formatQuestion(text) {
-    let paragraphs = [];
-    if (text.indexOf('\n\n') >= 0) {
-      paragraphs = text.split(/\n{2,}/);
+  function checkAnswer(selectedIndex, correctAnswers) {
+    if (correctAnswers.includes(selectedIndex)) {
+      alert("Correct answer!");
     } else {
-      paragraphs = text.split(/([.?!]\s+)/g).reduce((acc, part, idx, arr) => {
-        if (part.match(/[.?!]\s+/)) {
-          acc[acc.length - 1] += part;
-        } else {
-          acc.push(part);
-        }
-        return acc;
-      }, []);
+      alert("Incorrect answer.");
     }
-    return paragraphs.map(p => `<p>${p.trim()}</p>`).join('');
+    // Disable further answering and enable next question
+    const buttons = document.querySelectorAll('.answer-button');
+    buttons.forEach(button => button.disabled = true);
   }
 
-  function mainContent() {
-    let {ok, err} = getCurrentGroupStats();
-    let qStatus = '';
-    if (groupResults[qIdx] === true) {
-      qStatus = `<span class="mini-badge ok cur-q" title="Correct">✔</span>`;
-    } else if (groupResults[qIdx] === false) {
-      qStatus = `<span class="mini-badge err cur-q" title="Incorrect">✖</span>`;
+  function nextQuestion() {
+    currentQuestionIndex++;
+    if (currentQuestionIndex < questions.length) {
+      displayQuestion();
+    } else {
+      alert("Congratulations, you have completed the quiz!");
     }
-
-    let timerBox = `
-      <span class="modern-timer" title="Time spent">
-        <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-          <circle cx="12" cy="12" r="9" />
-          <polyline points="12 7 12 12 15 15" />
-        </svg>
-        ${Math.floor(timer/60)}:${String(timer%60).padStart(2,'0')}
-      </span>
-    `;
-
-    let counterBlock = `<div class="flex flex-wrap items-center gap-4 justify-center mb-3">
-      <div class="bg-white/70 text-mint-700 px-2 py-0.5 rounded-md text-xs font-semibold border border-mint-200 flex items-center">
-        Group ${groupIdx+1}/${groups.length}
-        <span class="mini-stats">
-          <span class="mini-badge ok" title="Correct in group">✔ ${ok}</span>
-          <span class="mini-badge err" title="Incorrect in group">✖ ${err}</span>
-        </span>
-      </div>
-      <div class="bg-white/70 text-mint-700 px-2 py-0.5 rounded-md text-xs font-semibold border border-mint-200 flex items-center">
-        Question ${qIdx+1}/${group.length}
-        ${qStatus}
-      </div>
-      ${timerBox}
-    </div>`;
-
-    let selectHint = "";
-    if (!showAnswer && q && q.correct && q.correct.length > 1) {
-      selectHint = `<div class="multiple-hint" role="alert">
-        Multiple answers possible! There may be <b>two or more</b> correct answers.
-      </div>`;
-    }
-
-    return counterBlock + `
-      <div class="rounded-3xl shadow-2xl p-10 w-full max-w-4xl question-area bg-white flex flex-col gap-2 fade border border-mint-100">
-        <div class="mb-4 font-for-questions">${formatQuestion(q.question)}</div>
-        ${selectHint}
-        <div class="flex flex-col gap-4 mb-2" role="group" aria-label="Answer choices">
-          ${q.answers.map((a,i) => {
-            let isCorrect = q.correct.includes(i);
-            let isSelected = (allSelected[groupIdx] && allSelected[groupIdx][qIdx] || []).includes(i);
-            let color = 'border-slate-300 bg-white hover:bg-blue-50';
-            let label = '';
-            let labelColor = '';
-            if (showAnswer) {
-              if (isCorrect && isSelected) { color = 'border-green-600 bg-green-50 ring-2 ring-green-200'; label = 'Correct'; labelColor='bg-green-100 text-green-800'; }
-              else if (isCorrect && !isSelected) { color = 'border-green-500 bg-green-50 ring-2 ring-green-200'; label = 'Correct'; labelColor='bg-green-100 text-green-800'; }
-              else if (!isCorrect && isSelected) { color = 'border-red-500 bg-red-50 ring-2 ring-red-200'; label = 'Wrong'; labelColor='bg-red-100 text-red-800'; }
-            } else if (isSelected) {
-              color = 'border-blue-600 bg-blue-50 ring-2 ring-blue-200';
-              label = 'Your choice';
-              labelColor='bg-blue-100 text-blue-800';
-            }
-            return `<button class="w-full flex items-center justify-between text-left rounded-2xl py-3 px-4 answer-btn-text font-for-questions shadow border transition ${color}"
-              ${showAnswer ? 'disabled' : ''}
-              aria-pressed="${isSelected ? 'true' : 'false'}"
-              tabindex="0"
-              onclick="toggleSelect(${i})"
-              onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleSelect(${i});}">
-                <span>
-                  <span class="inline-block font-bold mr-3 text-xl text-blue-800">${ABC[i]||''}.</span>
-                  ${a}
-                  ${isSelected && !showAnswer ? '<span class="ml-2 text-blue-700 font-bold">✔ (selected)</span>' : ''}
-                </span>
-                ${label ? `<span class="ml-3 px-3 py-1 rounded-xl text-base ${labelColor}">${label}</span>` : ''}
-              </button>`;
-          }).join('')}
-        </div>
-        <div class="mt-6 flex justify-center">
-          ${
-            !showAnswer
-            ? `<button onclick="checkAnswer()" class="next-group-btn" ${getSelected().length===0?'disabled':''}>Check</button>`
-            : `<button onclick="next()" class="next-group-btn">Next Question</button>`
-          }
-        </div>
-      </div>`;
   }
+
+  loadQuestions();  // Load the questions initially
 </script>
+
 </body>
 </html>
