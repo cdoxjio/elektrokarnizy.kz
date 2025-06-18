@@ -87,11 +87,10 @@
   let currentQuestionIndex = 0;
   let questions = [];
 
-  // Fetch questions from the provided JSON file on GitHub
+  // Fetch questions from the provided JSON file (use GitHub Pages relative path)
   async function loadQuestions() {
     try {
-      // Load the JSON file from GitHub
-      const response = await fetch('https://raw.githubusercontent.com/cdoxjio/elektrokarnizy.kz/main/ms700_questions.json');
+      const response = await fetch('ms700_questions.json');  // Load directly from GitHub Pages
       const data = await response.json();
       questions = data; // Store the questions in the 'questions' array
       displayQuestion();
