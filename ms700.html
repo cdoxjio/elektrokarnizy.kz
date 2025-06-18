@@ -528,7 +528,7 @@ function mainContent() {
       ${selectHint}
       <div class="flex flex-col gap-4 mb-2" role="group" aria-label="Answer choices">
         
-  // Shuffle the answers, ensuring the correct answer position changes
+  // Ensure answers are shuffled correctly while maintaining the integrity of the correct answers
   const answers = shuffle([...q.answers]);
   const correctAnswers = q.correct.map(idx => answers.indexOf(q.answers[idx]));  // Get the shuffled positions of correct answers
   ${answers.map((a, i) => {
