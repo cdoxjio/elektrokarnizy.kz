@@ -87,14 +87,18 @@
 <script>
   let currentQuestionIndex = 0;
   let questions = [];
-  let correctAnswers = [];
 
   // Fetch questions from the provided JSON file
   async function loadQuestions() {
-    const response = await fetch('/mnt/data/ms700_questions.json');
-    const data = await response.json();
-    questions = data;
-    displayQuestion();
+    try {
+      const response = await fetch('/mnt/data/ms700_questions.json');  // Fetching the JSON file
+      const data = await response.json();
+      questions = data;  // Store the questions in the 'questions' array
+      displayQuestion();
+    } catch (error) {
+      console.error("Error loading the questions:", error);
+      alert("Failed to load questions!");
+    }
   }
 
   function shuffleAnswers(answers, correctIndices) {
@@ -162,7 +166,7 @@
     }
   }
 
-  loadQuestions();
+  loadQuestions();  // Load the questions initially
 </script>
 
 </body>
