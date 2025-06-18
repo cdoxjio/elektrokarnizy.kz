@@ -3,111 +3,145 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The MS-700 certification</title>
+  <title>MS‑700 Certification Practice</title>
   <script src="https://cdn.tailwindcss.com"></script>
-
   <style>
     body { font-family: 'Segoe UI', Arial, sans-serif; }
-
-    /* Плавное появление/исчезновение блоков */
     .fade { transition: all 0.5s; }
-
     .mint-bg {
-      background: linear-gradient(120deg,#e6fff4 0%,#f6fefc 100%);
+      background: linear-gradient(120deg, #e6fff4 0%, #f6fefc 100%);
     }
-
-    /* ---------- ГЛАВНОЕ ИСПРАВЛЕНИЕ ---------- */
-    .groups-link-bar{
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(120px,1fr));
-      gap:0.5em;
-      justify-items:center;
-      align-items:center;
-      margin:2em 0 0.1em;
+    .groups-link-bar {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+      gap: 0.5em;
+      justify-items: center;
+      align-items: center;
+      margin-top: 2em;
+      margin-bottom: 0.1em;
     }
-    /* ----------------------------------------- */
-
-    /* ссылки-вкладки групп */
-    .group-link{
-      padding:0.1em 0.7em;
-      border-radius:6px;
-      font-size:1em;
-      text-decoration:underline dotted;
-      color:#205070;
-      background:none;
-      border:none;
-      cursor:pointer;
-      transition:background .2s,color .2s;
-      font-weight:600;
-      user-select:none;
+    .group-link {
+      padding: 0.4em 0.8em;
+      border-radius: 6px;
+      background: #E4EFFF;
+      color: #3855A3;
+      text-decoration: none;
+      font-weight: 600;
+      user-select: none;
     }
-    .group-link.active{
-      color:#fff;
-      background:#B22234;
-      text-decoration:none;
-      font-weight:bold;
+    .group-link.active {
+      background: #B22234;
+      color: #fff;
     }
-    .group-link:focus-visible{
-      outline:2px solid #B22234;
-      outline-offset:1px;
+    .group-link:focus-visible {
+      outline: 2px solid #B22234;
+      outline-offset: 1px;
     }
-
-    /* «Random question» и вторичные ссылки */
-    .random-link{
-      padding:0.1em 0.7em;
-      border-radius:6px;
-      font-size:1em;
-      color:#137ca8;
-      text-decoration:underline dotted;
-      cursor:pointer;
-      font-weight:600;
-      background:none;
-      border:none;
-      margin:0.7em 0.3em 1em;
-      transition:color .15s;
-      display:inline-block;
+    .random-link {
+      display: inline-block;
+      margin: 1.5em 0;
+      padding: 0.5em 1.2em;
+      background: #f0f0f0;
+      border-radius: 6px;
+      text-decoration: none;
+      color: #333;
+      font-weight: 600;
+      user-select: none;
     }
-    .random-link:hover{color:#1e80c1;}
-
-    /* …дальнейшие стили без изменений … */
-    /* (их опустил ради сокращения ответа, они остаются теми же) */
+    .random-link:focus-visible {
+      outline: 2px solid #B22234;
+      outline-offset: 1px;
+    }
+    .question-area { max-width: 1200px; margin: 0 auto; }
+    .question-area p { margin-bottom: 0.7em; }
+    .ask-again {
+      display: block;
+      margin: 2em auto 1em auto;
+      text-decoration: none;
+      font-style: italic;
+      color: #555;
+    }
+    .ask-again:focus-visible {
+      outline: 2px solid #B22234;
+      outline-offset: 1px;
+    }
+    .wrong-list { margin: 1.5em auto 0.8em auto; max-width: 700px; }
   </style>
 </head>
+<body class="mint-bg">
+  <header class="text-center p-6">
+    <h1 class="text-3xl font-bold">MS‑700 Certification Practice</h1>
+    <nav class="groups-link-bar"></nav>
+    <a href="#" class="random-link">Random Question</a>
+  </header>
 
-<body class="mint-bg min-h-screen flex flex-col items-center">
-  <div id="app" class="w-full flex flex-col items-center justify-center min-h-screen"></div>
-  <div id="footerInfo"></div>
+  <main class="question-area p-6 bg-white rounded-xl shadow-lg fade">
+    <p class="question-text"></p>
+    <ul class="options-list"></ul>
+    <a href="#" class="ask-again">Ask me another question</a>
+    <div class="wrong-list"></div>
+  </main>
 
   <script>
-  /* ---------- JS остаётся прежним ---------- */
-  const QUESTIONS = [];
-  let QUESTIONS_LOADED = false;
-  let LOAD_ERROR = false;
-  let allQuestionsMode = false;
+    fetch('data.json')
+      .then(r => r.json())
+      .then(init)
+      .catch(err => console.error('Failed to load questions:', err));
 
-  fetch('ms700_questions.json')
-    .then(r=>r.json())
-    .then(qs=>{QUESTIONS.push(...qs);QUESTIONS_LOADED=true;start();})
-    .catch(()=>{LOAD_ERROR=true;render();});
+    function init(data) {
+      const questions = (data.questions || []).filter(q => q && q.text && q.text.trim() !== '');
+      if (!questions.length) return alert('No questions found!');
 
-  function chunkArray(array,size){
-    const result=[];
-    for(let i=0;i<array.length;i+=size){
-      result.push(array.slice(i,i+size));
+      const totalGroups = Math.ceil(questions.length / 20);
+      const nav = document.querySelector('.groups-link-bar');
+
+      for (let i = 0; i < totalGroups; i++) {
+        const link = document.createElement('a');
+        link.href = '#';
+        link.textContent = `Group ${i + 1}`;
+        link.className = 'group-link';
+        link.addEventListener('click', e => { e.preventDefault(); displayGroup(i); });
+        nav.appendChild(link);
+      }
+
+      function displayGroup(groupIndex) {
+        document.querySelectorAll('.group-link').forEach((l, idx) => l.classList.toggle('active', idx === groupIndex));
+        const start = groupIndex * 20;
+        const end = Math.min(start + 20, questions.length);
+        const groupQuestions = questions.slice(start, end);
+        showQuestion(groupQuestions[Math.floor(Math.random() * groupQuestions.length)]);
+      }
+
+      function showQuestion(q) {
+        document.querySelector('.question-text').textContent = q.text;
+        const ul = document.querySelector('.options-list');
+        ul.innerHTML = '';
+        q.options.forEach(opt => {
+          const li = document.createElement('li');
+          li.textContent = opt;
+          ul.appendChild(li);
+        });
+      }
+
+      document.querySelector('.random-link').addEventListener('click', e => {
+        e.preventDefault();
+        showQuestion(questions[Math.floor(Math.random() * questions.length)]);
+        document.querySelectorAll('.group-link').forEach(l => l.classList.remove('active'));
+      });
+
+      document.querySelector('.ask-again').addEventListener('click', e => {
+        e.preventDefault();
+        const activeIdx = [...document.querySelectorAll('.group-link')].findIndex(l => l.classList.contains('active'));
+        if (activeIdx >= 0) {
+          const start = activeIdx * 20;
+          const end = Math.min(start + 20, questions.length);
+          const groupQuestions = questions.slice(start, end);
+          showQuestion(groupQuestions[Math.floor(Math.random() * groupQuestions.length)]);
+        }
+      });
+
+      displayGroup(0);
     }
-    return result;
-  }
-  function shuffle(arr){
-    let a=arr.slice();
-    for(let i=a.length-1;i>0;i--){
-      let j=Math.floor(Math.random()*(i+1));
-      [a[i],a[j]]=[a[j],a[i]];
-    }
-    return a;
-  }
-
-  /* …весь остальной скрипт без изменений… */
-  /* (оставлен прежним: формирование групп, переключение вопросов, таймер и т.д.) */
   </script>
 </body>
 </html>
