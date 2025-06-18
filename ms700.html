@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -88,12 +87,13 @@
   let currentQuestionIndex = 0;
   let questions = [];
 
-  // Fetch questions from the provided JSON file
+  // Fetch questions from the provided JSON file on GitHub
   async function loadQuestions() {
     try {
-      const response = await fetch('/mnt/data/ms700_questions.json');  // Fetching the JSON file
+      // Load the JSON file from GitHub
+      const response = await fetch('https://raw.githubusercontent.com/cdoxjio/elektrokarnizy.kz/main/ms700_questions.json');
       const data = await response.json();
-      questions = data;  // Store the questions in the 'questions' array
+      questions = data; // Store the questions in the 'questions' array
       displayQuestion();
     } catch (error) {
       console.error("Error loading the questions:", error);
