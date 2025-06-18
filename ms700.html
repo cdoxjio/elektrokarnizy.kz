@@ -13,30 +13,15 @@
     .mint-bg {
       background: linear-gradient(120deg, #e6fff4 0%, #f6fefc 100%);
     }
-   .groups-link-bar {
-  display: grid;
-  grid-template-columns: repeat(11, minmax(0, 1fr));
-  gap: 0.5em;
-  justify-items: center;
-  align-items: center;
-  margin-bottom: 0.1em;
-  margin-top: 2em;
-}
-@media (max-width: 1200px) {
-  .groups-link-bar {
-    grid-template-columns: repeat(6, minmax(0, 1fr));
-  }
-}
-@media (max-width: 900px) {
-  .groups-link-bar {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-}
-@media (max-width: 600px) {
-  .groups-link-bar {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-}
+    .groups-link-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5em;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 0.1em;
+      margin-top: 2em;
+    }
     .group-link {
       padding: 0.1em 0.7em;
       border-radius: 6px;
